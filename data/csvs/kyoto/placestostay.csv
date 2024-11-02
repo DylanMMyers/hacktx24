@@ -1,0 +1,19 @@
+Category,Name,Price ($/night),Distance to Nearest Train Station (km),Ratings (out of 5),Nearest Train Station
+Hotel,The Ritz-Carlton Kyoto,650,0.5,4.8,Kyoto Shiyakusho-mae Station
+Hotel,Four Seasons Hotel Kyoto,550,0.7,4.7,Higashiyama Station
+Hotel,Hotel Granvia Kyoto,200,0.1,4.4,Kyoto Station
+Hotel,Kyoto Century Hotel,180,0.2,4.3,Kyoto Station
+Hotel,Ibis Styles Kyoto Station,120,0.1,4.1,Kyoto Station
+Hotel,Hotel Keihan Kyoto Grande,100,0.3,4.0,Kyoto Station
+Hostel,Len Kyoto Kawaramachi,30,0.4,4.6,Kawaramachi Station
+Hostel,Piece Hostel Sanjo,25,0.5,4.5,Kyotoshiyakushomae Station
+Hostel,The Lower East Nine Hostel,40,0.6,4.3,Kiyomizu-Gojo Station
+Hostel,Kyoto Morris Hostel,45,0.3,4.2,Gojo Station
+Hostel,Gojo Guest House,55,0.4,4.1,Gojo Station
+Hostel,Khaosan Kyoto Guesthouse,60,0.5,4.0,Kawaramachi Station
+Airbnb,Gion Shijo Private Condo,128,0.1,4.9,Gion-Shijo Station
+Airbnb,Kyoto Gion Apartment,75,0.2,4.8,Gion-Shijo Station
+Airbnb,Double Room near Kyoto Station,55,0.8,4.8,Kyoto Station
+Airbnb,Zen House near Kyoto Station,90,0.7,4.9,Kyoto Station
+Airbnb,Spacious Apartment in Central Kyoto,133,0.5,4.9,Karasuma Oike Station
+Airbnb,The Gion House (Upper Level),234,0.3,4.9,Gion-Shijo Station
