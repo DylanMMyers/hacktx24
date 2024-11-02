@@ -9,6 +9,6 @@ def req(url, out):
     df.to_csv(f"{out}.csv", index=False)
 
 if __name__ == "__main__":
-    url = "https://nihangodb.s3.amazonaws.com/Hostel.csv"
+    url = "https://nihangodb.s3.amazonaws.com/hostel.csv"
     out = "hostel_data"
     req(url, out)

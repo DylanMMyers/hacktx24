@@ -1,0 +1,33 @@
+Category,Name,Price ($/night),Distance to Nearest Train Station (km),Ratings (out of 5),Nearest Train Station
+Breakfast,Yoshinoya,5,0.2,3.8,Osaka Station
+Breakfast,Doutor Coffee,6,0.3,3.7,Umeda Station
+Breakfast,West Wood Bakers,12,0.5,4.1,Shinsaibashi Station
+Breakfast,MANSOU,15,0.4,4.0,Kadoma-minami Station
+Breakfast,bills Osaka,25,0.1,4.3,Osaka Station
+Breakfast,Cafe Italian,30,0.3,4.2,Nishikinohama Station
+Breakfast,Swissotel Nankai Osaka Tavola 36,50,0.1,4.5,Namba Station
+Breakfast,Hotel Keihan Kyobashi Grande Lorraine,55,0.2,4.4,Kyobashi Station
+Lunch,Takoyaki Stand,3,0.3,3.9,Dotonbori Station
+Lunch,Okonomiyaki Fukutaro,5,0.4,4.0,Namba Station
+Lunch,Kushikatsu Daruma,10,0.2,4.1,Tsutenkaku Station
+Lunch,Kura Sushi,12,0.5,3.8,Shinsaibashi Station
+Lunch,Ippudo Ramen,20,0.3,4.2,Umeda Station
+Lunch,Mizuno,25,0.4,4.3,Namba Station
+Lunch,Hajime,120,0.6,4.7,Higobashi Station
+Lunch,La Cime,130,0.5,4.6,Hommachi Station
+Dinner,Osaka Ohsho,7,0.3,3.8,Umeda Station
+Dinner,Ichiran Ramen,8,0.2,4.0,Dotonbori Station
+Dinner,Chibo,15,0.4,4.1,Namba Station
+Dinner,Kani Doraku,18,0.3,4.2,Shinsaibashi Station
+Dinner,Zuboraya,30,0.5,4.3,Shinsekai Station
+Dinner,Hariju,35,0.4,4.4,Kitashinchi Station
+Dinner,Kashiwaya,150,0.7,4.8,Yodoyabashi Station
+Dinner,Fujiya 1935,160,0.6,4.7,Shinsaibashi Station
+Bar,300 Bar,5,0.2,3.7,Namba Station
+Bar,Space Station,6,0.3,3.8,Amerikamura Station
+Bar,Moonshine,12,0.4,4.0,Shinsaibashi Station
+Bar,Nayuta,15,0.3,4.1,Kitashinchi Station
+Bar,Bar Nayuta,25,0.5,4.3,Umeda Station
+Bar,The Silver Whisky Bar,30,0.4,4.4,Hommachi Station
+Bar,Bar Elixir K,50,0.6,4.6,Kitashinchi Station
+Bar,Bar Osaka,55,0.5,4.5,Umeda Station
