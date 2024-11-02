@@ -1,0 +1,19 @@
+Category,Name,Price ($/night),Distance to Nearest Train Station (km),Ratings (out of 5),Nearest Train Station
+Hotel,The Ritz-Carlton Osaka,450,0.3,4.7,Osaka Station
+Hotel,Conrad Osaka,400,0.5,4.6,Higobashi Station
+Hotel,Hotel Granvia Osaka,200,0.1,4.3,Osaka Station
+Hotel,Swissotel Nankai Osaka,180,0.2,4.4,Namba Station
+Hotel,Osaka Fujiya Hotel,100,0.4,4.0,Tanimachi 4-chome Station
+Hotel,Hotel Chuo Oasis,80,0.3,3.9,Namba Station
+Hostel,J-Hoppers Osaka Guesthouse,25,0.5,4.5,Fukushima Station
+Hostel,Osaka Guesthouse NEST,20,0.6,4.4,Shin-Imamiya Station
+Hostel,The Pax Hostel,40,0.4,4.3,Namba Station
+Hostel,Backstage Osaka Hostel & Bar,45,0.3,4.2,Nipponbashi Station
+Hostel,Grampus Inn Osaka,60,0.2,4.1,Namba Station
+Hostel,Ark Hostel,65,0.5,4.0,Shinsaibashi Station
+Airbnb,Cozy Japanese Room TD Shin-Osaka,46,0.7,4.9,Shin-Osaka Station
+Airbnb,GrandouceNishiTengachaya Namba,63,0.8,4.8,Tengachaya Station
+Airbnb,Ninja House in Central Osaka,112,0.5,4.7,Shinsaibashi Station
+Airbnb,Riverside Room Kitahama,133,0.1,4.6,Kitahama Station
+Airbnb,Dotonbori 1min Nihonbashi Station,194,0.1,4.7,Nipponbashi Station
+Airbnb,Luxury Penthouse near Namba,250,0.6,4.8,Namba Station

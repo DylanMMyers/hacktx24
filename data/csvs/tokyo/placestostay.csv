@@ -1,0 +1,19 @@
+Category,Name,Price ($/night),Distance to Nearest Train Station (km),Ratings (out of 5),Nearest Train Station
+Hotel,Park Hyatt Tokyo,850,0.5,4.7,Tochomae Station
+Hotel,The Ritz-Carlton Tokyo,1200,0.3,4.8,Roppongi Station
+Hotel,Tokyu Stay Shinjuku,180,0.2,4.3,Shinjuku-sanchome Station
+Hotel,Shinjuku Granbell Hotel,150,0.4,4.1,Higashi-Shinjuku Station
+Hotel,Hotel Gracery Shinjuku,120,0.1,4.2,Shinjuku-sanchome Station
+Hotel,APA Hotel Shinjuku Gyoenmae,80,0.3,3.9,Shinjuku-gyoemmae Station
+Hostel,Imano Tokyo Hostel,30,0.5,4.5,Shinjuku-sanchome Station
+Hostel,Nui. Hostel & Bar Lounge,25,0.7,4.6,Kuramae Station
+Hostel,CITAN Hostel,45,0.6,4.4,Bakuro-yokoyama Station
+Hostel,The Millennials Shibuya,55,0.3,4.5,Shibuya Station
+Hostel,Emblem Hostel Nishiarai,65,0.2,4.3,Nishiarai Station
+Hostel,Kaisu Hostel,70,0.4,4.2,Akasaka Station
+Airbnb,Cozy Studio in Shibuya,40,0.4,4.7,Shibuya Station
+Airbnb,Traditional Japanese Room in Asakusa,35,0.6,4.6,Asakusa Station
+Airbnb,Modern Apartment near Tokyo Tower,80,0.5,4.4,Kamiyacho Station
+Airbnb,Spacious Loft in Roppongi,95,0.3,4.3,Roppongi Station
+Airbnb,Luxury Penthouse with Sky View,250,0.7,4.9,Roppongi Station
+Airbnb,Designer Home in Daikanyama,180,0.8,4.8,Daikanyama Station
