@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nihon-go!</title>
+  <link rel="icon" href="icons\face.png" type="image/x-icon" sizes="86x86">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.27/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.27/"></script>
+  <style>
+    @font-face {
+        font-family: 'Minecraft';
+        src: url('fonts/Minecraft.ttf');
+    }
+
+    html, body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #E0E0E0; /* Grey background for overall layout */
+        box-sizing: border-box; /* Ensure padding and border are part of the width/height */
+        overflow: hidden; /* Prevent scroll bars from appearing */
+    }
+    button:hover {
+    background-color: #808080; /* Darker grey for the hover effect */
+    color: #FFFFFF; /* Ensures text remains light */
+    border: 1px solid #FFFFFF; /* Gives a border highlight */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a pop-out effect */
+    }
+
+    #newChatButton:hover,
+    #sendButton:hover {
+        background-color: #707070; /* Even darker grey for a more distinct hover */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+    }
+    #navBar {
+        width: 100%;
+        background-color: #656565; /* Dark grey for navigation bar */
+        color: #FFFFFF; /* Light text */
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box; /* Include padding in width */
+    }
+    #navBar .logo {
+      font-family: 'Minecraft';
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding-left: .5rem;
+    }
+    #navBar .logo img {
+    height: 3.5rem; /* Increased height */
+    width: 3.5rem;  /* Increased width */
+    margin-right: 1rem;
+    }
+    .profile-icon {
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        margin: 0; /* Ensure no extra margins */
+        padding-right: .5rem; /* Ensure no extra padding */
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 50px; /* Adjust based on your navbar height */
+        right: 10px; /* Adjust position from the right */
+        background-color: #FFFFFF;
+        border: 1px solid #A0A0A0;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        min-width: 150px;
+    }
+
+    .dropdown-item {
+        padding: 10px;
+        color: #333333;
+        cursor: pointer;
+    }
+
+  .dropdown-item:hover {
+    background-color: #D0D0D0;
+  }
+    #contentGrid {
+        display: grid;
+        grid-template-columns: 1fr 5px 1fr; /* Adjusted for the resizable divider */
+        grid-template-rows: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+        flex: 1;
+        height: calc(100% - 60px); /* Adjust to leave space for the nav bar */
+        box-sizing: border-box;
+        overflow: hidden; /* Prevent scroll */
+    }
+    #mapContainer, #history, #chat {
+      font-family: 'Minecraft';
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    #mapContainer {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      border: 1px solid #A0A0A0; /* Mid-grey border color */
+    }
+    #resizableDivider {
+        background-color: #A0A0A0; /* Mid-grey divider */
+        cursor: col-resize; /* Resize cursor */
+        width: 5px;
+        height: 100%;
+    }
+    #history {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      border: 1px solid #A0A0A0;
+      background-color: #D0D0D0; /* Light grey background */
+      padding: 10px;
+      overflow-y: auto;
+    }
+    #newChatButton {
+        width: 100%; /* Make the button span the width of the panel */
+        padding: 10px;
+        margin: 10px 0; /* Add some space around the button */
+        background-color: #A0A0A0; /* Mid-grey button color */
+        color: #FFFFFF; /* Light text */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Minecraft';
+        font-size: 16px;
+        transition: background-color 0.2s; /* Smooth transition for hover */
+    }
+    #newChatButton:hover {
+        background-color: #909090; /* Slightly darker grey for hover */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Highlight shadow */
+    }
+    .new-chat-entry,
+    .history-item {
+        width: calc(100% - 20px); /* Adjust width to add padding/margin */
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #C0C0C0; /* Different shade of grey for new conversation */
+        color: #333333; /* Dark text color */
+        border-radius: 5px;
+        font-family: 'Minecraft';
+        font-size: 16px;
+        outline: none;
+        border: 1px solid #A0A0A0;
+        transition: background-color 0.2s; /* Smooth transition for hover */
+    }
+    /* Add hover effect */
+    .new-chat-entry:hover,
+    .history-item:hover {
+        background-color: #B0B0B0; /* Slightly darker grey on hover */
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+    #chat {
+      font-family: 'Minecraft';
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      border: 1px solid #A0A0A0;
+      background-color: #B0B0B0; /* Medium grey background */
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      color: #FFFFFF; /* Light text color for contrast */
+    }
+    #chatTitle {
+      font-family: 'Minecraft';
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    #chatContent {
+      flex: 1;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+    .chat-bubble {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 15px;
+      display: block;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      width: fit-content;
+      max-width: 70%;
+      clear: both;
+      color: #333333; /* Darker text for readability */
+    }
+    .user-bubble {
+      background-color: #FFFFFF; /* White background for user bubbles */
+      align-self: flex-end;
+      text-align: right;
+      margin-left: auto;
+    }
+    .responder-bubble {
+      background-color: #CCCCCC; /* Light grey for responder bubbles */
+      align-self: flex-start;
+      text-align: left;
+      margin-right: auto;
+    }
+    #chatInputBar {
+      display: flex;
+      background-color: #656565; /* Dark grey for input bar */
+      padding: 5px;
+      border-radius: 5px;
+    }
+    #chatInput {
+      font-family: 'Minecraft';
+      flex: 1;
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+      margin-right: 5px;
+      outline: none;
+      background-color: #D0D0D0; /* Light grey input field */
+      color: #333333; /* Dark text */
+    }
+    #sendButton {
+      width: 50px;
+      height: 30px;
+      background-color: #A0A0A0; /* Mid-grey button */
+      color: #FFFFFF; /* Light text */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="navBar">
+    <div class="logo">
+        Nihon-go!
+    <img class="japan-icon" src="icons\pngwing.com.png" alt="Profile Icon">
+    </div>
+    <img class="profile-icon" src="icons/face.png" alt="Profile Icon">
+    <div class="dropdown-menu" id="profileDropdown">
+        <div class="dropdown-item">Sign In</div>
+        <div class="dropdown-item">Account</div>
+    </div>
+  </div>
+  <div id="contentGrid">
+    <div id="mapContainer">
+      <div id="viewDiv" style="height: 100%; width: 100%;"></div>
+    </div>
+    <div id="resizableDivider"></div> <!-- Divider for resizing -->
+    <div id="history">
+      <div id="historyTitle">History</div>
+      <button id="newChatButton">New Chat</button>
+      <!-- Content for history goes here -->
+    </div>
+    <div id="chat">
+      <div id="chatTitle">Chat</div>
+      <div id="chatContent">
+        <div class="chat-bubble responder-bubble">Hello! How can I help you today?</div>
+        <div class="chat-bubble user-bubble">I would like to know more about Japan's geography.</div>
+        <div class="chat-bubble responder-bubble">Sure! Japan is an island country located in East Asia, known for its mountainous terrain and beautiful coastlines.</div>
+        <div class="chat-bubble user-bubble">Thanks, that's interesting!</div>
+      </div>
+      <div id="chatInputBar">
+        <input id="chatInput" type="text" placeholder="Type a message...">
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView"
+    ], function(Map, MapView) {
+      const map = new Map({
+        basemap: "topo-vector" // Choose a basemap style
+      });
+
+      const view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [138.2529, 36.2048], // Longitude, latitude of Japan
+        zoom: 5 // Initial zoom level
+      });
+    });
+
+    document.getElementById("newChatButton").addEventListener("click", function() {
+    // Clear chat panel messages
+    const chatContent = document.getElementById("chatContent");
+    chatContent.innerHTML = ""; // Clears the chat panel
+
+    // Create a new input field in the history pane
+    const historyPanel = document.getElementById("history");
+    const newChatBlock = document.createElement("input");
+    newChatBlock.type = "text";
+    newChatBlock.placeholder = "Please enter conversation title";
+    newChatBlock.classList.add("new-chat-entry");
+
+    // Append the new input field to the history panel
+    historyPanel.appendChild(newChatBlock);
+
+    // Focus on the new input field
+    newChatBlock.focus();
+
+    // Event listener for pressing 'Enter' on the new input field
+    newChatBlock.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            if (newChatBlock.value.trim() === "") {
+                // Show error box if input is blank
+                const userChoice = confirm("The conversation title cannot be blank. Click 'OK' to retry or 'Cancel' to delete the conversation.");
+                if (userChoice) {
+                    newChatBlock.focus(); // Retry
+                } else {
+                    historyPanel.removeChild(newChatBlock); // Cancel and delete
+                }
+            } else {
+                // Save the input as static text
+                const savedTitle = document.createElement("div");
+                savedTitle.textContent = newChatBlock.value;
+                savedTitle.style.width = "calc(100% - 20px)"; // Adjust width to add padding/margin
+                savedTitle.style.padding = "10px";
+                savedTitle.style.marginBottom = "10px";
+                savedTitle.style.backgroundColor = "#A0A0A0"; // Mid-grey background
+                savedTitle.style.color = "#FFFFFF"; // Light text
+                savedTitle.style.borderRadius = "5px";
+                savedTitle.style.fontFamily = "'Minecraft'";
+                savedTitle.style.fontSize = "16px";
+                savedTitle.style.textAlign = "center";
+
+                // Replace input field with static text
+                historyPanel.replaceChild(savedTitle, newChatBlock);
+            }
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const divider = document.getElementById('resizableDivider');
+    let isResizing = false;
+
+    divider.addEventListener('mousedown', (e) => {
+        isResizing = true;
+        document.body.style.cursor = 'col-resize';
+        e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (!isResizing) return;
+        const grid = document.getElementById('contentGrid');
+        const leftPanelWidth = e.clientX - grid.offsetLeft;
+
+        // Limit minimum and maximum width for the left panel
+        if (leftPanelWidth > 100 && leftPanelWidth < grid.clientWidth - 100) {
+            grid.style.gridTemplateColumns = `${leftPanelWidth}px 5px 1fr`;
+        }
+    });
+
+    document.addEventListener('mouseup', () => {
+        if (isResizing) {
+            isResizing = false;
+            document.body.style.cursor = 'default';
+        }
+    });
+});
+
+    // Function to send a message
+    function sendMessage() {
+      const chatInput = document.getElementById("chatInput");
+      const chatContent = document.getElementById("chatContent");
+      const userMessage = chatInput.value.trim();
+
+      if (userMessage) {
+        const newBubble = document.createElement("div");
+        newBubble.classList.add("chat-bubble", "user-bubble");
+        newBubble.textContent = userMessage;
+        chatContent.appendChild(newBubble);
+        chatInput.value = ""; // Clear the input field
+        chatContent.scrollTop = chatContent.scrollHeight; // Scroll to the bottom
+      }
+    }
+
+    // Event listener for the send button
+    document.getElementById("sendButton").addEventListener("click", sendMessage);
+
+    // Event listener for pressing 'Enter' in the text input
+    document.getElementById("chatInput").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault(); // Prevent default 'Enter' key behavior
+        sendMessage();
+      }
+    });
+    // Toggle the display of the dropdown menu when the profile icon is clicked
+    document.querySelector('.profile-icon').addEventListener('click', function() {
+        const dropdown = document.getElementById('profileDropdown');
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Close the dropdown if clicked outside
+    window.addEventListener('click', function(event) {
+        if (!event.target.matches('.profile-icon')) {
+        const dropdown = document.getElementById('profileDropdown');
+        if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        }
+        }
+    });
+</script>
+</body>
+</html>
