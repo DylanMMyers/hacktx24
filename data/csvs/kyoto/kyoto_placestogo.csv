@@ -1,51 +1,36 @@
-Name,Cost (JPY),Location,Description,Nearest Train Station
-Osaka Castle,600,Chuo Ward,Historic castle and museum,Tanimachi 4-chome Station
-Dotonbori,0,Chuo Ward,Famous entertainment district with neon signs,Namba Station
-Shinsaibashi Shopping Street,0,Chuo Ward,Popular covered shopping arcade,Shinsaibashi Station
-Kuromon Ichiba Market,0,Chuo Ward,Lively food market known as "Osaka's Kitchen",Nipponbashi Station
-Osaka Aquarium Kaiyukan,2400,Minato Ward,One of the world's largest aquariums,Osakako Station
-Universal Studios Japan,7800-8400,Konohana Ward,Popular theme park with movie-based attractions,Universal City Station
-Sumiyoshi Taisha Shrine,0,Sumiyoshi Ward,One of Japan's oldest Shinto shrines,Sumiyoshi Taisha Station
-Shinsekai,0,Naniwa Ward,Retro district famous for kushikatsu,Ebisucho Station
-Tsutenkaku Tower,800,Naniwa Ward,Landmark tower with observation deck,Shin-Imamiya Station
-Tennoji Park,150,Tennoji Ward,Large urban park with zoo and art museum,Tennoji Station
-Osaka Museum of Housing and Living,600,Kita Ward,Museum recreating Edo period Osaka,Tenjinbashisuji 6-chome Station
-Umeda Sky Building,1500,Kita Ward,Skyscraper with Floating Garden Observatory,Osaka Station
-Osaka Science Museum,400,Kita Ward,Interactive science museum,Higobashi Station
-Nakanoshima Park,0,Kita Ward,Park on an island between rivers,Naniwabashi Station
-Osaka Museum of History,600,Chuo Ward,Museum chronicling Osaka's history,Tanimachi 4-chome Station
-Hozenji Yokocho,0,Chuo Ward,Atmospheric alley with traditional shops,Namba Station
-America-mura,0,Chuo Ward,Trendy shopping and entertainment district,Shinsaibashi Station
-Namba Yasaka Shrine,0,Naniwa Ward,Shrine with unique lion-shaped stage,Namba Station
-Osaka Tenmangu Shrine,0,Kita Ward,Shrine dedicated to the god of learning,Osaka Tenmangu Station
-Kids Plaza Osaka,1400,Kita Ward,Hands-on children's museum,Ogimachi Station
-Osaka Castle Park,0,Chuo Ward,Large park surrounding Osaka Castle,Tanimachi 4-chome Station
-Minoo Park,0,Minoo City,Forested valley with waterfall,Minoo Station
-Abeno Harukas,1500,Abeno Ward,Japan's tallest skyscraper with observation deck,Tennoji Station
-Tempozan Ferris Wheel,800,Minato Ward,Large Ferris wheel with bay views,Osakako Station
-Osaka Peace Center,0,Chuo Ward,Museum dedicated to WWII air raids on Osaka,Tanimachi 4-chome Station
-Osaka Museum of Natural History,300,Higashisumiyoshi Ward,Natural history museum with dinosaur exhibits,Nagai Station
-Nagai Botanical Garden,200,Higashisumiyoshi Ward,Large botanical garden with greenhouses,Nagai Station
-Shitenno-ji Temple,300,Tennoji Ward,One of Japan's oldest Buddhist temples,Shitennoji-mae Yuhigaoka Station
-Isshin-ji Temple,0,Tennoji Ward,Temple known for unique Buddha statues,Tennoji Station
-Spa World,2700,Tennoji Ward,Large hot spring complex with themed baths,Shin-Imamiya Station
-Osaka Prefectural Sayamaike Museum,300,Osakasayama City,Museum about ancient reservoir technology,Sayamaike Station
-Osaka Maritime Museum,0,Suminoe Ward,Museum ship in Osaka Bay,Cosmosquare Station
-Osaka International Peace Center,0,Chuo Ward,Museum promoting peace and human rights,Morinomiya Station
-Osaka City Central Public Hall,200,Kita Ward,Historic Neo-Renaissance style building,Yodoyabashi Station
-Namba Shrine,0,Chuo Ward,Shrine in the heart of bustling Namba,Namba Station
-Tsuruhashi Korean Town,0,Ikuno Ward,Area known for Korean cuisine and culture,Tsuruhashi Station
-Osaka Mint Bureau,0,Kita Ward,Mint facility with cherry blossom viewing,Temmabashi Station
-Nipponbashi Denden Town,0,Naniwa Ward,Electronics and otaku culture district,Ebisucho Station
-Osaka Museum of Fine Arts,300,Tennoji Ward,Art museum in Tennoji Park,Tennoji Station
-Namba Parks,0,Naniwa Ward,Shopping complex with rooftop garden,Namba Station
-Osaka City Air Terminal,0,Kita Ward,Airport bus terminal with observation deck,Namba Station
-Tempozan Harbor Village,0,Minato Ward,Waterfront shopping and entertainment area,Osakako Station
-Osaka Culturarium at Tempozan,0,Minato Ward,Cultural facility with art exhibitions,Osakako Station
-Osaka Shochikuza Theater,1000-18000,Chuo Ward,Historic kabuki theater,Namba Station
-Nakanoshima Library,0,Kita Ward,Art Deco style public library,Watanabebashi Station
-Osaka City Central Wholesale Market,0,Fukushima Ward,Largest wholesale market in Japan,Tamagawa Station
-Osaka Castle Nishinomaru Garden,200,Chuo Ward,Japanese garden within castle grounds,Osakajokoen Station
-Utsubo Park,0,Nishi Ward,Large park with tennis courts,Hommachi Station
-Nagai Stadium,0,Higashisumiyoshi Ward,Major sports stadium,Nagai Station
-Tsuyunoten Shrine,0,Abeno Ward,Shrine known for "love-knot" stones,Tennoji Station
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags
+Attraction,Kinkaku-ji (Golden Pavilion),400,3.0,4.5,Kitano-Hakubaicho Station,"[Historical Sites, Cultural Landmarks, Temples, Scenic Views]"
+Attraction,Fushimi Inari Taisha,0,0.1,4.7,Inari Station,"[Religious Sites, Cultural Landmarks, Hiking, Free Attractions]"
+Attraction,Kiyomizu-dera,400,1.5,4.6,Kiyomizu-Gojo Station,"[Temples, Cultural Landmarks, Scenic Views, Shopping]"
+Attraction,Arashiyama Bamboo Grove,0,0.5,4.8,Arashiyama Station,"[Nature Spots, Scenic Views, Free Attractions]"
+Attraction,Nijo Castle,1000,0.7,4.4,Nijojo-mae Station,"[Historical Sites, Cultural Landmarks]"
+Attraction,Gion District,0,0.3,4.5,Gion-Shijo Station,"[Cultural Landmarks, Entertainment Areas]"
+Attraction,Philosopher's Path,0,1.0,4.3,Demachiyanagi Station,"[Nature Spots, Scenic Views]"
+Attraction,Ryoan-ji Temple,500,2.5,4.3,Ryoanji-michi Station,"[Temples, Cultural Landmarks]"
+Attraction,Nishiki Market,0,0.2,4.4,Shijo Station,"[Markets, Food and Dining]"
+Attraction,Sanjusangendo Temple,600,1.0,4.5,Kyoto Station,"[Temples]"
+Attraction,Kyoto Imperial Palace,0,1.2,4.2,Imadegawa Station,"[Historical Sites]"
+Attraction,Ginkaku-ji (Silver Pavilion),500,2.0,4.4,Ginkakuji-michi Station,"[Temples]"
+Attraction,Pontocho Alley,0,0.3,4.3,Sanjo Station,"[Entertainment Areas]"
+Attraction,Tofuku-ji Temple,400,0.5,4.5,Tofukuji Station,"[Temples]"
+Attraction,Eikan-do Temple,600,1.5,4.4,Keage Station,"[Temples]"
+Attraction,Kamigamo Shrine,0,1.0,4.3,Kitayama Station,"[Religious Sites]"
+Attraction,Daitoku-ji Temple,500,1.5,4.2,Kitaoji Station,"[Temples]"
+Attraction,Saiho-ji Temple (Moss Temple),1000,2.5,4.6,Matsuo Station,"[Temples]"
+Attraction,Higashi Hongan-ji Temple,0,0.5,4.3,Kyoto Station,"[Temples]"
+Attraction,Nanzen-ji Temple,500,1.2,4.5,Keage Station,"[Temples]"
+Attraction,Kifune Shrine,0,2.0,4.4,Kibuneguchi Station,"[Religious Sites]"
+Attraction,Murin-an Garden,410,1.0,4.2,Keage Station,"[Parks and Gardens]"
+Attraction,Kyoto Tower,770,0.1,4.0,Kyoto Station,"[Observation Decks]"
+Attraction,Kyoto Railway Museum,1200,0.5,4.4,Umekoji-Kyotonishi Station,"[Museums]"
+Attraction,Abeno Harukas 300 Observation Deck,1500,0.1,4.3,Tennoji Station,"[Observation Decks]"
+Attraction,Takagamine Shrine,0,1.5,4.0,Kitaoji Station,"[Religious Sites]"
+Attraction,Otagi Nenbutsu-ji Temple,300,3.0,4.3,Arashiyama Station,"[Temples]"
+Attraction,Iwatayama Monkey Park,550,1.0,4.3,Arashiyama Station,"[Nature Spots, Wildlife, Family-Friendly]"
+Attraction,Sagano Bamboo Forest,0,1.2,4.5,Arashiyama Station,"[Nature Spots, Scenic Views]"
+Attraction,Honen-in Temple,500,1.5,4.2,Ginkakuji-michi Station,"[Temples, Cultural Landmarks]"
+Attraction,Yasaka Shrine,0,0.5,4.6,Gion-Shijo Station,"[Religious Sites, Cultural Landmarks]"
+Attraction,Jingo-ji Temple,600,3.5,4.1,Takao Station,"[Historical Sites]"
+Attraction,Mizuno Shinden,0,2.0,3.9,Arashiyama Station,"[Cultural Landmarks]"
+Attraction,Tanzan-jinja Shrine,500,2.5,4.0,Sakurai Station,"[Religious Sites]"
+Attraction,Higashiyama Jisho-ji (Silver Pavilion),500,2.0,4.4,Ginkakuji-michi Station,"[Cultural Landmarks]"
