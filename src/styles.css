@@ -327,6 +327,7 @@ background-color: #D0D0D0;
     flex: 1; /* Allow the content to grow and take available space */
     overflow-y: auto; /* Enables vertical scrolling when content overflows */
     margin: 0; /* Remove margin to make it fit within the container */
+    margin-top: 2rem;
     padding: 1rem; /* Add padding for content spacing */
     min-height: 0; /* Ensure it doesn't enforce a minimum height */
     position: relative; /* Use relative positioning to keep it inside the flex layout */
@@ -402,3 +403,36 @@ background-color: #D0D0D0;
 #sendButton:hover {
     background-color: #909090;
 }
+
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    #contentGrid {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto auto auto auto; /* Each panel on its own row */
+        gap: 0.5rem;
+    }
+
+    #mapContainer {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; /* First row */
+        height: 300px; /* Adjust height as needed for smaller screens */
+    }
+
+    #history {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; /* Second row */
+    }
+
+    #preferences {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; /* Third row */
+    }
+
+    #chat {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5; /* Fourth row */
+        min-height: 200px; /* Adjust as needed */
+    }
+}
+
+
