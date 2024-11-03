@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('fonts/Minecraft.ttf');
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E0E0E0; /* Grey background for overall layout */
+    box-sizing: border-box; /* Ensure padding and border are part of the width/height */
+    overflow: hidden; /* Prevent scroll bars from appearing */
+}
+button:hover {
+background-color: #808080; /* Darker grey for the hover effect */
+color: #FFFFFF; /* Ensures text remains light */
+border: 1px solid #FFFFFF; /* Gives a border highlight */
+cursor: pointer; /* Pointer cursor on hover */
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a pop-out effect */
+}
+
+#newChatButton:hover,
+#sendButton:hover {
+    background-color: #707070; /* Even darker grey for a more distinct hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+}
+#navBar {
+    width: 100%;
+    background-color: #656565; /* Dark grey for navigation bar */
+    color: #FFFFFF; /* Light text */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Include padding in width */
+}
+#navBar .logo {
+  font-family: 'Minecraft';
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
+}
+#navBar .logo img {
+height: 3.5rem; /* Increased height */
+width: 3.5rem;  /* Increased width */
+margin-right: 1rem;
+}
+.profile-icon {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    margin: 0; /* Ensure no extra margins */
+    padding-right: .5rem; /* Ensure no extra padding */
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px; /* Adjust based on your navbar height */
+    right: 10px; /* Adjust position from the right */
+    background-color: #FFFFFF;
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+background-color: #D0D0D0;
+}
+#contentGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Map takes 2 parts, history and preferences each take 1 */
+    grid-template-rows: 1r auto; /* First row for history and preferences, second row for chat */
+    gap: 0.5rem;
+    padding: 1rem;
+    height: calc(100% - 60px); /* Leave space for the nav bar */
+    box-sizing: border-box;
+}
+#mapContainer, #history, #chat, #preferences {
+  font-family: 'Minecraft';
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#chatContent {
+    flex: 1;
+    overflow-y: auto; /* Enables vertical scrolling */
+    margin-bottom: 10px;
+    max-height: 300px; /* Adjust the height as needed to fit your layout */
+  }
+  
+#mapContainer {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; /* Span both rows */
+    display: flex;
+    position: relative; /* Needed for absolute positioning of the divider */
+    justify-content: flex-start;
+}
+#dividerBetweenSections {
+    position: absolute;
+    right: 0; /* Align to the right side of the container */
+    top: 0;
+    bottom: 0; /* Extend from top to bottom */
+    width: 10px; /* Adjust width as needed */
+    background-color: #A0A0A0; /* Keep or modify color */
+}
+#history {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2; /* Place above chat */
+    background-color: #D0D0D0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #A0A0A0;
+}
+
+#preferences {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; /* Place above chat */
+    background-color: #C0C0C0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #A0A0A0;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    background-color: #D0D0D0;
+    transition: background-color 0.3s;
+}
+
+.button-container {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+#button1, #button2, #button3 {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    background-color: #D0D0D0;
+    transition: background-color 0.3s;
+}
+
+#button1.active, #button2.active, #button3.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+#visitLengthContainer {
+    margin-top: 1.5rem;
+  }
+  
+#numberGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columns */
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .number-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Minecraft';
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    background-color: #D0D0D0;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .number-box:hover {
+    background-color: #909090; /* Darker grey for hover */
+  }
+  
+  .number-box.selected {
+    background-color: #4caf50; /* Green when selected */
+    color: white;
+  }
+
+  .number-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Minecraft';
+    font-size: 16px;
+    width: 2rem; /* Adjusted size */
+    height: 2rem; /* Adjusted size */
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    background-color: #D0D0D0;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+#submitButton {
+    width: 100%; /* Make the button span the width of the pane */
+    padding: 10px;
+    margin-top: 10px; /* Add some space above the button */
+    background-color: #A0A0A0; /* Mid-grey button color */
+    color: #FFFFFF; /* Light text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Minecraft';
+    font-size: 16px;
+    transition: background-color 0.2s; /* Smooth transition for hover */
+  }
+  
+#submitButton:hover {
+    background-color: #909090; /* Slightly darker grey for hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Highlight shadow */
+  }
+
+.warning-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }  
+
+#newChatButton {
+    width: 100%; /* Make the button span the width of the panel */
+    padding: 10px;
+    margin: 10px 0; /* Add some space around the button */
+    background-color: #A0A0A0; /* Mid-grey button color */
+    color: #FFFFFF; /* Light text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Minecraft';
+    font-size: 16px;
+    transition: background-color 0.2s; /* Smooth transition for hover */
+}
+#newChatButton:hover {
+    background-color: #909090; /* Slightly darker grey for hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Highlight shadow */
+}
+.new-chat-entry,
+.history-item {
+    width: calc(100% - 20px); /* Adjust width to add padding/margin */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #C0C0C0; /* Different shade of grey for new conversation */
+    color: #333333; /* Dark text color */
+    border-radius: 5px;
+    font-family: 'Minecraft';
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #A0A0A0;
+    transition: background-color 0.2s; /* Smooth transition for hover */
+}
+/* Add hover effect */
+.new-chat-entry:hover,
+.history-item:hover {
+    background-color: #B0B0B0; /* Slightly darker grey on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+    
+}
+#resizeHandle {
+    width: 100%; /* Full width of the chat pane */
+    height: 10px; /* Height to act as the resize handle */
+    background-color: #A0A0A0; /* Handle color */
+    cursor: ns-resize; /* Vertical resize cursor */
+  }
+#chat {
+    grid-column: 2 / 4; /* Span history and preferences columns */
+    grid-row: 2 / 3;
+    background-color: #B0B0B0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #A0A0A0;
+}
+#chatTitle {
+  font-family: 'Minecraft';
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#chatContent {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.chat-bubble {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 15px;
+  display: block;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  width: fit-content;
+  max-width: 70%;
+  clear: both;
+  color: #333333; /* Darker text for readability */
+}
+.user-bubble {
+  background-color: #FFFFFF; /* White background for user bubbles */
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+.responder-bubble {
+  background-color: #CCCCCC; /* Light grey for responder bubbles */
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+}
+#chatInputBar {
+  display: flex;
+  background-color: #656565; /* Dark grey for input bar */
+  padding: 5px;
+  border-radius: 5px;
+}
+#chatInput {
+  font-family: 'Minecraft';
+  flex: 1;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  outline: none;
+  background-color: #D0D0D0; /* Light grey input field */
+  color: #333333; /* Dark text */
+}
+#sendButton {
+  width: 50px;
+  height: 30px;
+  background-color: #A0A0A0; /* Mid-grey button */
+  color: #FFFFFF; /* Light text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
