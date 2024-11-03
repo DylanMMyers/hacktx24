@@ -10,7 +10,7 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #E0E0E0; /* Grey background for overall layout */
+    background-color: #67A3D9; /* Grey background for overall layout */
     box-sizing: border-box; /* Ensure padding and border are part of the width/height */
     overflow: hidden; /* Prevent scroll bars from appearing */
 }
@@ -29,8 +29,9 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a pop-out effec
 }
 #navBar {
     width: 100%;
-    background-color: #656565; /* Dark grey for navigation bar */
-    color: #FFFFFF; /* Light text */
+    background-color: #C8E7F5; /* Dark grey for navigation bar */
+    border-bottom: 1px solid #F6D2E0;
+    color: #65655E; /* Light text */
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a pop-out effec
     box-sizing: border-box; /* Include padding in width */
 }
 #navBar .logo {
+  color: #0671B7;
   font-family: 'Minecraft';
   font-size: 24px;
   font-weight: bold;
@@ -107,6 +109,7 @@ background-color: #D0D0D0;
     display: flex;
     position: relative; /* Needed for absolute positioning of the divider */
     justify-content: flex-start;
+    border: 1px solid #0671B7;
 }
 #dividerBetweenSections {
     position: absolute;
@@ -119,19 +122,20 @@ background-color: #D0D0D0;
 #history {
     grid-column: 3 / 4;
     grid-row: 1 / 2; /* Place above chat */
-    background-color: #D0D0D0;
+    background-color: #C8E7F5;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #A0A0A0;
+    border: 0.1em solid #0671B7;
+    overflow-y: auto; /* Allows the chat entries to be scrollable */
 }
 
 #preferences {
     grid-column: 2 / 3;
     grid-row: 1 / 2; /* Place above chat */
-    background-color: #C0C0C0;
+    background-color: #C8E7F5;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #A0A0A0;
+    border: 0.1em solid #0671B7;
 }
 
 .button-container {
@@ -161,9 +165,9 @@ background-color: #D0D0D0;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    border: 1px solid #A0A0A0;
+    border: 1px solid #0671B7;
     border-radius: 5px;
-    background-color: #D0D0D0;
+    background-color: #F6D2E0;
     transition: background-color 0.3s;
 }
 
@@ -179,7 +183,7 @@ background-color: #D0D0D0;
 #numberGrid {
     display: grid;
     grid-template-columns: repeat(10, 1fr); /* 10 columns */
-    gap: 5px;
+    gap: .2em;
     margin-top: 10px;
   }
 
@@ -191,15 +195,15 @@ background-color: #D0D0D0;
     font-size: 16px;
     width: 30px;
     height: 30px;
-    border: 1px solid #A0A0A0;
     border-radius: 5px;
-    background-color: #D0D0D0;
+    background-color: #F6D2E0;
+    border: 1px solid #67A3D9;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
   }
   
   .number-box:hover {
-    background-color: #909090; /* Darker grey for hover */
+    background-color: #FFFFFF; /* Darker grey for hover */
   }
   
   .number-box.selected {
@@ -215,9 +219,9 @@ background-color: #D0D0D0;
     font-size: 16px;
     width: 2rem; /* Adjusted size */
     height: 2rem; /* Adjusted size */
-    border: 1px solid #A0A0A0;
+    border: 1px solid #0671B7;
     border-radius: 5px;
-    background-color: #D0D0D0;
+    background-color: #F6D2E0;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
   }
@@ -226,9 +230,9 @@ background-color: #D0D0D0;
     width: 100%; /* Make the button span the width of the pane */
     padding: 10px;
     margin-top: 10px; /* Add some space above the button */
-    background-color: #A0A0A0; /* Mid-grey button color */
+    background-color: #0671B7; /* Mid-grey button color */
     color: #FFFFFF; /* Light text */
-    border: none;
+    border: 1px solid #F6D2E0;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Minecraft';
@@ -251,64 +255,81 @@ background-color: #D0D0D0;
     width: 100%; /* Make the button span the width of the panel */
     padding: 10px;
     margin: 10px 0; /* Add some space around the button */
-    background-color: #A0A0A0; /* Mid-grey button color */
-    color: #FFFFFF; /* Light text */
-    border: none;
+    background-color: #F6D2E0; /* Mid-grey button color */
+    color: #333333; /* Light text */
+    border-style: solid;
+    border-color: #0671B7;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Minecraft';
     font-size: 16px;
     transition: background-color 0.2s; /* Smooth transition for hover */
+    position:sticky;
 }
 #newChatButton:hover {
     background-color: #909090; /* Slightly darker grey for hover */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Highlight shadow */
 }
-.new-chat-entry,
-.history-item {
-    width: calc(100% - 20px); /* Adjust width to add padding/margin */
+.new-chat-entry {
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #C0C0C0; /* Different shade of grey for new conversation */
-    color: #333333; /* Dark text color */
-    border-radius: 5px;
+    background-color: #67A3D9; /* Mid-grey background */
+    color: #FFFFFF; /* Light text */
+    border: 1px solid #F6D2E0;
     font-family: 'Minecraft';
     font-size: 16px;
-    outline: none;
-    border: 1px solid #A0A0A0;
-    transition: background-color 0.2s; /* Smooth transition for hover */
+    transition: background-color 0.2s;
+    text-align: center;
 }
-/* Add hover effect */
-.new-chat-entry:hover,
-.history-item:hover {
-    background-color: #B0B0B0; /* Slightly darker grey on hover */
-    cursor: pointer; /* Pointer cursor on hover */
-    
+/* Hover effect */
+.new-chat-entry:hover {
+    background-color: #909090; /* Slightly darker grey on hover */
 }
+
+/* Position resize handle at the very top */
 #resizeHandle {
-    width: 100%; /* Full width of the chat pane */
-    height: 10px; /* Height to act as the resize handle */
-    background-color: #A0A0A0; /* Handle color */
-    cursor: ns-resize; /* Vertical resize cursor */
-  }
+    width: 100%;
+    height: 1rem;
+    background-color:#C8E7F5;
+    cursor: ns-resize;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevent handle from shrinking */
+    z-index: 2;
+}
 #chat {
-    grid-column: 2 / 4; /* Span history and preferences columns */
+    grid-column: 2 / 4;
     grid-row: 2 / 3;
-    background-color: #B0B0B0;
-    padding: 10px;
+    background-color: #C8E7F5;
+    padding: 0; /* Remove padding to allow handle to span full width */
     border-radius: 10px;
-    border: 1px solid #A0A0A0;
+    border: 1px solid #0671B7;
+    position: relative; /* For absolute positioning of children */
+    flex-direction: column;
+    overflow: hidden; /* Keep rounded corners clean */
+    min-height: 28rem; /* Enables proper flex behavior in grid */
+    height: 100%; /* Make sure it fills the grid space */
 }
 #chatTitle {
-  font-family: 'Minecraft';
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
+    font-family: 'Minecraft';
+    font-size: 18px;
+    font-weight: bold;
+    color: #070707;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 #chatContent {
-  flex: 1;
-  overflow-y: auto;
-  margin-bottom: 10px;
+    flex: 1; /* Allow the content to grow and take available space */
+    overflow-y: auto; /* Enables vertical scrolling when content overflows */
+    margin: 0; /* Remove margin to make it fit within the container */
+    padding: 1rem; /* Add padding for content spacing */
+    min-height: 0; /* Ensure it doesn't enforce a minimum height */
+    position: relative; /* Use relative positioning to keep it inside the flex layout */
 }
 .chat-bubble {
   margin: 10px 0;
@@ -323,40 +344,61 @@ background-color: #D0D0D0;
   color: #333333; /* Darker text for readability */
 }
 .user-bubble {
-  background-color: #FFFFFF; /* White background for user bubbles */
+  background-color: #F6D2E0; /* White background for user bubbles */
+  border: 1px solid #0671B7;
   align-self: flex-end;
   text-align: right;
   margin-left: auto;
 }
 .responder-bubble {
-  background-color: #CCCCCC; /* Light grey for responder bubbles */
+  background-color: #F8B7CD; /* Light grey for responder bubbles */
+  border: 1px solid #0671B7;
+  color:#333333;
   align-self: flex-start;
   text-align: left;
   margin-right: auto;
 }
+/* Input bar fixed at bottom */
 #chatInputBar {
-  display: flex;
-  background-color: #656565; /* Dark grey for input bar */
-  padding: 5px;
-  border-radius: 5px;
+    margin-top: auto; /* Pushes the input bar to the bottom */
+    display: flex; /* Allows the input and button to stay in a row */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F6D2E0;
+    border-top: 1px solid #0671B7;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    min-height: 50px; /* Fixed height for input bar */
+    box-sizing: border-box;
 }
+/* Style for the input field inside the input bar */
 #chatInput {
-  font-family: 'Minecraft';
-  flex: 1;
-  border: none;
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 5px;
-  outline: none;
-  background-color: #D0D0D0; /* Light grey input field */
-  color: #333333; /* Dark text */
+    flex: 1;
+    font-family: 'Minecraft';
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+    border-top: 1px solid #0671B7;
+    background-color: #FFF;
+    color: #333333;
 }
+/* Style for the send button */
 #sendButton {
-  width: 50px;
-  height: 30px;
-  background-color: #A0A0A0; /* Mid-grey button */
-  color: #FFFFFF; /* Light text */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    width: 50px;
+    height: 30px;
+    background-color: #0671B7;
+    border: 1px solid #C8E7F5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Add hover effect for send button */
+#sendButton:hover {
+    background-color: #909090;
 }
