@@ -232,23 +232,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const username = document.getElementById('registerUsername').value;
         const password = document.getElementById('registerPassword').value;
     
-        // Send the data to the Python server
-        fetch('/register', {
+        fetch('http://127.0.0.1:5000/register', {  // Ensure this matches the Flask server port
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+              'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ username: username, password: password })
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data.message); // Log the response for debugging
-            alert(data.message);       // Display the message to the user
-        })
-        .catch(error => {
+            body: JSON.stringify({
+              username: username,
+              password: password
+            })
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            console.log('Success:', data);
+          })
+          .catch((error) => {
             console.error('Error:', error);
-            alert('There was an error with registration.');
-        });
+          });
+          
     });
 
 
