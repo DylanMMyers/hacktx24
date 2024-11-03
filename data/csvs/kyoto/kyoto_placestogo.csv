@@ -1,36 +1,36 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category
-Attraction,Kinkaku-ji (Golden Pavilion),400,3.0,4.5,Kitano-Hakubaicho Station,"[Historical Sites, Cultural Landmarks, Temples, Scenic Views]",mid
-Attraction,Fushimi Inari Taisha,0,0.1,4.7,Inari Station,"[Religious Sites, Cultural Landmarks, Hiking, Free Attractions]",low
-Attraction,Kiyomizu-dera,400,1.5,4.6,Kiyomizu-Gojo Station,"[Temples, Cultural Landmarks, Scenic Views, Shopping]",mid
-Attraction,Arashiyama Bamboo Grove,0,0.5,4.8,Arashiyama Station,"[Nature Spots, Scenic Views, Free Attractions]",low
-Attraction,Nijo Castle,1000,0.7,4.4,Nijojo-mae Station,"[Historical Sites, Cultural Landmarks]",high
-Attraction,Gion District,0,0.3,4.5,Gion-Shijo Station,"[Cultural Landmarks, Entertainment Areas]",low
-Attraction,Philosopher's Path,0,1.0,4.3,Demachiyanagi Station,"[Nature Spots, Scenic Views]",low
-Attraction,Ryoan-ji Temple,500,2.5,4.3,Ryoanji-michi Station,"[Temples, Cultural Landmarks]",mid
-Attraction,Nishiki Market,0,0.2,4.4,Shijo Station,"[Markets, Food and Dining]",low
-Attraction,Sanjusangendo Temple,600,1.0,4.5,Kyoto Station,[Temples],high
-Attraction,Kyoto Imperial Palace,0,1.2,4.2,Imadegawa Station,[Historical Sites],low
-Attraction,Ginkaku-ji (Silver Pavilion),500,2.0,4.4,Ginkakuji-michi Station,[Temples],mid
-Attraction,Pontocho Alley,0,0.3,4.3,Sanjo Station,[Entertainment Areas],low
-Attraction,Tofuku-ji Temple,400,0.5,4.5,Tofukuji Station,[Temples],mid
-Attraction,Eikan-do Temple,600,1.5,4.4,Keage Station,[Temples],high
-Attraction,Kamigamo Shrine,0,1.0,4.3,Kitayama Station,[Religious Sites],low
-Attraction,Daitoku-ji Temple,500,1.5,4.2,Kitaoji Station,[Temples],mid
-Attraction,Saiho-ji Temple (Moss Temple),1000,2.5,4.6,Matsuo Station,[Temples],high
-Attraction,Higashi Hongan-ji Temple,0,0.5,4.3,Kyoto Station,[Temples],low
-Attraction,Nanzen-ji Temple,500,1.2,4.5,Keage Station,[Temples],mid
-Attraction,Kifune Shrine,0,2.0,4.4,Kibuneguchi Station,[Religious Sites],low
-Attraction,Murin-an Garden,410,1.0,4.2,Keage Station,[Parks and Gardens],mid
-Attraction,Kyoto Tower,770,0.1,4.0,Kyoto Station,[Observation Decks],high
-Attraction,Kyoto Railway Museum,1200,0.5,4.4,Umekoji-Kyotonishi Station,[Museums],high
-Attraction,Abeno Harukas 300 Observation Deck,1500,0.1,4.3,Tennoji Station,[Observation Decks],high
-Attraction,Takagamine Shrine,0,1.5,4.0,Kitaoji Station,[Religious Sites],low
-Attraction,Otagi Nenbutsu-ji Temple,300,3.0,4.3,Arashiyama Station,[Temples],mid
-Attraction,Iwatayama Monkey Park,550,1.0,4.3,Arashiyama Station,"[Nature Spots, Wildlife, Family-Friendly]",high
-Attraction,Sagano Bamboo Forest,0,1.2,4.5,Arashiyama Station,"[Nature Spots, Scenic Views]",low
-Attraction,Honen-in Temple,500,1.5,4.2,Ginkakuji-michi Station,"[Temples, Cultural Landmarks]",mid
-Attraction,Yasaka Shrine,0,0.5,4.6,Gion-Shijo Station,"[Religious Sites, Cultural Landmarks]",low
-Attraction,Jingo-ji Temple,600,3.5,4.1,Takao Station,[Historical Sites],high
-Attraction,Mizuno Shinden,0,2.0,3.9,Arashiyama Station,[Cultural Landmarks],low
-Attraction,Tanzan-jinja Shrine,500,2.5,4.0,Sakurai Station,[Religious Sites],mid
-Attraction,Higashiyama Jisho-ji (Silver Pavilion),500,2.0,4.4,Ginkakuji-michi Station,[Cultural Landmarks],mid
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category,Latitude,Longitude
+Attraction,Kinkaku-ji (Golden Pavilion),400,3.0,4.5,Kitano-Hakubaicho Station,"[Historical Sites, Cultural Landmarks, Temples, Scenic Views]",mid,35.0295,135.7347
+Attraction,Fushimi Inari Taisha,0,0.1,4.7,Inari Station,"[Religious Sites, Cultural Landmarks, Hiking, Free Attractions]",low,34.9671,135.7726
+Attraction,Kiyomizu-dera,400,1.5,4.6,Kiyomizu-Gojo Station,"[Temples, Cultural Landmarks, Scenic Views, Shopping]",mid,34.9957,135.7688
+Attraction,Arashiyama Bamboo Grove,0,0.5,4.8,Arashiyama Station,"[Nature Spots, Scenic Views, Free Attractions]",low,35.0118,135.6711
+Attraction,Nijo Castle,1000,0.7,4.4,Nijojo-mae Station,"[Historical Sites, Cultural Landmarks]",high,35.0145,135.7484
+Attraction,Gion District,0,0.3,4.5,Gion-Shijo Station,"[Cultural Landmarks, Entertainment Areas]",low,35.00381,135.771977
+Attraction,Philosopher's Path,0,1.0,4.3,Demachiyanagi Station,"[Nature Spots, Scenic Views]",low,35.0308,135.7732
+Attraction,Ryoan-ji Temple,500,2.5,4.3,Ryoanji-michi Station,"[Temples, Cultural Landmarks]",mid,35.0347,135.7184
+Attraction,Nishiki Market,0,0.2,4.4,Shijo Station,"[Markets, Food and Dining]",low,35.0038,135.7587
+Attraction,Sanjusangendo Temple,600,1.0,4.5,Kyoto Station,[Temples],high,34.9856,135.7756
+Attraction,Kyoto Imperial Palace,0,1.2,4.2,Imadegawa Station,[Historical Sites],low,35.0259,135.7624
+Attraction,Ginkaku-ji (Silver Pavilion),500,2.0,4.4,Ginkakuji-michi Station,[Temples],mid,35.0271,135.7944
+Attraction,Pontocho Alley,0,0.3,4.3,Sanjo Station,[Entertainment Areas],low,35.00917,135.77222
+Attraction,Tofuku-ji Temple,400,0.5,4.5,Tofukuji Station,[Temples],mid,34.9758,135.7723
+Attraction,Eikan-do Temple,600,1.5,4.4,Keage Station,[Temples],high,35.0166,135.7944
+Attraction,Kamigamo Shrine,0,1.0,4.3,Kitayama Station,[Religious Sites],low,35.0495,135.7503
+Attraction,Daitoku-ji Temple,500,1.5,4.2,Kitaoji Station,[Temples],mid,35.0409,135.7536
+Attraction,Saiho-ji Temple (Moss Temple),1000,2.5,4.6,Matsuo Station,[Temples],high,34.9914,135.6936
+Attraction,Higashi Hongan-ji Temple,0,0.5,4.3,Kyoto Station,[Temples],low,34.9856,135.7756
+Attraction,Nanzen-ji Temple,500,1.2,4.5,Keage Station,[Temples],mid,35.0166,135.7944
+Attraction,Kifune Shrine,0,2.0,4.4,Kibuneguchi Station,[Religious Sites],low,35.1217,135.7628
+Attraction,Murin-an Garden,410,1.0,4.2,Keage Station,[Parks and Gardens],mid,35.0166,135.7944
+Attraction,Kyoto Tower,770,0.1,4.0,Kyoto Station,[Observation Decks],high,34.9856,135.7756
+Attraction,Kyoto Railway Museum,1200,0.5,4.4,Umekoji-Kyotonishi Station,[Museums],high,34.9856,135.745
+Attraction,Abeno Harukas 300 Observation Deck,1500,0.1,4.3,Tennoji Station,[Observation Decks],high,34.6479,135.5016
+Attraction,Takagamine Shrine,0,1.5,4.0,Kitaoji Station,[Religious Sites],low,35.0409,135.7536
+Attraction,Otagi Nenbutsu-ji Temple,300,3.0,4.3,Arashiyama Station,[Temples],mid,35.0118,135.6711
+Attraction,Iwatayama Monkey Park,550,1.0,4.3,Arashiyama Station,"[Nature Spots, Wildlife, Family-Friendly]",high,35.0118,135.6711
+Attraction,Sagano Bamboo Forest,0,1.2,4.5,Arashiyama Station,"[Nature Spots, Scenic Views]",low,35.0118,135.6711
+Attraction,Honen-in Temple,500,1.5,4.2,Ginkakuji-michi Station,"[Temples, Cultural Landmarks]",mid,35.0271,135.7944
+Attraction,Yasaka Shrine,0,0.5,4.6,Gion-Shijo Station,"[Religious Sites, Cultural Landmarks]",low,35.00381,135.771977
+Attraction,Jingo-ji Temple,600,3.5,4.1,Takao Station,[Historical Sites],high,35.0644,135.6475
+Attraction,Mizuno Shinden,0,2.0,3.9,Arashiyama Station,[Cultural Landmarks],low,35.0118,135.6711
+Attraction,Tanzan-jinja Shrine,500,2.5,4.0,Sakurai Station,[Religious Sites],mid,34.5101,135.8528
+Attraction,Higashiyama Jisho-ji (Silver Pavilion),500,2.0,4.4,Ginkakuji-michi Station,[Cultural Landmarks],mid,35.0271,135.7944
