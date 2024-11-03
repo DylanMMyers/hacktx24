@@ -48,25 +48,32 @@ function processLLMResponse(response) {
     // Destructure the response object
     const { locations, message } = response;
     
-    // Verify the response format
-    if (!Array.isArray(locations) || typeof message !== 'string') {
-        throw new Error('Invalid response format');
-    }
-    
-    // Add pins for each location
-    locations.forEach(location => {
-        if (location.longitude && location.latitude) {
-            addPin(location.longitude, location.latitude);
-        }
-    });
-    
-    // Create and append the AI response bubble
+    // Add the AI response to chat
     const chatContent = document.getElementById("chatContent");
     const newBubble = document.createElement("div");
-    newBubble.classList.add("chat-bubble", "ai-bubble");
+    newBubble.classList.add("chat-bubble", "responder-bubble");
     newBubble.textContent = message;
     chatContent.appendChild(newBubble);
+    
+    // Scroll to bottom of chat
     chatContent.scrollTop = chatContent.scrollHeight;
+    
+    // If there are locations, add them to the map
+    if (locations && locations.length > 0) {
+        // Clear existing graphics if needed
+        graphicsLayer.removeAll();
+        
+        // Add each location to the map
+        locations.forEach(location => {
+            addPin(location.latitude, location.longitude);
+        });
+        
+        // Center map on first location
+        view.goTo({
+            center: [locations[0].longitude, locations[0].latitude],
+            zoom: 12
+        });
+    }
 }
 
 
@@ -168,7 +175,7 @@ async function sendUserMessage() {
     chatContent.appendChild(userBubble);
     
     // Clear input
-    chatInput.value = "";
+    chatInput.value = '';
     
     try {
         // Send message to backend
@@ -180,14 +187,15 @@ async function sendUserMessage() {
             body: JSON.stringify({ message: userMessage })
         });
         
-        const data = await response.json();
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
         
-        // Process the response
+        const data = await response.json();
         processLLMResponse(data);
         
     } catch (error) {
         console.error('Error:', error);
-        // Show error message in chat
         const errorBubble = document.createElement("div");
         errorBubble.classList.add("chat-bubble", "responder-bubble");
         errorBubble.textContent = "Sorry, there was an error processing your request.";

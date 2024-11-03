@@ -40,11 +40,16 @@ def broadcast_output(ai_output, **objects):
                 'longitude': location['Longitude']
             })
     
-    data = {
+    # Ensure ai_output is a string
+    if not isinstance(ai_output, str):
+        ai_output = str(ai_output)
+    
+    response = {
         "message": ai_output,
         "locations": locations_data
     }
-    return json.dumps(data, indent=4)
+    
+    return response
 
 
 def create_itinerary():
