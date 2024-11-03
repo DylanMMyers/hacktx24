@@ -288,8 +288,9 @@ async function sendMessage() {
     const aiBubble = document.createElement("div");
     aiBubble.classList.add("chat-bubble", "responder-bubble");
     aiBubble.textContent = data.response;
+    // chatContent.appendChild(aiBubble);
+    await parseResponse(data.response);
     chatContent.appendChild(aiBubble);
-    parseResponse(data.response);
 
   } catch (error) {
     console.error('Error:', error);
