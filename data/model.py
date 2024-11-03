@@ -19,16 +19,9 @@ workflow.add_node("model", call_model)
 memory = MemorySaver()
 app = workflow.compile(checkpointer=memory)
 
-def website_introduction():
-    ai_response_print = "Welcome to Nihon-go! Please select the preferences above to the best of your ability to start our convorsation."
-    broadcast_output(ai_response_print)
-
-website_introduction()
-
-sample_data = ["mid", "7"]
-
 # function that will put all text and objects passed into it into a json format
 def broadcast_output(ai_output, **objects):
+    print(ai_output)
     data = {
         "ai_output": ai_output,
         "objects": objects
@@ -36,6 +29,13 @@ def broadcast_output(ai_output, **objects):
     json_data = json.dumps(data, indent = 4)
     return json_data
 
+def website_introduction():
+    ai_response_print = "Welcome to Nihon-go! Please select the preferences above to the best of your ability to start our convorsation."
+    broadcast_output(ai_response_print)
+
+website_introduction()
+
+sample_data = ["mid", "7"]
 
 def create_itinerary():
     global prompt
@@ -338,7 +338,7 @@ def start_conversation():
 
     create_itinerary()
 
-    ai_response_print("Now that we have a basic outline of the trip, we can start editing the trip to your liking. Is there anything you would like to change?")
+    ai_response_print = "Now that we have a basic outline of the trip, we can start editing the trip to your liking. Is there anything you would like to change?"
     broadcast_output(ai_response_print)
 
     while(True):
@@ -349,7 +349,7 @@ def start_conversation():
         [
             (
                 "system",
-                "The user will say they want to change something or say they are happy with the trip. If they want to change something, agree and say you will change the itinerary to match their preferences. If they are happy with the trip, ask them if they would like to see the updated itinerary. Keep your answer short and sweet. Do not add a follow up question.",
+                "The user will say they want to change something or say they are happy with the trip. If they want to change something, agree and say you will change the itinerary to match their preferences. If they are happy with their changes or current, ask them if they would like to see the updated itinerary. Keep your answer short and sweet. Do not add a follow up question.",
             ),
             MessagesPlaceholder(variable_name="messages"),
         ]
@@ -362,7 +362,7 @@ def start_conversation():
         [
             (
                 "system",
-                "You must print out the name(s) of what they want to remove. Get spelling and capitolization from itinerary and use proper capitalization and spelling in your output. Do **not** output it how the user typed it. After, it will be followed by the category that it comes from. ('Food' or 'Attraction' or 'Accommodation'). Seperate the name and category by using ', '. You can't include any other information in your output, **you can't** describe the list, and **you can't** use new line characters.",
+                "If user doesnt want to change the itinerary, print only the word 'true' and **nothing** else. Otherwise, You must print out the name(s) of what they want to remove. Get spelling and capitalization from itinerary and use proper capitalization and spelling in your output. It must be the full name as it appears in the itinerary. Do **not** output it how the user typed it. Only output what is to be removed, nothing else. After, it will be followed by the category that it comes from based on where it was in the itinerary ('Food' or 'Attraction' or 'Accommodation'). Seperate the name and category by using ', '. You can't include any other information in your output, **you can't** describe the list, and **you can't** use new line characters.",
             ),
             MessagesPlaceholder(variable_name="messages"),
         ]
@@ -371,5 +371,14 @@ def start_conversation():
         output = app.invoke({"messages": input_messages}, config)
         check_if_listed = output["messages"][-1].content
         print(check_if_listed)
+        if ", " in check_if_listed:
+            check_if_listed = check_if_listed.split(", ")
+            dont_food.append(check_if_listed[0])
+            dont_go.append(check_if_listed[0])
+            dont_stay.append(check_if_listed[0])
+        else:
+            ai_response_print = "Would you like to see the updated itinerary?"
+            broadcast_output(ai_response_print)
+            break
 
 start_conversation()
