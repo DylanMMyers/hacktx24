@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nihon-go!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="icons\face.png" type="image/x-icon" sizes="86x86">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.27/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.27/"></script>
+</head>
+<body>
+  <div id="navBar">
+    <div class="logo">
+        Nihon-go!
+    <img class="japan-icon" src="icons\pngwing.com.png" alt="Profile Icon">
+    </div>
+    <img class="profile-icon" src="icons/face.png" alt="Profile Icon">
+    <div class="dropdown-menu" id="profileDropdown">
+        <div class="dropdown-item">Sign In</div>
+        <div class="dropdown-item">Account</div>
+    </div>
+  </div>
+  <div id="contentGrid">
+    <div id="mapContainer">
+      <div id="viewDiv" style="height: 100%; width: 100%;"></div>
+    </div>
+<div id="history">
+  <div id="historyTitle">History</div>
+  <button id="newChatButton">New Chat</button>
+  <div id="chatEntriesContainer"></div> <!-- Container for chat entries -->
+</div>
+    <div id="preferences">
+      <div id="preferencesTitle">Preferences</div>
+      <!-- Content for preferences -->
+      <div class="button-container">
+        <button class="button" id="button1" onclick="handleClick(this)">$</button>
+        <button class="button" id="button2" onclick="handleClick(this)">$$</button>
+        <button class="button" id="button3" onclick="handleClick(this)">$$$</button>
+      </div>
+      <div id="visitLengthContainer">
+        <label for="numberGrid">Length of Visit:</label>
+        <div id="numberGrid">
+        </div>
+      </div>
+      <div id="submitButtonContainer">
+        <button id="submitButton" class="button">SUBMIT</button>
+        <p id="warningMessage" class="warning-message" style="display: none;">Please select your preferences above</p>
+      </div>
+    </div>
+    <div id="chat">
+      <div id="resizeHandle" class="resize-handle"></div>
+      <div class="chat-header">
+        <div id="chatTitle">Chat</div>
+      </div>
+      <div id="chatContent">
+        <!-- Chat content -->
+        <div class="chat-bubble responder-bubble">Hello! How can I help you today?</div>
+        <div class="chat-bubble user-bubble">I would like to know more about Japan's geography.</div>
+        <div class="chat-bubble responder-bubble">Sure thing! Japan has a lotta mountains and koi fish and stuff!</div>
+        <div class="chat-bubble user-bubble">Uh... thanks?</div>
+      </div>
+      <div id="chatInputBar">
+        <input id="chatInput" type="text" placeholder="Type a message...">
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html>
