@@ -58,7 +58,7 @@ require([
     if (shouldCenter) {
       view.goTo({
         center: [longitude, latitude],
-        zoom: 12
+        // zoom: 12
       });
     }
   };
@@ -327,9 +327,11 @@ async function parseResponse(response) {
   const data = await response2.json();
   if (data.locations) {
     data.locations.forEach((location, index) => {
-      // Only center on the first location
+      // Swap the coordinates order since they come as [lat, lon] but we need [lon, lat]
+      const longitude = location.coordinates[1];  // Get longitude from second position
+      const latitude = location.coordinates[0];   // Get latitude from first position
       const shouldCenter = index === 0;
-      addPin(location.coordinates[0], location.coordinates[1], location.location, shouldCenter);
+      addPin(longitude, latitude, location.location, shouldCenter);
     });
   }
 }

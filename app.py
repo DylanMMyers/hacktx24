@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-client = OpenAI(api_key='key')
+client = OpenAI(api_key='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')
 
 # Store conversations in memory (in a production environment, use a database)
 conversations = {}
