@@ -70,8 +70,6 @@ document.getElementById("newChatButton").addEventListener("click", function() {
     });
 });
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const divider = document.getElementById('dividerBetweenSections');
     const contentGrid = document.getElementById('contentGrid');
@@ -202,6 +200,16 @@ document.addEventListener('DOMContentLoaded', () => {
           chatPane.style.height = `${newHeight}px`;
         }
       }
+
+      window.addEventListener('resize', function() {
+        if (window.innerWidth <= 768) { // Match the media query max-width
+            const chatSection = document.getElementById('chat');
+            if (chatSection) {
+                chatSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+    
       
       
       
