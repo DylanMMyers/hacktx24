@@ -1,49 +1,49 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category,Coordinates
-Attraction,Tokyo Metropolitan Government Building Observatory,0,0.1,4.4,Tochomae Station,"[Free Attractions, Observation Decks, Modern Architecture, Scenic Views]",low,"(35.6896, 139.6917)"
-Attraction,Senso-ji Temple,0,0.3,4.5,Asakusa Station,"[Religious Sites, Historical Sites, Cultural Landmarks, Free Attractions]",low,"(35.7147, 139.7967)"
-Attraction,Meiji Shrine,0,0.5,4.6,Harajuku Station,"[Religious Sites, Historical Sites, Nature Spots, Free Attractions]",low,"(35.6763, 139.6993)"
-Attraction,Tsukiji Outer Market,0,0.2,4.3,Tsukiji Station,"[Markets, Food and Dining, Shopping Districts, Free Attractions]",low,"(35.6654, 139.7707)"
-Attraction,Shibuya Crossing,0,0.1,4.4,Shibuya Station,"[Modern Architecture, Photography Spots, Free Attractions]",low,"(35.6595, 139.7004)"
-Attraction,Ueno Park,0,0.2,4.5,Ueno Station,"[Parks and Gardens, Museums, Zoos, Free Attractions]",low,"(35.7155, 139.7744)"
-Attraction,Akihabara Electric Town,0,0.1,4.2,Akihabara Station,"[Shopping Districts, Technology and Pop Culture, Entertainment Areas]",low,"(35.7022, 139.7741)"
-Attraction,Imperial Palace East Gardens,0,0.5,4.4,Otemachi Station,"[Historical Sites, Parks and Gardens, Free Attractions]",low,"(35.6852, 139.7528)"
-Attraction,Harajuku and Takeshita Street,0,0.2,4.1,Harajuku Station,"[Shopping Districts, Fashion, Youth Culture]",low,"(35.6716, 139.7031)"
-Attraction,Yoyogi Park,0,0.5,4.5,Harajuku Station,"[Parks and Gardens, Nature Spots, Free Attractions]",low,"(35.6712, 139.6949)"
-Attraction,Odaiba Seaside Park,0,0.3,4.3,Odaiba-kaihinkoen Station,"[Parks and Gardens, Waterfront Areas, Free Attractions]",low,"(35.6279, 139.7745)"
-Attraction,Zojoji Temple,0,0.4,4.3,Onarimon Station,"[Religious Sites, Historical Sites, Free Attractions]",low,"(35.6586, 139.7454)"
-Attraction,Shinjuku Gyoen National Garden,500,0.3,4.6,Shinjuku-gyoenmae Station,"[Parks and Gardens, Nature Spots]",mid,"(35.6851, 139.7100)"
-Attraction,Tokyo National Museum,1000,0.5,4.6,Ueno Station,"[Museums, Art Galleries, Cultural Landmarks]",mid,"(35.7187, 139.7765)"
-Attraction,teamLab Planets TOKYO,3200,0.7,4.7,Shin-Toyosu Station,"[Art Galleries, Modern Art, Unique Experiences]",high,"(35.6489, 139.7921)"
-Attraction,Tokyo Skytree Observation Deck,3100,0.1,4.5,Tokyo Skytree Station,"[Observation Decks, Modern Architecture, Scenic Views]",high,"(35.7100, 139.8107)"
-Attraction,Tokyo Disneyland,7900,0.5,4.6,Maihama Station,"[Theme Parks, Family-Friendly, Entertainment Areas]",high,"(35.6329, 139.8804)"
-Attraction,Robot Restaurant,8000,0.5,3.9,Shinjuku Station,"[Entertainment Areas, Unique Experiences, Nightlife]",high,"(35.6942, 139.7017)"
-Attraction,Ghibli Museum,1000,1.2,4.6,Mitaka Station,"[Museums, Animation, Family-Friendly]",mid,"(35.6962, 139.5704)"
-Attraction,Mori Art Museum,1800,0.3,4.4,Roppongi Station,"[Art Galleries, Modern Art, Cultural Landmarks]",high,"(35.6605, 139.7291)"
-Attraction,Tokyo Tower,900,0.4,4.4,Akabanebashi Station,"[Observation Decks, Historical Sites, Scenic Views]",mid,"(35.6586, 139.7454)"
-Attraction,Edo-Tokyo Museum,1200,0.3,4.5,Ryogoku Station,"[Museums, Historical Sites, Educational Attractions]",high,"(35.6962, 139.7967)"
-Attraction,Yomiuriland,1800,0.5,4.2,Keio-yomiuriland Station,"[Theme Parks, Family-Friendly, Entertainment Areas]",high,"(35.6246, 139.5283)"
-Attraction,Ueno Zoo,600,0.5,4.1,Ueno Station,"[Zoos, Family-Friendly, Wildlife]",mid,"(35.7164, 139.7713)"
-Attraction,Nezu Museum,1300,0.7,4.5,Omotesando Station,"[Museums, Art Galleries, Cultural Landmarks]",high,"(35.6628, 139.7183)"
-Attraction,Tokyo Sea Life Park,700,0.8,4.0,Kasai-rinkai-koen Station,"[Aquariums, Family-Friendly, Wildlife]",mid,"(35.6464, 139.8611)"
-Attraction,Roppongi Hills Observation Deck,1800,0.3,4.3,Roppongi Station,"[Observation Decks, Modern Architecture, Scenic Views]",high,"(35.6605, 139.7291)"
-Attraction,Suntory Museum of Art,1500,0.4,4.3,Roppongi Station,"[Museums, Art Galleries, Cultural Landmarks]",high,"(35.6652, 139.7307)"
-Attraction,Hama Rikyu Gardens,300,0.5,4.4,Shiodome Station,"[Parks and Gardens, Historical Sites, Tea Ceremony]",mid,"(35.6597, 139.7634)"
-Attraction,Sumida Aquarium,2050,0.1,4.1,Tokyo Skytree Station,"[Aquariums, Family-Friendly, Wildlife]",high,"(35.7100, 139.8107)"
-Attraction,National Museum of Nature and Science,630,0.5,4.4,Ueno Station,"[Museums, Science Centers, Educational Attractions]",mid,"(35.7160, 139.7762)"
-Attraction,Shinjuku Golden Gai,0,0.5,4.1,Shinjuku Station,"[Nightlife, Food and Dining, Unique Experiences]",low,"(35.6941, 139.7044)"
-Attraction,Asakusa Hanayashiki,1000,0.4,3.9,Asakusa Station,"[Theme Parks, Family-Friendly, Historical Sites]",mid,"(35.7155, 139.7947)"
-Attraction,Tokyo Dome City,0,0.3,4.2,Suidobashi Station,"[Entertainment Areas, Shopping Districts, Theme Parks]",low,"(35.7056, 139.7518)"
-Attraction,Yanaka Ginza,0,0.5,4.2,Nippori Station,"[Shopping Districts, Traditional Streets, Cultural Landmarks]",low,"(35.7281, 139.7687)"
-Attraction,Meguro Sky Garden,0,0.3,4.1,Ikejiri-ohashi Station,"[Parks and Gardens, Scenic Views, Free Attractions]",low,"(35.6434, 139.6933)"
-Attraction,Rikugien Garden,300,0.8,4.5,Komagome Station,"[Parks and Gardens, Historical Sites, Scenic Views]",mid,"(35.7333, 139.7469)"
-Attraction,Tokyo Metropolitan Teien Art Museum,1000,0.7,4.3,Meguro Station,"[Museums, Art Galleries, Historical Sites]",mid,"(35.6372, 139.7144)"
-Attraction,Sunshine Aquarium,2400,0.5,4.2,Ikebukuro Station,"[Aquariums, Family-Friendly, Wildlife]",high,"(35.7294, 139.7191)"
-Attraction,Kanda Myojin Shrine,0,0.4,4.3,Ochanomizu Station,"[Religious Sites, Historical Sites, Cultural Landmarks]",low,"(35.7020, 139.7686)"
-Attraction,Gotokuji Temple,0,0.8,4.3,Gotokuji Station,"[Religious Sites, Cultural Landmarks, Unique Experiences]",low,"(35.6584, 139.6478)"
-Attraction,National Museum of Modern Art,1000,0.3,4.4,Takebashi Station,"[Museums, Art Galleries, Cultural Landmarks]",mid,"(35.6905, 139.7546)"
-Attraction,Toyosu Fish Market,0,0.2,4.0,Shijo-mae Station,"[Markets, Food and Dining, Unique Experiences]",low,"(35.6453, 139.7921)"
-Attraction,Koishikawa Korakuen Garden,300,0.7,4.5,Iidabashi Station,"[Parks and Gardens, Historical Sites, Scenic Views]",mid,"(35.7080, 139.7506)"
-Attraction,Intermediatheque,0,0.2,4.3,Tokyo Station,"[Museums, Educational Attractions, Free Attractions]",low,"(35.6812, 139.7671)"
-Attraction,Samurai Museum,1900,0.6,4.3,Shinjuku Station,"[Museums, Historical Sites, Cultural Landmarks]",high,"(35.6945, 139.7037)"
-Attraction,Gokokuji Temple,0,0.3,4.2,Gokokuji Station,"[Religious Sites, Historical Sites, Cultural Landmarks]",low,"(35.7219, 139.7256)"
-Attraction,Omoide Yokocho,0,0.3,4.0,Shinjuku Station,"[Food and Dining, Traditional Streets, Nightlife]",low,"(35.6935, 139.6999)"
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category,Latitude,Longitude
+Attraction,Tokyo Metropolitan Government Building Observatory,0,0.1,4.4,Tochomae Station,"[Free Attractions, Observation Decks, Modern Architecture, Scenic Views]",low,35.6896,139.6917
+Attraction,Senso-ji Temple,0,0.3,4.5,Asakusa Station,"[Religious Sites, Historical Sites, Cultural Landmarks, Free Attractions]",low,35.7147,139.7967
+Attraction,Meiji Shrine,0,0.5,4.6,Harajuku Station,"[Religious Sites, Historical Sites, Nature Spots, Free Attractions]",low,35.6763,139.6993
+Attraction,Tsukiji Outer Market,0,0.2,4.3,Tsukiji Station,"[Markets, Food and Dining, Shopping Districts, Free Attractions]",low,35.6654,139.7707
+Attraction,Shibuya Crossing,0,0.1,4.4,Shibuya Station,"[Modern Architecture, Photography Spots, Free Attractions]",low,35.6595,139.7004
+Attraction,Ueno Park,0,0.2,4.5,Ueno Station,"[Parks and Gardens, Museums, Zoos, Free Attractions]",low,35.7155,139.7744
+Attraction,Akihabara Electric Town,0,0.1,4.2,Akihabara Station,"[Shopping Districts, Technology and Pop Culture, Entertainment Areas]",low,35.7022,139.7741
+Attraction,Imperial Palace East Gardens,0,0.5,4.4,Otemachi Station,"[Historical Sites, Parks and Gardens, Free Attractions]",low,35.6852,139.7528
+Attraction,Harajuku and Takeshita Street,0,0.2,4.1,Harajuku Station,"[Shopping Districts, Fashion, Youth Culture]",low,35.6716,139.7031
+Attraction,Yoyogi Park,0,0.5,4.5,Harajuku Station,"[Parks and Gardens, Nature Spots, Free Attractions]",low,35.6712,139.6949
+Attraction,Odaiba Seaside Park,0,0.3,4.3,Odaiba-kaihinkoen Station,"[Parks and Gardens, Waterfront Areas, Free Attractions]",low,35.6279,139.7745
+Attraction,Zojoji Temple,0,0.4,4.3,Onarimon Station,"[Religious Sites, Historical Sites, Free Attractions]",low,35.6586,139.7454
+Attraction,Shinjuku Gyoen National Garden,500,0.3,4.6,Shinjuku-gyoenmae Station,"[Parks and Gardens, Nature Spots]",mid,35.6851,139.7100
+Attraction,Tokyo National Museum,1000,0.5,4.6,Ueno Station,"[Museums, Art Galleries, Cultural Landmarks]",mid,35.7187,139.7765
+Attraction,teamLab Planets TOKYO,3200,0.7,4.7,Shin-Toyosu Station,"[Art Galleries, Modern Art, Unique Experiences]",high,35.6489,139.7921
+Attraction,Tokyo Skytree Observation Deck,3100,0.1,4.5,Tokyo Skytree Station,"[Observation Decks, Modern Architecture, Scenic Views]",high,35.7100,139.8107
+Attraction,Tokyo Disneyland,7900,0.5,4.6,Maihama Station,"[Theme Parks, Family-Friendly, Entertainment Areas]",high,35.6329,139.8804
+Attraction,Robot Restaurant,8000,0.5,3.9,Shinjuku Station,"[Entertainment Areas, Unique Experiences, Nightlife]",high,35.6942,139.7017
+Attraction,Ghibli Museum,1000,1.2,4.6,Mitaka Station,"[Museums, Animation, Family-Friendly]",mid,35.6962,139.5704
+Attraction,Mori Art Museum,1800,0.3,4.4,Roppongi Station,"[Art Galleries, Modern Art, Cultural Landmarks]",high,35.6605,139.7291
+Attraction,Tokyo Tower,900,0.4,4.4,Akabanebashi Station,"[Observation Decks, Historical Sites, Scenic Views]",mid,35.6586,139.7454
+Attraction,Edo-Tokyo Museum,1200,0.3,4.5,Ryogoku Station,"[Museums, Historical Sites, Educational Attractions]",high,35.6962,139.7967
+Attraction,Yomiuriland,1800,0.5,4.2,Keio-yomiuriland Station,"[Theme Parks, Family-Friendly, Entertainment Areas]",high,35.6246,139.5283
+Attraction,Ueno Zoo,600,0.5,4.1,Ueno Station,"[Zoos, Family-Friendly, Wildlife]",mid,35.7164,139.7713
+Attraction,Nezu Museum,1300,0.7,4.5,Omotesando Station,"[Museums, Art Galleries, Cultural Landmarks]",high,35.6628,139.7183
+Attraction,Tokyo Sea Life Park,700,0.8,4.0,Kasai-rinkai-koen Station,"[Aquariums, Family-Friendly, Wildlife]",mid,35.6464,139.8611
+Attraction,Roppongi Hills Observation Deck,1800,0.3,4.3,Roppongi Station,"[Observation Decks, Modern Architecture, Scenic Views]",high,35.6605,139.7291
+Attraction,Suntory Museum of Art,1500,0.4,4.3,Roppongi Station,"[Museums, Art Galleries, Cultural Landmarks]",high,35.6652,139.7307
+Attraction,Hama Rikyu Gardens,300,0.5,4.4,Shiodome Station,"[Parks and Gardens, Historical Sites, Tea Ceremony]",mid,35.6597,139.7634
+Attraction,Sumida Aquarium,2050,0.1,4.1,Tokyo Skytree Station,"[Aquariums, Family-Friendly, Wildlife]",high,35.7100,139.8107
+Attraction,National Museum of Nature and Science,630,0.5,4.4,Ueno Station,"[Museums, Science Centers, Educational Attractions]",mid,35.7160,139.7762
+Attraction,Shinjuku Golden Gai,0,0.5,4.1,Shinjuku Station,"[Nightlife, Food and Dining, Unique Experiences]",low,35.6941,139.7044
+Attraction,Asakusa Hanayashiki,1000,0.4,3.9,Asakusa Station,"[Theme Parks, Family-Friendly, Historical Sites]",mid,35.7155,139.7947
+Attraction,Tokyo Dome City,0,0.3,4.2,Suidobashi Station,"[Entertainment Areas, Shopping Districts, Theme Parks]",low,35.7056,139.7518
+Attraction,Yanaka Ginza,0,0.5,4.2,Nippori Station,"[Shopping Districts, Traditional Streets, Cultural Landmarks]",low,35.7281,139.7687
+Attraction,Meguro Sky Garden,0,0.3,4.1,Ikejiri-ohashi Station,"[Parks and Gardens, Scenic Views, Free Attractions]",low,35.6434,139.6933
+Attraction,Rikugien Garden,300,0.8,4.5,Komagome Station,"[Parks and Gardens, Historical Sites, Scenic Views]",mid,35.7333,139.7469
+Attraction,Tokyo Metropolitan Teien Art Museum,1000,0.7,4.3,Meguro Station,"[Museums, Art Galleries, Historical Sites]",mid,35.6372,139.7144
+Attraction,Sunshine Aquarium,2400,0.5,4.2,Ikebukuro Station,"[Aquariums, Family-Friendly, Wildlife]",high,35.7294,139.7191
+Attraction,Kanda Myojin Shrine,0,0.4,4.3,Ochanomizu Station,"[Religious Sites, Historical Sites, Cultural Landmarks]",low,35.7020,139.7686
+Attraction,Gotokuji Temple,0,0.8,4.3,Gotokuji Station,"[Religious Sites, Cultural Landmarks, Unique Experiences]",low,35.6584,139.6478
+Attraction,National Museum of Modern Art,1000,0.3,4.4,Takebashi Station,"[Museums, Art Galleries, Cultural Landmarks]",mid,35.6905,139.7546
+Attraction,Toyosu Fish Market,0,0.2,4.0,Shijo-mae Station,"[Markets, Food and Dining, Unique Experiences]",low,35.6453,139.7921
+Attraction,Koishikawa Korakuen Garden,300,0.7,4.5,Iidabashi Station,"[Parks and Gardens, Historical Sites, Scenic Views]",mid,35.7080,139.7506
+Attraction,Intermediatheque,0,0.2,4.3,Tokyo Station,"[Museums, Educational Attractions, Free Attractions]",low,35.6812,139.7671
+Attraction,Samurai Museum,1900,0.6,4.3,Shinjuku Station,"[Museums, Historical Sites, Cultural Landmarks]",high,35.6945,139.7037
+Attraction,Gokokuji Temple,0,0.3,4.2,Gokokuji Station,"[Religious Sites, Historical Sites, Cultural Landmarks]",low,35.7219,139.7256
+Attraction,Omoide Yokocho,0,0.3,4.0,Shinjuku Station,"[Food and Dining, Traditional Streets, Nightlife]",low,35.6935,139.6999
