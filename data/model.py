@@ -28,12 +28,22 @@ sample_data = ["mid", "7"]
 
 # function that will put all text and objects passed into it into a json format
 def broadcast_output(ai_output, **objects):
+    locations_data = []
+    
+    # Extract location data from objects if present
+    if 'locations' in objects:
+        for location in objects['locations']:
+            locations_data.append({
+                'name': location['Name'],
+                'latitude': location['Latitude'],
+                'longitude': location['Longitude']
+            })
+    
     data = {
-        "ai_output": ai_output,
-        "objects": objects
+        "message": ai_output,
+        "locations": locations_data
     }
-    json_data = json.dumps(data, indent = 4)
-    return json_data
+    return json.dumps(data, indent=4)
 
 
 def create_itinerary():

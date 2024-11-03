@@ -45,28 +45,28 @@ require([
 });
 
 function processLLMResponse(response) {
-  // Destructure the response object
-  const { locations, message } = response;
-  
-  // Verify the response format
-  if (!Array.isArray(locations) || typeof message !== 'string') {
-    throw new Error('Invalid response format');
-  }
-  
-  // Add pins for each location
-  locations.forEach(location => {
-    if (location.longitude && location.latitude) {
-      addPin(location.longitude, location.latitude);
+    // Destructure the response object
+    const { locations, message } = response;
+    
+    // Verify the response format
+    if (!Array.isArray(locations) || typeof message !== 'string') {
+        throw new Error('Invalid response format');
     }
-  });
-  
-  // Create and append the AI response bubble
-  const chatContent = document.getElementById("chatContent");
-  const newBubble = document.createElement("div");
-  newBubble.classList.add("chat-bubble", "ai-bubble");
-  newBubble.textContent = message;
-  chatContent.appendChild(newBubble);
-  chatContent.scrollTop = chatContent.scrollHeight;
+    
+    // Add pins for each location
+    locations.forEach(location => {
+        if (location.longitude && location.latitude) {
+            addPin(location.longitude, location.latitude);
+        }
+    });
+    
+    // Create and append the AI response bubble
+    const chatContent = document.getElementById("chatContent");
+    const newBubble = document.createElement("div");
+    newBubble.classList.add("chat-bubble", "ai-bubble");
+    newBubble.textContent = message;
+    chatContent.appendChild(newBubble);
+    chatContent.scrollTop = chatContent.scrollHeight;
 }
 
 
@@ -154,30 +154,54 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Function to send a message
-function sendMessage() {
-	const chatInput = document.getElementById("chatInput");
-	const chatContent = document.getElementById("chatContent");
-	const userMessage = chatInput.value.trim();
+async function sendUserMessage() {
+    const chatInput = document.getElementById("chatInput");
+    const userMessage = chatInput.value.trim();
 
-	if (userMessage) {
-		const newBubble = document.createElement("div");
-		newBubble.classList.add("chat-bubble", "user-bubble");
-		newBubble.textContent = userMessage;
-		chatContent.appendChild(newBubble);
-		chatInput.value = ""; // Clear the input field
-		chatContent.scrollTop = chatContent.scrollHeight; // Scroll to the bottom
-	}
+    if (!userMessage) return;
+
+    // Display user message
+    const chatContent = document.getElementById("chatContent");
+    const userBubble = document.createElement("div");
+    userBubble.classList.add("chat-bubble", "user-bubble");
+    userBubble.textContent = userMessage;
+    chatContent.appendChild(userBubble);
+    
+    // Clear input
+    chatInput.value = "";
+    
+    try {
+        // Send message to backend
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: userMessage })
+        });
+        
+        const data = await response.json();
+        
+        // Process the response
+        processLLMResponse(data);
+        
+    } catch (error) {
+        console.error('Error:', error);
+        // Show error message in chat
+        const errorBubble = document.createElement("div");
+        errorBubble.classList.add("chat-bubble", "responder-bubble");
+        errorBubble.textContent = "Sorry, there was an error processing your request.";
+        chatContent.appendChild(errorBubble);
+    }
 }
 
-// Event listener for the send button
-document.getElementById("sendButton").addEventListener("click", sendMessage);
-
-// Event listener for pressing 'Enter' in the text input
+// Replace the old event listeners with the new function
+document.getElementById("sendButton").addEventListener("click", sendUserMessage);
 document.getElementById("chatInput").addEventListener("keypress", function(event) {
-	if (event.key === "Enter") {
-		event.preventDefault(); // Prevent default 'Enter' key behavior
-		sendMessage();
-	}
+    if (event.key === "Enter") {
+        event.preventDefault();
+        sendUserMessage();
+    }
 });
 
 // Toggle the display of the dropdown menu when the profile icon is clicked
