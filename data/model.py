@@ -369,12 +369,12 @@ def start_conversation():
             [
                 (
                 "system",
-                f"Print just one number: The index where this list constains the closest value to query: {current_itinerary}",
+                f"",
                 ),
             MessagesPlaceholder(variable_name="messages"),
             ]
             )
-            input_messages = [HumanMessage("")]
+            input_messages = [HumanMessage(f"Given the user critique provided, search the itinerary dataset for the closest matching itinerary item, based on semantic similarity: {current_itinerary} Identify the index of the closest matching item from the dataset. Your response should contain only the index you found that was sematically similar. user critique: {query}")]
             output = app.invoke({"messages": input_messages}, config)
             try:
                 ind = int(output["messages"][-1].content)
