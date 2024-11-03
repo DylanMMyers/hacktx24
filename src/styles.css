@@ -406,6 +406,7 @@ background-color: #D0D0D0;
     flex-direction: column;
     overflow: hidden; /* Keep rounded corners clean */
     min-height: 28rem; /* Enables proper flex behavior in grid */
+    max-height: 45rem;
     height: 100%; /* Make sure it fills the grid space */
 }
 #chatTitle {
