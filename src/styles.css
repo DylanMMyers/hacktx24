@@ -82,7 +82,7 @@ background-color: #D0D0D0;
 #contentGrid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; /* Map takes 2 parts, history and preferences each take 1 */
-    grid-template-rows: 1fr auto; /* First row for history and preferences, second row for chat */
+    grid-template-rows: 1r auto; /* First row for history and preferences, second row for chat */
     gap: 0.5rem;
     padding: 1rem;
     height: calc(100% - 60px); /* Leave space for the nav bar */
@@ -245,8 +245,7 @@ background-color: #D0D0D0;
     color: red;
     font-size: 14px;
     margin-top: 5px;
-  }
-  
+  }  
 
 #newChatButton {
     width: 100%; /* Make the button span the width of the panel */
@@ -284,7 +283,14 @@ background-color: #D0D0D0;
 .history-item:hover {
     background-color: #B0B0B0; /* Slightly darker grey on hover */
     cursor: pointer; /* Pointer cursor on hover */
+    
 }
+#resizeHandle {
+    width: 100%; /* Full width of the chat pane */
+    height: 10px; /* Height to act as the resize handle */
+    background-color: #A0A0A0; /* Handle color */
+    cursor: ns-resize; /* Vertical resize cursor */
+  }
 #chat {
     grid-column: 2 / 4; /* Span history and preferences columns */
     grid-row: 2 / 3;

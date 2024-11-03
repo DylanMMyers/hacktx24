@@ -182,4 +182,27 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       });
+
+      const resizeHandle = document.getElementById('resizeHandle');
+      const chatPane = document.getElementById('chat');
+      let isResizing = false;
+      
+      resizeHandle.addEventListener('mousedown', (e) => {
+        isResizing = true;
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', () => {
+          isResizing = false;
+          document.removeEventListener('mousemove', onMouseMove);
+        });
+      });
+      
+      function onMouseMove(e) {
+        if (isResizing) {
+          const newHeight = window.innerHeight - e.clientY;
+          chatPane.style.height = `${newHeight}px`;
+        }
+      }
+      
+      
+      
       
