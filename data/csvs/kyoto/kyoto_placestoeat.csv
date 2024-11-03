@@ -1,33 +1,33 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category
-Breakfast,Inoda Coffee Honten,10,0.3,4.2,Kyoto Station,"[Cafe, Coffee Shop]",low
-Breakfast,Vermillion Espresso Bar,12,0.5,4.5,Gion-Shijo Station,"[Cafe, Coffee Shop]",low
-Breakfast,Shinshindo Sanjo Kawaramachi,15,0.2,4.0,Sanjo Station,"[Cafe, Coffee Shop, Bread]",low
-Breakfast,Smart Coffee,18,0.4,4.3,Karasuma Oike Station,"[Cafe, Coffee Shop]",low
-Breakfast,Kyo Kaiseki Minokichi,35,0.1,4.6,Karasuma Station,"[Japanese Cuisine, Ryokan/Auberge (Other)]",mid
-Breakfast,Roji Usagi,40,0.6,4.4,Gion-Shijo Station,"[Cafe, Japanese Cuisine]",mid
-Breakfast,Hyoutei,80,1.0,4.8,Keage Station,"[Japanese Cuisine, Ryokan/Auberge (Other)]",high
-Breakfast,The Kitchen Kanra,85,0.2,4.7,Kyoto Station,"[Western Sweets, Cafe]",high
-Lunch,Musashi Sushi,8,0.3,3.9,Kyoto Station,"[Sushi, Japanese Cuisine]",low
-Lunch,Omen Kodaiji,12,0.7,4.1,Gion-Shijo Station,"[Japanese Cuisine, Noodles]",low
-Lunch,Kyoto Gogyo Ramen,20,0.4,4.3,Kawaramachi Station,"[Ramen, Japanese Cuisine]",low
-Lunch,Kyoto Katsugyu,25,0.2,4.5,Kyoto Station,"[Japanese Cuisine, Tonkatsu]",mid
-Lunch,Gion Karyo,45,0.5,4.6,Gion-Shijo Station,"[Japanese Cuisine, Kaiseki]",mid
-Lunch,Kikunoi Roan,50,0.8,4.7,Higashiyama Station,"[Japanese Cuisine, Kaiseki]",mid
-Lunch,Tempura Endo Yasaka,90,0.6,4.8,Gion-Shijo Station,"[Japanese Cuisine, Tempura]",high
-Lunch,Kyoto Kitcho Arashiyama,120,1.2,4.9,Arashiyama Station,"[Japanese Cuisine, Kaiseki]",high
-Dinner,Chao Chao Gyoza,15,0.4,4.0,Kyoto Station,"[Japanese Cuisine, Gyoza]",low
-Dinner,Katsukura Kyoto Station,20,0.1,4.2,Kyoto Station,"[Japanese Cuisine, Tonkatsu]",low
-Dinner,Kichi Kichi Omurice,30,0.5,4.4,Sanjo Station,"[Japanese Cuisine, Omurice]",mid
-Dinner,Gion Sekiya,35,0.3,4.5,Gion-Shijo Station,"[Japanese Cuisine, Kaiseki]",mid
-Dinner,Gion Maruyama,70,0.4,4.7,Gion-Shijo Station,"[Japanese Cuisine, Kaiseki]",high
-Dinner,Kyoto Wakuden,80,0.7,4.8,Karasuma Oike Station,"[Japanese Cuisine, Kaiseki]",high
-Dinner,Mizai,150,1.0,4.9,Ichijoji Station,"[Japanese Cuisine, Kaiseki]",high
-Dinner,Nakamura,160,0.8,4.9,Karasuma Oike Station,"[Japanese Cuisine, Kaiseki]",high
-Bar,Cafe Independants,10,0.3,4.1,Kawaramachi Station,"[Bar, Cafe]",low
-Bar,A Bar,15,0.5,4.3,Sanjo Station,"[Bar, Dining Bar]",low
-Bar,L'Escamoteur Bar,25,0.4,4.5,Gion-Shijo Station,"[Bar, Cocktail Bar]",mid
-Bar,Bar Bunkyu,30,0.6,4.4,Karasuma Oike Station,"[Bar, Japanese Bar]",mid
-Bar,Bar K6,50,0.2,4.6,Kyoto Station,"[Bar, Cocktail Bar]",mid
-Bar,The Ritz-Carlton Bar,60,0.3,4.7,Kyoto Station,"[Bar, Lounge, Cocktail Bar]",high
-Bar,Bar Rocking Chair,90,0.7,4.8,Karasuma Station,"[Bar, Jazz Bar]",high
-Bar,Bar Kazu,100,0.5,4.9,Gion-Shijo Station,"[Bar, Japanese Bar]",high
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category,Coordinates
+Breakfast,Inoda Coffee Honten,10,0.3,4.2,Kyoto Station,"[Cafe, Coffee Shop]",low,"(34.9856, 135.7756)"
+Breakfast,Vermillion Espresso Bar,12,0.5,4.5,Gion-Shijo Station,"[Cafe, Coffee Shop]",low,"(35.00381, 135.771977)"
+Breakfast,Shinshindo Sanjo Kawaramachi,15,0.2,4.0,Sanjo Station,"[Cafe, Coffee Shop, Bread]",low,"(35.00917, 135.77222)"
+Breakfast,Smart Coffee,18,0.4,4.3,Karasuma Oike Station,"[Cafe, Coffee Shop]",low,"(35.0133, 135.7586)"
+Breakfast,Kyo Kaiseki Minokichi,35,0.1,4.6,Karasuma Station,"[Japanese Cuisine, Ryokan/Auberge (Other)]",mid,"(35.0141, 135.7552)"
+Breakfast,Roji Usagi,40,0.6,4.4,Gion-Shijo Station,"[Cafe, Japanese Cuisine]",mid,"(35.00381, 135.771977)"
+Breakfast,Hyoutei,80,1.0,4.8,Keage Station,"[Japanese Cuisine, Ryokan/Auberge (Other)]",high,"(35.0166, 135.7944)"
+Breakfast,The Kitchen Kanra,85,0.2,4.7,Kyoto Station,"[Western Sweets, Cafe]",high,"(34.9856, 135.7756)"
+Lunch,Musashi Sushi,8,0.3,3.9,Kyoto Station,"[Sushi, Japanese Cuisine]",low,"(34.9856, 135.7756)"
+Lunch,Omen Kodaiji,12,0.7,4.1,Gion-Shijo Station,"[Japanese Cuisine, Noodles]",low,"(35.00381, 135.771977)"
+Lunch,Kyoto Gogyo Ramen,20,0.4,4.3,Kawaramachi Station,"[Ramen, Japanese Cuisine]",low,"(35.0048, 135.7685)"
+Lunch,Kyoto Katsugyu,25,0.2,4.5,Kyoto Station,"[Japanese Cuisine, Tonkatsu]",mid,"(34.9856, 135.7756)"
+Lunch,Gion Karyo,45,0.5,4.6,Gion-Shijo Station,"[Japanese Cuisine, Kaiseki]",mid,"(35.00381, 135.771977)"
+Lunch,Kikunoi Roan,50,0.8,4.7,Higashiyama Station,"[Japanese Cuisine, Kaiseki]",mid,"(35.0024, 135.7854)"
+Lunch,Tempura Endo Yasaka,90,0.6,4.8,Gion-Shijo Station,"[Japanese Cuisine, Tempura]",high,"(35.00381, 135.771977)"
+Lunch,Kyoto Kitcho Arashiyama,120,1.2,4.9,Arashiyama Station,"[Japanese Cuisine, Kaiseki]",high,"(35.0118, 135.6711)"
+Dinner,Chao Chao Gyoza,15,0.4,4.0,Kyoto Station,"[Japanese Cuisine, Gyoza]",low,"(34.9856, 135.7756)"
+Dinner,Katsukura Kyoto Station,20,0.1,4.2,Kyoto Station,"[Japanese Cuisine, Tonkatsu]",low,"(34.9856, 135.7756)"
+Dinner,Kichi Kichi Omurice,30,0.5,4.4,Sanjo Station,"[Japanese Cuisine, Omurice]",mid,"(35.00917, 135.77222)"
+Dinner,Gion Sekiya,35,0.3,4.5,Gion-Shijo Station,"[Japanese Cuisine, Kaiseki]",mid,"(35.00381, 135.771977)"
+Dinner,Gion Maruyama,70,0.4,4.7,Gion-Shijo Station,"[Japanese Cuisine, Kaiseki]",high,"(35.00381, 135.771977)"
+Dinner,Kyoto Wakuden,80,0.7,4.8,Karasuma Oike Station,"[Japanese Cuisine, Kaiseki]",high,"(35.0133, 135.7586)"
+Dinner,Mizai,150,1.0,4.9,Ichijoji Station,"[Japanese Cuisine, Kaiseki]",high,"(35.0156, 135.7943)"
+Dinner,Nakamura,160,0.8,4.9,Karasuma Oike Station,"[Japanese Cuisine, Kaiseki]",high,"(35.0133, 135.7586)"
+Bar,Cafe Independants,10,0.3,4.1,Kawaramachi Station,"[Bar, Cafe]",low,"(35.0048, 135.7685)"
+Bar,A Bar,15,0.5,4.3,Sanjo Station,"[Bar, Dining Bar]",low,"(35.00917, 135.77222)"
+Bar,L'Escamoteur Bar,25,0.4,4.5,Gion-Shijo Station,"[Bar, Cocktail Bar]",mid,"(35.00381, 135.771977)"
+Bar,Bar Bunkyu,30,0.6,4.4,Karasuma Oike Station,"[Bar, Japanese Bar]",mid,"(35.0133, 135.7586)"
+Bar,Bar K6,50,0.2,4.6,Kyoto Station,"[Bar, Cocktail Bar]",mid,"(34.9856, 135.7756)"
+Bar,The Ritz-Carlton Bar,60,0.3,4.7,Kyoto Station,"[Bar, Lounge, Cocktail Bar]",high,"(34.9856, 135.7756)"
+Bar,Bar Rocking Chair,90,0.7,4.8,Karasuma Station,"[Bar, Jazz Bar]",high,"(35.0141, 135.7552)"
+Bar,Bar Kazu,100,0.5,4.9,Gion-Shijo Station,"[Bar, Japanese Bar]",high,"(35.00381, 135.771977)"
