@@ -394,3 +394,30 @@ background-color: #D0D0D0;
 #sendButton:hover {
     background-color: #909090;
 }
+
+#coordinateInputs {
+    z-index: 1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+#coordinateInputs input {
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    font-family: 'Minecraft';
+}
+
+#addPinButton {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #A0A0A0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Minecraft';
+}
+
+#addPinButton:hover {
+    background-color: #808080;
+}

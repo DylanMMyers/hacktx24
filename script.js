@@ -1,18 +1,77 @@
 require([
     "esri/Map",
-    "esri/views/MapView"
-  ], function(Map, MapView) {
+    "esri/views/MapView",
+    "esri/Graphic",
+    "esri/layers/GraphicsLayer"
+], function(Map, MapView, Graphic, GraphicsLayer) {
     const map = new Map({
-      basemap: "topo-vector" // Choose a basemap style
+        basemap: "topo-vector"
     });
 
+    const graphicsLayer = new GraphicsLayer();
+    map.add(graphicsLayer);
+
     const view = new MapView({
-      container: "viewDiv",
-      map: map,
-      center: [138.2529, 36.2048], // Longitude, latitude of Japan
-      zoom: 5 // Initial zoom level
+        container: "viewDiv",
+        map: map,
+        center: [138.2529, 36.2048],
+        zoom: 5
     });
-  });
+
+    function addPin(latitude, longitude) {
+        // Clear existing graphics
+        // graphicsLayer.removeAll();
+
+        // Create a point
+        const point = {
+            type: "point",
+            longitude: longitude,
+            latitude: latitude
+        };
+
+        // Create a symbol for rendering the point
+        const markerSymbol = {
+            type: "simple-marker",
+            color: [226, 119, 40], // Orange
+            outline: {
+                color: [255, 255, 255], // White
+                width: 2
+            }
+        };
+
+        // Create a graphic and add it to the graphics layer
+        const pointGraphic = new Graphic({
+            geometry: point,
+            symbol: markerSymbol
+        });
+
+        graphicsLayer.add(pointGraphic);
+
+        // Center the map on the new point
+        view.goTo({
+            center: [longitude, latitude],
+            zoom: 12
+        });
+    }
+
+    // Add event listener for the button
+    document.getElementById("addPinButton").addEventListener("click", function() {
+        const lat = parseFloat(document.getElementById("latInput").value);
+        const long = parseFloat(document.getElementById("longInput").value);
+
+        if (isNaN(lat) || isNaN(long)) {
+            alert("Please enter valid coordinates");
+            return;
+        }
+
+        if (lat < -90 || lat > 90 || long < -180 || long > 180) {
+            alert("Please enter valid coordinates:\nLatitude: -90 to 90\nLongitude: -180 to 180");
+            return;
+        }
+
+        addPin(lat, long);
+    });
+});
 
   function handleClick(button) {
     const buttons = document.querySelectorAll('.button');

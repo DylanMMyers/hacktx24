@@ -202,6 +202,8 @@ document.addEventListener('DOMContentLoaded', () => {
           chatPane.style.height = `${newHeight}px`;
         }
       }
+
+    
       
       
       
