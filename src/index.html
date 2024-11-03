@@ -16,9 +16,38 @@
     </div>
     <img class="profile-icon" src="icons/face.png" alt="Profile Icon">
     <div class="dropdown-menu" id="profileDropdown">
-        <div class="dropdown-item">Sign In</div>
-        <div class="dropdown-item">Account</div>
+        <div id="sign-in-button" class="dropdown-item">Sign In</div>
+        <div id="register-button" class="dropdown-item">Register</div>
     </div>
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('loginPopup')">&times;</span>
+          <h2>Login</h2>
+          <form>
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="username" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" required>
+            <button type="submit" class="popup-submit-login">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+      <div id="registerPopup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup('registerPopup')">&times;</span>
+          <h2>Register</h2>
+          <form>
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" name="username" required>
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" name="password" required>
+            <button type="submit" class="popup-submit-register">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+      
   </div>
   <div id="contentGrid">
     <div id="mapContainer">

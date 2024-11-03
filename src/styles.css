@@ -81,6 +81,62 @@ margin-right: 1rem;
 .dropdown-item:hover {
 background-color: #D0D0D0;
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #0671B7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  }
+  
+  .popup-content {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .popup h2 {
+    margin: 0 0 10px;
+    font-family: 'Minecraft';
+    color: #0671B7;
+  }
+  
+  .popup-submit {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #0671B7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #0671B7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Minecraft';
+  }
+  
 #contentGrid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; /* Map takes 2 parts, history and preferences each take 1 */
@@ -127,6 +183,44 @@ background-color: #D0D0D0;
     border-radius: 10px;
     border: 0.1em solid #0671B7;
     overflow-y: auto; /* Allows the chat entries to be scrollable */
+}
+
+/* Delete button styling */
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-family: 'Minecraft';
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    transition: color 0.2s;
+}
+
+.delete-button:hover {
+    color: #FF0000; /* Change color to red on hover */
+}
+
+/* Delete button styling */
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-family: 'Minecraft';
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    transition: color 0.2s;
+}
+
+.delete-button:hover {
+    color: #FF0000; /* Change color to red on hover */
 }
 
 #preferences {
@@ -271,11 +365,12 @@ background-color: #D0D0D0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Highlight shadow */
 }
 .new-chat-entry {
+    position: relative;
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #67A3D9; /* Mid-grey background */
-    color: #FFFFFF; /* Light text */
+    background-color: #67A3D9;
+    color: #FFFFFF;
     border: 1px solid #F6D2E0;
     font-family: 'Minecraft';
     font-size: 16px;
@@ -402,37 +497,6 @@ background-color: #D0D0D0;
 /* Add hover effect for send button */
 #sendButton:hover {
     background-color: #909090;
-}
-
-@media (max-width: 768px) { /* Adjust the max-width as needed */
-    #contentGrid {
-        display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto auto auto auto; /* Each panel on its own row */
-        gap: 0.5rem;
-    }
-
-    #mapContainer {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2; /* First row */
-        height: 300px; /* Adjust height as needed for smaller screens */
-    }
-
-    #history {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3; /* Second row */
-    }
-
-    #preferences {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4; /* Third row */
-    }
-
-    #chat {
-        grid-column: 1 / 2;
-        grid-row: 4 / 5; /* Fourth row */
-        min-height: 200px; /* Adjust as needed */
-    }
 }
 
 

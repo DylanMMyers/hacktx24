@@ -19,56 +19,22 @@ require([
     buttons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 }
-
-document.getElementById("newChatButton").addEventListener("click", function() {
-    // Clear chat panel messages
-    const chatContent = document.getElementById("chatContent");
-    chatContent.innerHTML = ""; // Clears the chat panel
-
-    // Create a new input field in the chat entries container
-    const chatEntriesContainer = document.getElementById("chatEntriesContainer");
-    const newChatBlock = document.createElement("input");
-    newChatBlock.type = "text";
-    newChatBlock.placeholder = "Please enter conversation title";
-    newChatBlock.classList.add("new-chat-entry");
-
-    // Append the new input field to the chat entries container
-    chatEntriesContainer.appendChild(newChatBlock);
-
-    // Focus on the new input field
-    newChatBlock.focus();
-
-    // Event listener for pressing 'Enter' on the new input field
-    newChatBlock.addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            if (newChatBlock.value.trim() === "") {
-                // Show error box if input is blank
-                const userChoice = confirm("The conversation title cannot be blank. Click 'OK' to retry or 'Cancel' to delete the conversation.");
-                if (userChoice) {
-                    newChatBlock.focus(); // Retry
-                } else {
-                    chatEntriesContainer.removeChild(newChatBlock); // Cancel and delete
-                }
-            } else {
-                // Save the input as static text
-                const savedTitle = document.createElement("div");
-                savedTitle.textContent = newChatBlock.value;
-                savedTitle.classList.add("new-chat-entry");
-                savedTitle.style.cursor = "pointer"; // Add pointer for interactivity
-
-                // Add click event to highlight the new entry
-                savedTitle.addEventListener("click", function() {
-                    document.querySelectorAll('.new-chat-entry').forEach(entry => entry.classList.remove('active'));
-                    savedTitle.classList.add('active');
-                });
-
-                // Replace input field with static text
-                chatEntriesContainer.replaceChild(savedTitle, newChatBlock);
-            }
-        }
-    });
-});
+document.getElementById('sign-in-button').addEventListener('click', function() {
+    showPopup('loginPopup');
+  });
+  
+  document.getElementById('register-button').addEventListener('click', function() {
+    showPopup('registerPopup');
+  });
+  
+  function showPopup(popupId) {
+    document.getElementById(popupId).style.display = 'block';
+  }
+  
+  function closePopup(popupId) {
+    document.getElementById(popupId).style.display = 'none';
+  }
+  
 
 document.addEventListener('DOMContentLoaded', () => {
     const divider = document.getElementById('dividerBetweenSections');
@@ -209,6 +175,85 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    document.getElementById("newChatButton").addEventListener("click", function() {
+        const chatEntriesContainer = document.getElementById("chatEntriesContainer");
+        const newChatBlock = document.createElement("input");
+        newChatBlock.type = "text";
+        newChatBlock.placeholder = "Please enter conversation title";
+        newChatBlock.classList.add("new-chat-entry");
+    
+        // Append the new input field to the chat entries container
+        chatEntriesContainer.appendChild(newChatBlock);
+        newChatBlock.focus();
+    
+        // Event listener for pressing 'Enter' on the new input field
+        newChatBlock.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                if (newChatBlock.value.trim() === "") {
+                    const userChoice = confirm("The conversation title cannot be blank. Click 'OK' to retry or 'Cancel' to delete the conversation.");
+                    if (userChoice) {
+                        newChatBlock.focus(); // Retry
+                    } else {
+                        chatEntriesContainer.removeChild(newChatBlock); // Cancel and delete
+                    }
+                } else {
+                    // Save the input as static text
+                    const savedTitle = document.createElement("div");
+                    savedTitle.textContent = newChatBlock.value;
+                    savedTitle.classList.add("new-chat-entry");
+                    savedTitle.style.position = "relative";
+    
+                    // Create and append the delete button
+                    const deleteButton = document.createElement("span");
+                    deleteButton.textContent = "X";
+                    deleteButton.classList.add("delete-button");
+    
+                    // Add event listener for delete button
+                    deleteButton.addEventListener("click", function(event) {
+                        event.stopPropagation(); // Prevent event from affecting parent
+                        const userConfirmed = confirm("Are you sure you want to delete this conversation?");
+                        if (userConfirmed) {
+                            chatEntriesContainer.removeChild(savedTitle);
+                        }
+                    });
+    
+                    savedTitle.appendChild(deleteButton);
+                    chatEntriesContainer.replaceChild(savedTitle, newChatBlock);
+                }
+            }
+        });
+    });
+    
+// REGISTERING NEW USERS
+document.querySelector('.popup-submit-register').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const username = document.getElementById('registerUsername').value;
+    const password = document.getElementById('registerPassword').value;
+
+    // Send the data to the Python server
+    fetch('/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username: username, password: password })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); // Log the entire JSON response
+        alert(data.message); // Show a message to the user
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error with registration.');
+    });
+});
+
+    
+    
     
       
       
