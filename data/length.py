@@ -14,6 +14,4 @@ def getDaySplitsBetweenCities(totalDays):
         citySplits[totalDaysCopy] += 1
         totalDaysCopy -= 1
     
-
     return citySplits
-    
