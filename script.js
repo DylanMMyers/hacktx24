@@ -133,10 +133,19 @@ require([
     }
 
     // Example of how to integrate with LLM response:
-    function handleLLMResponse(llmResponse) {
-        // Assuming llmResponse includes an array of location objects
-        const itineraryLocations = llmResponse.locations; // Adjust based on actual response structure
-        processItineraryLocations(itineraryLocations);
+    function handleLLMResponse(response) {
+        // Check if we have locations to process
+        if (response.locations && response.locations.length > 0) {
+            processItineraryLocations(response.locations);
+        }
+        
+        // Handle the LLM text response
+        const chatContent = document.getElementById("chatContent");
+        const newBubble = document.createElement("div");
+        newBubble.classList.add("chat-bubble", "responder-bubble");
+        newBubble.textContent = response.message;
+        chatContent.appendChild(newBubble);
+        chatContent.scrollTop = chatContent.scrollHeight;
     }
 });
 
