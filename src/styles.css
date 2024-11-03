@@ -427,7 +427,7 @@ background-color: #D0D0D0;
     min-height: 0; /* Ensure it doesn't enforce a minimum height */
     position: relative; /* Use relative positioning to keep it inside the flex layout */
 }
-.chat-bubble {
+.chat-bubble{
   margin: 10px 0;
   padding: 10px;
   border-radius: 15px;
