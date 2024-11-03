@@ -50,21 +50,20 @@ require([
     button.classList.add('active');
 }
 
-   
-   document.getElementById("newChatButton").addEventListener("click", function() {
+document.getElementById("newChatButton").addEventListener("click", function() {
     // Clear chat panel messages
     const chatContent = document.getElementById("chatContent");
     chatContent.innerHTML = ""; // Clears the chat panel
 
-    // Create a new input field in the history pane
-    const historyPanel = document.getElementById("history");
+    // Create a new input field in the chat entries container
+    const chatEntriesContainer = document.getElementById("chatEntriesContainer");
     const newChatBlock = document.createElement("input");
     newChatBlock.type = "text";
     newChatBlock.placeholder = "Please enter conversation title";
     newChatBlock.classList.add("new-chat-entry");
 
-    // Append the new input field to the history panel
-    historyPanel.appendChild(newChatBlock);
+    // Append the new input field to the chat entries container
+    chatEntriesContainer.appendChild(newChatBlock);
 
     // Focus on the new input field
     newChatBlock.focus();
@@ -79,28 +78,29 @@ require([
                 if (userChoice) {
                     newChatBlock.focus(); // Retry
                 } else {
-                    historyPanel.removeChild(newChatBlock); // Cancel and delete
+                    chatEntriesContainer.removeChild(newChatBlock); // Cancel and delete
                 }
             } else {
                 // Save the input as static text
                 const savedTitle = document.createElement("div");
                 savedTitle.textContent = newChatBlock.value;
-                savedTitle.style.width = "calc(100% - 20px)"; // Adjust width to add padding/margin
-                savedTitle.style.padding = "10px";
-                savedTitle.style.marginBottom = "10px";
-                savedTitle.style.backgroundColor = "#A0A0A0"; // Mid-grey background
-                savedTitle.style.color = "#FFFFFF"; // Light text
-                savedTitle.style.borderRadius = "5px";
-                savedTitle.style.fontFamily = "'Minecraft'";
-                savedTitle.style.fontSize = "16px";
-                savedTitle.style.textAlign = "center";
+                savedTitle.classList.add("new-chat-entry");
+                savedTitle.style.cursor = "pointer"; // Add pointer for interactivity
+
+                // Add click event to highlight the new entry
+                savedTitle.addEventListener("click", function() {
+                    document.querySelectorAll('.new-chat-entry').forEach(entry => entry.classList.remove('active'));
+                    savedTitle.classList.add('active');
+                });
 
                 // Replace input field with static text
-                historyPanel.replaceChild(savedTitle, newChatBlock);
+                chatEntriesContainer.replaceChild(savedTitle, newChatBlock);
             }
         }
     });
 });
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const divider = document.getElementById('dividerBetweenSections');
