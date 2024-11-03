@@ -123,6 +123,7 @@ background-color: #D0D0D0;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #A0A0A0;
+    overflow-y: auto; /* Allows the chat entries to be scrollable */
 }
 
 #preferences {
@@ -253,7 +254,8 @@ background-color: #D0D0D0;
     margin: 10px 0; /* Add some space around the button */
     background-color: #A0A0A0; /* Mid-grey button color */
     color: #FFFFFF; /* Light text */
-    border: none;
+    border-style: solid;
+    border-color: #070707;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Minecraft';
@@ -264,27 +266,23 @@ background-color: #D0D0D0;
     background-color: #909090; /* Slightly darker grey for hover */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Highlight shadow */
 }
-.new-chat-entry,
-.history-item {
-    width: calc(100% - 20px); /* Adjust width to add padding/margin */
+.new-chat-entry {
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #C0C0C0; /* Different shade of grey for new conversation */
-    color: #333333; /* Dark text color */
+    background-color: #A0A0A0; /* Mid-grey background */
+    color: #FFFFFF; /* Light text */
     border-radius: 5px;
     font-family: 'Minecraft';
     font-size: 16px;
-    outline: none;
-    border: 1px solid #A0A0A0;
-    transition: background-color 0.2s; /* Smooth transition for hover */
+    transition: background-color 0.2s;
+    text-align: center;
 }
-/* Add hover effect */
-.new-chat-entry:hover,
-.history-item:hover {
-    background-color: #B0B0B0; /* Slightly darker grey on hover */
-    cursor: pointer; /* Pointer cursor on hover */
-    
+/* Hover effect */
+.new-chat-entry:hover {
+    background-color: #909090; /* Slightly darker grey on hover */
 }
+
 /* Position resize handle at the very top */
 #resizeHandle {
     width: 100%;
@@ -309,6 +307,7 @@ background-color: #D0D0D0;
     flex-direction: column;
     overflow: hidden; /* Keep rounded corners clean */
     min-height: 28rem; /* Enables proper flex behavior in grid */
+    height: 100%; /* Make sure it fills the grid space */
 }
 #chatTitle {
     font-family: 'Minecraft';
@@ -321,12 +320,12 @@ background-color: #D0D0D0;
     pointer-events: none;
 }
 #chatContent {
-    flex: 1;
-    overflow-y: auto;
-    margin: 10px;
-    padding: 0 10px 60px 10px; /* Added padding at bottom to prevent content being hidden behind input */
-    min-height: 0;
-    position: relative;
+    flex: 1; /* Allow the content to grow and take available space */
+    overflow-y: auto; /* Enables vertical scrolling when content overflows */
+    margin: 0; /* Remove margin to make it fit within the container */
+    padding: 10px; /* Add padding for content spacing */
+    min-height: 0; /* Ensure it doesn't enforce a minimum height */
+    position: relative; /* Use relative positioning to keep it inside the flex layout */
 }
 .chat-bubble {
   margin: 10px 0;
