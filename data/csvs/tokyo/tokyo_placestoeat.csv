@@ -1,33 +1,33 @@
-store_id,name,nearest_station,genre,rating_val,review_cnt,save_cnt,budget_dinner,budget_lunch,holiday,address,prefecture,municipalities_1,municipalities_2,municipalities_3,budget,budget-qual,meal_type
-13033057,Farine Kimuraya,Iidabashi Station,"['Bread', 'Sandwich', 'Western Sweets']",3.41,90.0,1759.0,～￥999,～￥999,"日曜日・祝日★コロナウィルス対策のため、現在土...",Tokyo Chiyoda-ku Iidabashi 2-9-5 Kimuraya Building 1F,東京,千代田区,飯田橋,-,999.0,very low,Breakfast
-13250295,Le Grenier à Pain Iidabashi,Iidabashi Station,"['Bread', 'Sandwich', 'Cake']",3.52,81.0,1938.0,～￥999,～￥999,不定休,Tokyo Chiyoda-ku Iidabashi 4-17-27 Ecute Edition Iidabashi 1F,東京,千代田区,飯田橋,-,999.0,very low,Breakfast
-13258256,Toggle Hotel Cafe/Bar,Suidobashi Station,"['Cafe', 'Bar']",3.17,24.0,2133.0,"￥1,000～￥1,999",～￥999,無休,Tokyo Chiyoda-ku Iidabashi 3-11-4 Toggle Hotel Suidobashi 9F,東京,千代田区,飯田橋,-,1249.25,low,Breakfast
-13025105,Coffee-kan Iidabashi,Iidabashi Station,"['Cafe', 'Coffee Shop', 'Sandwich']",3.08,55.0,551.0,"￥1,000～￥1,999",～￥999,なし,Tokyo Chiyoda-ku Iidabashi 4-8-13 Yamashō Building 1F,東京,千代田区,飯田橋,-,1249.25,low,Breakfast
-13232767,Cafe & Bar Adele,Kanda Station,"['Cafe', 'Bar']",3.02,1.0,20.0,"￥4,000～￥4,999",-,-,Tokyo Chiyoda-ku Uchi-Kanda 3-11-1 Sankei Building 2F,東京,千代田区,内神田,-,4499.5,medium,Breakfast
-13249583,SOLEIL Hibiya OKUROJI,Uchisaiwaicho Station,"['Dining Bar', 'Cafe', 'Asian Ethnic Cuisine']",3.21,33.0,3316.0,"￥5,000～￥5,999","￥1,000～￥1,999",-,Tokyo Chiyoda-ku Uchisaiwaicho 1-7-1 Hibiya OKUROJI H8,東京,千代田区,内幸町,-,3499.5,medium,Breakfast
-13044618,Armani Ristorante,Ginza Station,"['Italian', 'Cafe', 'Bar']",3.51,435.0,13321.0,"￥15,000～￥19,999","￥6,000～￥7,999",-,Tokyo Chuo-ku Ginza 5-5-4 Armani Ginza Tower 10F,東京,中央区,銀座,-,12249.5,high,Breakfast
-13115708,Club Lounge,Roppongi Station,"['Lounge', 'Cafe', 'Bar']",3.49,30.0,546.0,"￥40,000～￥49,999","￥30,000～￥39,999",-,Tokyo Minato-ku Akasaka 9-7-1 The Ritz-Carlton Tokyo 53F,東京,港区,赤坂,-,39999.5,high,Breakfast
-13137185,Plat Kiya,Iidabashi Station,['Coffee Shop'],3.22,14.0,205.0,-,～￥999,土曜日、日曜日、祝日,Tokyo Chiyoda-ku Iidabashi 4-3-2 Second KIYA Building 1F,東京,千代田区,飯田橋,-,999.0,very low,Lunch
-13026630,Luce,Iidabashi Station,['Italian'],3.25,30.0,435.0,-,～￥999,-,Tokyo Chiyoda-ku Iidabashi 1-7-4 Kudan MSC Building 1F,東京,千代田区,飯田橋,-,999.0,very low,Lunch
-13244455,TOKYO CURRY BUCCI spice×sake,Iidabashi Station,"['Curry Rice', 'Dining Bar', 'Sake Bar']",3.26,22.0,495.0,"￥3,000～￥3,999",～￥999,土日祝日,Tokyo Chiyoda-ku Iidabashi 1-10-1 Rokukawa Building 1F,東京,千代田区,飯田橋,-,2249.25,low,Lunch
-13061214,Sincero,Iidabashi Station,['Italian'],3.24,24.0,518.0,-,"￥1,000～￥1,999",日曜日、祝日,Tokyo Chiyoda-ku Iidabashi 4-3-3 11th Sōshin Building 1F,東京,千代田区,飯田橋,-,1499.5,low,Lunch
-13152517,APA Hotel Tokyo Kudanshita,Kudanshita Station,['Other'],3.02,3.0,12.0,-,"￥6,000～￥7,999",年中無休,Tokyo Chiyoda-ku Iidabashi 1-4-7,東京,千代田区,飯田橋,-,6999.5,medium,Lunch
-13002219,La Neige,Hanzomon Station,['French'],3.32,23.0,627.0,-,"￥3,000～￥3,999","月曜日・第4火曜夜年末年始",Tokyo Chiyoda-ku Ichibanchō 4-6 Ichibanchō Central Building 1F,東京,千代田区,一番町,-,3499.5,medium,Lunch
-13237866,L'Esprit du Vin Yanagiya,Kanda Station,['Other'],3.01,1.0,117.0,-,"￥15,000～￥19,999",土曜日、日曜日、祝日,Tokyo Chiyoda-ku Kajichō 1-3-9,東京,千代田区,鍛冶町,-,17499.5,high,Lunch
-13144462,Remm Akihabara,Akihabara Station,['Ryokan/Auberge (Other)'],3.19,5.0,21.0,-,"￥10,000～￥14,999",年中無休,Tokyo Chiyoda-ku Kanda-Sakumagashi 1-6-5 TX Akihabara Hankyu Building,東京,千代田区,神田佐久間町,-,12499.5,high,Lunch
-13099160,Sugiyama Shōten,Iidabashi Station,['Bar/Alcohol (Other)'],3.27,21.0,509.0,～￥999,-,日曜日、祝日,Tokyo Chiyoda-ku Iidabashi 4-5-13 Sugiyama Building 1F,東京,千代田区,飯田橋,-,999.0,very low,Dinner
-13204764,Doutor Coffee Shop Iidabashi Tokyo Kusei Kaikan,Iidabashi Station,['Cafe'],3.04,19.0,96.0,～￥999,-,-,Tokyo Chiyoda-ku Iidabashi 3-5-1 Tokyo Kusei Kaikan 1F,東京,千代田区,飯田橋,-,999.0,very low,Dinner
-13114542,Wagyu Yakiniku All-You-Can-Eat Nikuya no Daidokoro Iidabashi,Iidabashi Station,"['Yakiniku', 'Buffet', 'Izakaya']",3.26,121.0,9895.0,"￥3,000～￥3,999","￥2,000～￥2,999",-,Tokyo Chiyoda-ku Iidabashi 4-9-8 Iidabashi Plaza 8F,東京,千代田区,飯田橋,-,2999.5,low,Dinner
-13271459,Midtown BBQ Tokyo,Suidobashi Station,"['Steak', 'Hamburger', 'Izakaya']",3.06,8.0,327.0,"￥4,000～￥4,999","￥1,000～￥1,999",-,Tokyo Chiyoda-ku Iidabashi 3-10-9 Iidabashi iGarden Terrace 2F,東京,千代田区,飯田橋,-,2999.5,low,Dinner
-13270960,Akagyu Yakiniku and Horse Sashimi Tabetomo,Iidabashi Station,"['Yakiniku', 'Horse Sashimi', 'Izakaya']",3.06,4.0,211.0,"￥6,000～￥7,999",～￥999,-,Tokyo Chiyoda-ku Iidabashi 4-7-8 Second Yamashō Building 1F,東京,千代田区,飯田橋,-,3999.25,medium,Dinner
-13041573,Yamahiko,Iidabashi Station,"['Teppanyaki', 'Steak', 'Seafood']",3.39,31.0,1648.0,"￥8,000～￥9,999","￥2,000～￥2,999",-,Tokyo Chiyoda-ku Iidabashi 3-10-8 Hotel Metropolitan Edmont Main Building B1F,東京,千代田区,飯田橋,-,5749.5,medium,Dinner
-13032546,Nakaya Sushi,Iidabashi Station,"['Sushi', 'Sake Bar', 'Japanese Cuisine']",3.21,27.0,1554.0,"￥10,000～￥14,999",-,日曜日、祝日　（年末年始休みあり）,Tokyo Chiyoda-ku Iidabashi 3-7-6,東京,千代田区,飯田橋,-,12499.5,high,Dinner
-13136559,Ichibanchō Teruya,Kōjimachi Station,['Sushi'],3.61,58.0,5835.0,"￥30,000～￥39,999",-,月曜日,Tokyo Chiyoda-ku Ichibanchō 15-3 SA Building B1F,東京,千代田区,一番町,-,34999.5,high,Dinner
-13218582,Kōjimachi Sakaba Mandeya,Hanzomon Station,"['Izakaya', 'Fried Chicken', 'Yakitori']",3.12,14.0,498.0,-,～￥999,日曜日・祝日,Tokyo Chiyoda-ku Ichibanchō 15-20 Phoenix Building 1F,東京,千代田区,一番町,-,999.0,very low,Bar
-13199566,Iwamotochō Washun-shoku Chitora,Kodemmacho Station,"['Izakaya', 'Japanese Cuisine (Other)']",3.37,22.0,391.0,-,～￥999,無休,Tokyo Chiyoda-ku Iwamotochō 2-18-15 Asahi Building 2F,東京,千代田区,岩本町,-,999.0,very low,Bar
-13115133,Matsuri Iidabashi East Exit Station Front,Iidabashi Station,"['Izakaya', 'Japanese Cuisine (Other)', 'Yakitori']",3.25,29.0,1358.0,"￥2,000～￥2,999",-,-,Tokyo Chiyoda-ku Iidabashi 4-9-8 Iidabashi Plaza 1F,東京,千代田区,飯田橋,-,2499.5,low,Bar
-13139364,Torichū Iidabashi,Iidabashi Station,"['Yakitori', 'Izakaya', 'Sake Bar']",3.46,119.0,10893.0,"￥3,000～￥3,999",～￥999,-,Tokyo Chiyoda-ku Iidabashi 4-7-11 Cactus Iidabashi B1F,東京,千代田区,飯田橋,-,2249.25,low,Bar
-13097553,Private Room Hokukoku Robata Tokishirazu Iidabashi Station Front,Iidabashi Station,"['Seafood', 'Izakaya', 'Japanese Cuisine']",3.12,61.0,2848.0,"￥3,000～￥3,999","￥3,000～￥3,999",-,Tokyo Chiyoda-ku Iidabashi 4-9-8 Daiwa Building 5F,東京,千代田区,飯田橋,-,3499.5,medium,Bar
-13225614,Private Room Izakaya × Hakata Yakitori Makinosuke Iidabashi,Iidabashi Station,"['Izakaya', 'Yakitori', 'Motsunabe']",3.07,35.0,2475.0,"￥3,000～￥3,999",-,-,Tokyo Chiyoda-ku Iidabashi 4-5-6 ECS Third Building 1F,東京,千代田区,飯田橋,-,3499.5,medium,Bar
-13194299,Wine and Sake Shop Le Jongleur,Iidabashi Station,"['Izakaya', 'Wine Bar', 'Sake Bar']",3.46,118.0,15341.0,"￥10,000～￥14,999",-,-,Tokyo Chiyoda-ku Iidabashi 4-7-4 Iidabashi Grand Plus 1F,東京,千代田区,飯田橋,-,12499.5,high,Bar
-13098674,Ristorante Shy,Kanda Station,"['Italian', 'Wine Bar', 'Pasta']",3.54,88.0,4170.0,"￥10,000～￥14,999",-,日・祝・土曜不定休,Tokyo Chiyoda-ku Uchi-Kanda 2-10-2,東京,千代田区,内神田,-,12499.5,high,Bar
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags
+Breakfast,Farine Kimuraya,999.0,-,3.41,Iidabashi Station,"[Bread, Sandwich, Western Sweets]"
+Breakfast,Le Grenier à Pain Iidabashi,999.0,-,3.52,Iidabashi Station,"[Bread, Sandwich, Cake]"
+Breakfast,Toggle Hotel Cafe/Bar,1249.25,-,3.17,Suidobashi Station,"[Cafe, Bar]"
+Breakfast,Coffee-kan Iidabashi,1249.25,-,3.08,Iidabashi Station,"[Cafe, Coffee Shop, Sandwich]"
+Breakfast,Cafe & Bar Adele,4499.5,-,3.02,Kanda Station,"[Cafe, Bar]"
+Breakfast,SOLEIL Hibiya OKUROJI,3499.5,-,3.21,Uchisaiwaicho Station,"[Dining Bar, Cafe, Asian Ethnic Cuisine]"
+Breakfast,Armani Ristorante,12249.5,-,3.51,Ginza Station,"[Italian, Cafe, Bar]"
+Breakfast,Club Lounge,39999.5,-,3.49,Roppongi Station,"[Lounge, Cafe, Bar]"
+Lunch,Plat Kiya,999.0,-,3.22,Iidabashi Station,[Coffee Shop]
+Lunch,Luce,999.0,-,3.25,Iidabashi Station,[Italian]
+Lunch,TOKYO CURRY BUCCI spice×sake,2249.25,-,3.26,Iidabashi Station,"[Curry Rice, Dining Bar, Sake Bar]"
+Lunch,Sincero,1499.5,-,3.24,Iidabashi Station,[Italian]
+Lunch,APA Hotel Tokyo Kudanshita,6999.5,-,3.02,Kudanshita Station,[Other]
+Lunch,La Neige,3499.5,-,3.32,Hanzomon Station,[French]
+Lunch,L'Esprit du Vin Yanagiya,17499.5,-,3.01,Kanda Station,[Other]
+Lunch,Remm Akihabara,12499.5,-,3.19,Akihabara Station,[Ryokan/Auberge (Other)]
+Dinner,Sugiyama Shōten,999.0,-,3.27,Iidabashi Station,[Bar/Alcohol (Other)]
+Dinner,Doutor Coffee Shop Iidabashi Tokyo Kusei Kaikan,999.0,-,3.04,Iidabashi Station,[Cafe]
+Dinner,Wagyu Yakiniku All-You-Can-Eat Nikuya no Daidokoro Iidabashi,2999.5,-,3.26,Iidabashi Station,"[Yakiniku, Buffet, Izakaya]"
+Dinner,Midtown BBQ Tokyo,2999.5,-,3.06,Suidobashi Station,"[Steak, Hamburger, Izakaya]"
+Dinner,Akagyu Yakiniku and Horse Sashimi Tabetomo,3999.25,-,3.06,Iidabashi Station,"[Yakiniku, Horse Sashimi, Izakaya]"
+Dinner,Yamahiko,5749.5,-,3.39,Iidabashi Station,"[Teppanyaki, Steak, Seafood]"
+Dinner,Nakaya Sushi,12499.5,-,3.21,Iidabashi Station,"[Sushi, Sake Bar, Japanese Cuisine]"
+Dinner,Ichibanchō Teruya,34999.5,-,3.61,Kōjimachi Station,[Sushi]
+Bar,Kōjimachi Sakaba Mandeya,999.0,-,3.12,Hanzomon Station,"[Izakaya, Fried Chicken, Yakitori]"
+Bar,Iwamotochō Washun-shoku Chitora,999.0,-,3.37,Kodemmacho Station,"[Izakaya, Japanese Cuisine (Other)]"
+Bar,Matsuri Iidabashi East Exit Station Front,2499.5,-,3.25,Iidabashi Station,"[Izakaya, Japanese Cuisine (Other), Yakitori]"
+Bar,Torichū Iidabashi,2249.25,-,3.46,Iidabashi Station,"[Yakitori, Izakaya, Sake Bar]"
+Bar,Private Room Hokukoku Robata Tokishirazu Iidabashi Station Front,3499.5,-,3.12,Iidabashi Station,"[Seafood, Izakaya, Japanese Cuisine]"
+Bar,Private Room Izakaya × Hakata Yakitori Makinosuke Iidabashi,3499.5,-,3.07,Iidabashi Station,"[Izakaya, Yakitori, Motsunabe]"
+Bar,Wine and Sake Shop Le Jongleur,12499.5,-,3.46,Iidabashi Station,"[Izakaya, Wine Bar, Sake Bar]"
+Bar,Ristorante Shy,12499.5,-,3.54,Kanda Station,"[Italian, Wine Bar, Pasta]"
