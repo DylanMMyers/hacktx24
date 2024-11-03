@@ -1,19 +1,19 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category
-Hotel,Park Hyatt Tokyo,850,0.5,4.7,Tochomae Station,"[Hotel, Luxury, Walking Distance, Highly Rated, Free WiFi, City View, Fine Dining, Spa, Fitness Center]",high
-Hotel,The Ritz-Carlton Tokyo,1200,0.3,4.8,Roppongi Station,"[Hotel, Luxury, Central Location, Highly Rated, Free WiFi, City View, Fine Dining, Spa, Pool, Concierge Service]",high
-Hotel,Tokyu Stay Shinjuku,180,0.2,4.3,Shinjuku-sanchome Station,"[Hotel, Mid-range, Central Location, Well Rated, Free WiFi, City View, Business Center]",high
-Hotel,Shinjuku Granbell Hotel,150,0.4,4.1,Higashi-Shinjuku Station,"[Hotel, Mid-range, Walking Distance, Well Rated, Free WiFi, City View, Restaurant]",high
-Hotel,Hotel Gracery Shinjuku,120,0.1,4.2,Shinjuku-sanchome Station,"[Hotel, Mid-range, Central Location, Well Rated, Free WiFi, City View, 24-hour Front Desk]",mid
-Hotel,APA Hotel Shinjuku Gyoenmae,80,0.3,3.9,Shinjuku-gyoemmae Station,"[Hotel, Budget, Central Location, Free WiFi, City View]",mid
-Hostel,Imano Tokyo Hostel,30,0.5,4.5,Shinjuku-sanchome Station,"[Hostel, Budget, Walking Distance, Highly Rated, Free WiFi, Shared Lounge, Communal Kitchen]",low
-Hostel,Nui. Hostel & Bar Lounge,25,0.7,4.6,Kuramae Station,"[Hostel, Budget, Walking Distance, Highly Rated, Free WiFi, Bar, Communal Kitchen]",low
-Hostel,CITAN Hostel,45,0.6,4.4,Bakuro-yokoyama Station,"[Hostel, Budget, Walking Distance, Well Rated, Free WiFi, Cafe, Shared Lounge]",low
-Hostel,The Millennials Shibuya,55,0.3,4.5,Shibuya Station,"[Hostel, Budget, Central Location, Highly Rated, Free WiFi, Modern Design, Social Activities]",low
-Hostel,Emblem Hostel Nishiarai,65,0.2,4.3,Nishiarai Station,"[Hostel, Budget, Central Location, Well Rated, Free WiFi, Shared Kitchen, Bicycle Rental]",mid
-Hostel,Kaisu Hostel,70,0.4,4.2,Akasaka Station,"[Hostel, Budget, Walking Distance, Well Rated, Free WiFi, Shared Lounge, Laundry Facilities]",mid
-Airbnb,Cozy Studio in Shibuya,40,0.4,4.7,Shibuya Station,"[Airbnb, Budget, Walking Distance, Highly Rated, Free WiFi, City View, Self Check-in]",low
-Airbnb,Traditional Japanese Room in Asakusa,35,0.6,4.6,Asakusa Station,"[Airbnb, Budget, Walking Distance, Highly Rated, Free WiFi, Traditional Japanese Room, Cultural Experience]",low
-Airbnb,Modern Apartment near Tokyo Tower,80,0.5,4.4,Kamiyacho Station,"[Airbnb, Budget, Walking Distance, Well Rated, Free WiFi, City View, Modern Amenities]",mid
-Airbnb,Spacious Loft in Roppongi,95,0.3,4.3,Roppongi Station,"[Airbnb, Budget, Central Location, Well Rated, Free WiFi, City View, Modern Design]",mid
-Airbnb,Luxury Penthouse with Sky View,250,0.7,4.9,Roppongi Station,"[Airbnb, Mid-range, Walking Distance, Highly Rated, Free WiFi, City View, Luxury, Modern Amenities]",high
-Airbnb,Designer Home in Daikanyama,180,0.8,4.8,Daikanyama Station,"[Airbnb, Mid-range, Walking Distance, Highly Rated, Free WiFi, Modern Design, Fully Equipped Kitchen]",high
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category,Latitude,Longitude
+Hotel,Park Hyatt Tokyo,850,0.5,4.7,Tochomae Station,"[Luxury, Walking Distance, Highly Rated, Hotel, Free WiFi, City View, Fine Dining, Spa, Fitness Center]",high,35.6865,139.6897
+Hotel,The Ritz-Carlton Tokyo,1200,0.3,4.8,Roppongi Station,"[Luxury, Central Location, Highly Rated, Hotel, Pool, Spa, Fine Dining, Business Center, City View, Concierge Service]",high,35.6628,139.7311
+Hotel,Tokyu Stay Shinjuku,180,0.2,4.3,Shinjuku-sanchome Station,"[Mid-range, Central Location, Well Rated, Hotel, Business Center, City View, Free WiFi]",high,35.6908,139.7062
+Hotel,Shinjuku Granbell Hotel,150,0.4,4.1,Higashi-Shinjuku Station,"[Mid-range, Walking Distance, Well Rated, Hotel, Restaurant, City View, Free WiFi]",high,35.6971,139.7080
+Hotel,Hotel Gracery Shinjuku,120,0.1,4.2,Shinjuku-sanchome Station,"[Mid-range, Central Location, Well Rated, Hotel, 24-hour Front Desk, City View, Free WiFi]",mid,35.6908,139.7062
+Hotel,APA Hotel Shinjuku Gyoenmae,80,0.3,3.9,Shinjuku-gyoemmae Station,"[Budget, Central Location, Hotel, Free WiFi, City View]",mid,35.6876,139.7099
+Hostel,Imano Tokyo Hostel,30,0.5,4.5,Shinjuku-sanchome Station,"[Budget, Walking Distance, Well Rated, Hostel, Communal Kitchen, Shared Lounge, Free WiFi]",low,35.6908,139.7062
+Hostel,Nui. Hostel & Bar Lounge,25,0.7,4.6,Kuramae Station,"[Budget, Walking Distance, Well Rated, Hostel, Bar, Communal Kitchen, Free WiFi]",low,35.7089,139.7908
+Hostel,CITAN Hostel,45,0.6,4.4,Bakuro-yokoyama Station,"[Budget, Walking Distance, Well Rated, Hostel, Cafe, Shared Lounge, Free WiFi]",low,35.6909,139.7823
+Hostel,The Millennials Shibuya,55,0.3,4.5,Shibuya Station,"[Budget, Central Location, Well Rated, Hostel, Modern Design, Social Activities, Free WiFi]",low,35.6595,139.7004
+Hostel,Emblem Hostel Nishiarai,65,0.2,4.3,Nishiarai Station,"[Budget, Central Location, Well Rated, Hostel, Shared Kitchen, Bicycle Rental, Free WiFi]",mid,35.7778,139.7900
+Hostel,Kaisu Hostel,70,0.4,4.2,Akasaka Station,"[Budget, Walking Distance, Well Rated, Hostel, Shared Lounge, Laundry Facilities, Free WiFi]",mid,35.6749,139.7362
+Airbnb,Cozy Studio in Shibuya,40,0.4,4.7,Shibuya Station,"[Budget, Walking Distance, Highly Rated, Airbnb, City View, Self Check-in, Free WiFi]",low,35.6595,139.7004
+Airbnb,Traditional Japanese Room in Asakusa,35,0.6,4.6,Asakusa Station,"[Budget, Walking Distance, Highly Rated, Airbnb, Traditional Japanese Room, Cultural Experience, Free WiFi]",low,35.7147,139.7967
+Airbnb,Modern Apartment near Tokyo Tower,80,0.5,4.4,Kamiyacho Station,"[Budget, Walking Distance, Well Rated, Airbnb, City View, Modern Amenities, Free WiFi]",mid,35.6628,139.7452
+Airbnb,Spacious Loft in Roppongi,95,0.3,4.3,Roppongi Station,"[Budget, Central Location, Well Rated, Airbnb, City View, Modern Design, Free WiFi]",mid,35.6628,139.7311
+Airbnb,Luxury Penthouse with Sky View,250,0.7,4.9,Roppongi Station,"[Mid-range, Walking Distance, Highly Rated, Airbnb, City View, Luxury, Modern Amenities, Free WiFi]",high,35.6628,139.7311
+Airbnb,Designer Home in Daikanyama,180,0.8,4.8,Daikanyama Station,"[Mid-range, Walking Distance, Highly Rated, Airbnb, Modern Design, Fully Equipped Kitchen, Free WiFi]",high,35.6487,139.7030
