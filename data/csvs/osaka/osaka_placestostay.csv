@@ -1,19 +1,19 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags
-Hotel,The Ritz-Carlton Osaka,450,0.3,4.7,Osaka Station,"[Hotel, Central Location, Well Rated, Luxury, Highly Rated, Free WiFi, City View]"
-Hotel,Conrad Osaka,400,0.5,4.6,Higobashi Station,"[Hotel, Walking Distance, Well Rated, Luxury, Highly Rated, Free WiFi, City View]"
-Hotel,Hotel Granvia Osaka,200,0.1,4.3,Osaka Station,"[Hotel, Central Location, Well Rated, Mid-range, Free WiFi, City View]"
-Hotel,Swissotel Nankai Osaka,180,0.2,4.4,Namba Station,"[Hotel, Central Location, Well Rated, Mid-range, Free WiFi, City View]"
-Hotel,Osaka Fujiya Hotel,100,0.4,4.0,Tanimachi 4-chome Station,"[Hotel, Walking Distance, Well Rated, Budget, Free WiFi, City View]"
-Hotel,Hotel Chuo Oasis,80,0.3,3.9,Namba Station,"[Hotel, Central Location, Budget, Free WiFi, City View]"
-Hostel,J-Hoppers Osaka Guesthouse,25,0.5,4.5,Fukushima Station,"[Hostel, Budget, Walking Distance, Well Rated, Highly Rated, Free WiFi, City View]"
-Hostel,Osaka Guesthouse NEST,20,0.6,4.4,Shin-Imamiya Station,"[Hostel, Budget, Walking Distance, Well Rated, Free WiFi, City View]"
-Hostel,The Pax Hostel,40,0.4,4.3,Namba Station,"[Hostel, Budget, Walking Distance, Well Rated, Free WiFi, City View]"
-Hostel,Backstage Osaka Hostel & Bar,45,0.3,4.2,Nipponbashi Station,"[Hostel, Budget, Central Location, Well Rated, Free WiFi, City View, Bar]"
-Hostel,Grampus Inn Osaka,60,0.2,4.1,Namba Station,"[Hostel, Budget, Central Location, Well Rated, Free WiFi, City View]"
-Hostel,Ark Hostel,65,0.5,4.0,Shinsaibashi Station,"[Hostel, Budget, Walking Distance, Well Rated, Free WiFi, City View]"
-Airbnb,Cozy Japanese Room TD Shin-Osaka,46,0.7,4.9,Shin-Osaka Station,"[Airbnb, Budget, Highly Rated, Free WiFi, City View, Traditional Japanese Room]"
-Airbnb,GrandouceNishiTengachaya Namba,63,0.8,4.8,Tengachaya Station,"[Airbnb, Budget, Highly Rated, Free WiFi, City View]"
-Airbnb,Ninja House in Central Osaka,112,0.5,4.7,Shinsaibashi Station,"[Airbnb, Mid-range, Highly Rated, Free WiFi, City View, Themed Accommodation]"
-Airbnb,Riverside Room Kitahama,133,0.1,4.6,Kitahama Station,"[Airbnb, Mid-range, Highly Rated, Free WiFi, City View, River View, Central Location]"
-Airbnb,Dotonbori 1min Nihonbashi Station,194,0.1,4.7,Nipponbashi Station,"[Airbnb, Mid-range, Highly Rated, Free WiFi, City View, Central Location]"
-Airbnb,Luxury Penthouse near Namba,250,0.6,4.8,Namba Station,"[Airbnb, Mid-range, Highly Rated, Free WiFi, City View, Luxury]"
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category
+Hotel,The Ritz-Carlton Osaka,450,0.3,4.7,Osaka Station,"[Hotel, Central Location, Well Rated, Luxury, Highly Rated, Free WiFi, City View]",high
+Hotel,Conrad Osaka,400,0.5,4.6,Higobashi Station,"[Hotel, Walking Distance, Well Rated, Luxury, Highly Rated, Free WiFi, City View]",high
+Hotel,Hotel Granvia Osaka,200,0.1,4.3,Osaka Station,"[Hotel, Central Location, Well Rated, Mid-range, Free WiFi, City View]",high
+Hotel,Swissotel Nankai Osaka,180,0.2,4.4,Namba Station,"[Hotel, Central Location, Well Rated, Mid-range, Free WiFi, City View]",high
+Hotel,Osaka Fujiya Hotel,100,0.4,4.0,Tanimachi 4-chome Station,"[Hotel, Walking Distance, Well Rated, Budget, Free WiFi, City View]",mid
+Hotel,Hotel Chuo Oasis,80,0.3,3.9,Namba Station,"[Hotel, Central Location, Budget, Free WiFi, City View]",mid
+Hostel,J-Hoppers Osaka Guesthouse,25,0.5,4.5,Fukushima Station,"[Hostel, Budget, Walking Distance, Well Rated, Highly Rated, Free WiFi, City View]",low
+Hostel,Osaka Guesthouse NEST,20,0.6,4.4,Shin-Imamiya Station,"[Hostel, Budget, Walking Distance, Well Rated, Free WiFi, City View]",low
+Hostel,The Pax Hostel,40,0.4,4.3,Namba Station,"[Hostel, Budget, Walking Distance, Well Rated, Free WiFi, City View]",low
+Hostel,Backstage Osaka Hostel & Bar,45,0.3,4.2,Nipponbashi Station,"[Hostel, Budget, Central Location, Well Rated, Free WiFi, City View, Bar]",low
+Hostel,Grampus Inn Osaka,60,0.2,4.1,Namba Station,"[Hostel, Budget, Central Location, Well Rated, Free WiFi, City View]",low
+Hostel,Ark Hostel,65,0.5,4.0,Shinsaibashi Station,"[Hostel, Budget, Walking Distance, Well Rated, Free WiFi, City View]",mid
+Airbnb,Cozy Japanese Room TD Shin-Osaka,46,0.7,4.9,Shin-Osaka Station,"[Airbnb, Budget, Highly Rated, Free WiFi, City View, Traditional Japanese Room]",low
+Airbnb,GrandouceNishiTengachaya Namba,63,0.8,4.8,Tengachaya Station,"[Airbnb, Budget, Highly Rated, Free WiFi, City View]",mid
+Airbnb,Ninja House in Central Osaka,112,0.5,4.7,Shinsaibashi Station,"[Airbnb, Mid-range, Highly Rated, Free WiFi, City View, Themed Accommodation]",mid
+Airbnb,Riverside Room Kitahama,133,0.1,4.6,Kitahama Station,"[Airbnb, Mid-range, Highly Rated, Free WiFi, City View, River View, Central Location]",mid
+Airbnb,Dotonbori 1min Nihonbashi Station,194,0.1,4.7,Nipponbashi Station,"[Airbnb, Mid-range, Highly Rated, Free WiFi, City View, Central Location]",high
+Airbnb,Luxury Penthouse near Namba,250,0.6,4.8,Namba Station,"[Airbnb, Mid-range, Highly Rated, Free WiFi, City View, Luxury]",high

@@ -1,33 +1,33 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags
-Breakfast,Farine Kimuraya,999.0,-,3.41,Iidabashi Station,"[Bread, Sandwich, Western Sweets]"
-Breakfast,Le Grenier à Pain Iidabashi,999.0,-,3.52,Iidabashi Station,"[Bread, Sandwich, Cake]"
-Breakfast,Toggle Hotel Cafe/Bar,1249.25,-,3.17,Suidobashi Station,"[Cafe, Bar]"
-Breakfast,Coffee-kan Iidabashi,1249.25,-,3.08,Iidabashi Station,"[Cafe, Coffee Shop, Sandwich]"
-Breakfast,Cafe & Bar Adele,4499.5,-,3.02,Kanda Station,"[Cafe, Bar]"
-Breakfast,SOLEIL Hibiya OKUROJI,3499.5,-,3.21,Uchisaiwaicho Station,"[Dining Bar, Cafe, Asian Ethnic Cuisine]"
-Breakfast,Armani Ristorante,12249.5,-,3.51,Ginza Station,"[Italian, Cafe, Bar]"
-Breakfast,Club Lounge,39999.5,-,3.49,Roppongi Station,"[Lounge, Cafe, Bar]"
-Lunch,Plat Kiya,999.0,-,3.22,Iidabashi Station,[Coffee Shop]
-Lunch,Luce,999.0,-,3.25,Iidabashi Station,[Italian]
-Lunch,TOKYO CURRY BUCCI spice×sake,2249.25,-,3.26,Iidabashi Station,"[Curry Rice, Dining Bar, Sake Bar]"
-Lunch,Sincero,1499.5,-,3.24,Iidabashi Station,[Italian]
-Lunch,APA Hotel Tokyo Kudanshita,6999.5,-,3.02,Kudanshita Station,[Other]
-Lunch,La Neige,3499.5,-,3.32,Hanzomon Station,[French]
-Lunch,L'Esprit du Vin Yanagiya,17499.5,-,3.01,Kanda Station,[Other]
-Lunch,Remm Akihabara,12499.5,-,3.19,Akihabara Station,[Ryokan/Auberge (Other)]
-Dinner,Sugiyama Shōten,999.0,-,3.27,Iidabashi Station,[Bar/Alcohol (Other)]
-Dinner,Doutor Coffee Shop Iidabashi Tokyo Kusei Kaikan,999.0,-,3.04,Iidabashi Station,[Cafe]
-Dinner,Wagyu Yakiniku All-You-Can-Eat Nikuya no Daidokoro Iidabashi,2999.5,-,3.26,Iidabashi Station,"[Yakiniku, Buffet, Izakaya]"
-Dinner,Midtown BBQ Tokyo,2999.5,-,3.06,Suidobashi Station,"[Steak, Hamburger, Izakaya]"
-Dinner,Akagyu Yakiniku and Horse Sashimi Tabetomo,3999.25,-,3.06,Iidabashi Station,"[Yakiniku, Horse Sashimi, Izakaya]"
-Dinner,Yamahiko,5749.5,-,3.39,Iidabashi Station,"[Teppanyaki, Steak, Seafood]"
-Dinner,Nakaya Sushi,12499.5,-,3.21,Iidabashi Station,"[Sushi, Sake Bar, Japanese Cuisine]"
-Dinner,Ichibanchō Teruya,34999.5,-,3.61,Kōjimachi Station,[Sushi]
-Bar,Kōjimachi Sakaba Mandeya,999.0,-,3.12,Hanzomon Station,"[Izakaya, Fried Chicken, Yakitori]"
-Bar,Iwamotochō Washun-shoku Chitora,999.0,-,3.37,Kodemmacho Station,"[Izakaya, Japanese Cuisine (Other)]"
-Bar,Matsuri Iidabashi East Exit Station Front,2499.5,-,3.25,Iidabashi Station,"[Izakaya, Japanese Cuisine (Other), Yakitori]"
-Bar,Torichū Iidabashi,2249.25,-,3.46,Iidabashi Station,"[Yakitori, Izakaya, Sake Bar]"
-Bar,Private Room Hokukoku Robata Tokishirazu Iidabashi Station Front,3499.5,-,3.12,Iidabashi Station,"[Seafood, Izakaya, Japanese Cuisine]"
-Bar,Private Room Izakaya × Hakata Yakitori Makinosuke Iidabashi,3499.5,-,3.07,Iidabashi Station,"[Izakaya, Yakitori, Motsunabe]"
-Bar,Wine and Sake Shop Le Jongleur,12499.5,-,3.46,Iidabashi Station,"[Izakaya, Wine Bar, Sake Bar]"
-Bar,Ristorante Shy,12499.5,-,3.54,Kanda Station,"[Italian, Wine Bar, Pasta]"
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category
+Breakfast,Farine Kimuraya,999.0,-,3.41,Iidabashi Station,"[Bread, Sandwich, Western Sweets]",low
+Breakfast,Le Grenier à Pain Iidabashi,999.0,-,3.52,Iidabashi Station,"[Bread, Sandwich, Cake]",low
+Breakfast,Toggle Hotel Cafe/Bar,1249.25,-,3.17,Suidobashi Station,"[Cafe, Bar]",low
+Breakfast,Coffee-kan Iidabashi,1249.25,-,3.08,Iidabashi Station,"[Cafe, Coffee Shop, Sandwich]",low
+Breakfast,Cafe & Bar Adele,4499.5,-,3.02,Kanda Station,"[Cafe, Bar]",high
+Breakfast,SOLEIL Hibiya OKUROJI,3499.5,-,3.21,Uchisaiwaicho Station,"[Dining Bar, Cafe, Asian Ethnic Cuisine]",mid
+Breakfast,Armani Ristorante,12249.5,-,3.51,Ginza Station,"[Italian, Cafe, Bar]",high
+Breakfast,Club Lounge,39999.5,-,3.49,Roppongi Station,"[Lounge, Cafe, Bar]",high
+Lunch,Plat Kiya,999.0,-,3.22,Iidabashi Station,[Coffee Shop],low
+Lunch,Luce,999.0,-,3.25,Iidabashi Station,[Italian],low
+Lunch,TOKYO CURRY BUCCI spice×sake,2249.25,-,3.26,Iidabashi Station,"[Curry Rice, Dining Bar, Sake Bar]",mid
+Lunch,Sincero,1499.5,-,3.24,Iidabashi Station,[Italian],low
+Lunch,APA Hotel Tokyo Kudanshita,6999.5,-,3.02,Kudanshita Station,[Other],high
+Lunch,La Neige,3499.5,-,3.32,Hanzomon Station,[French],mid
+Lunch,L'Esprit du Vin Yanagiya,17499.5,-,3.01,Kanda Station,[Other],high
+Lunch,Remm Akihabara,12499.5,-,3.19,Akihabara Station,[Ryokan/Auberge (Other)],high
+Dinner,Sugiyama Shōten,999.0,-,3.27,Iidabashi Station,[Bar/Alcohol (Other)],low
+Dinner,Doutor Coffee Shop Iidabashi Tokyo Kusei Kaikan,999.0,-,3.04,Iidabashi Station,[Cafe],low
+Dinner,Wagyu Yakiniku All-You-Can-Eat Nikuya no Daidokoro Iidabashi,2999.5,-,3.26,Iidabashi Station,"[Yakiniku, Buffet, Izakaya]",mid
+Dinner,Midtown BBQ Tokyo,2999.5,-,3.06,Suidobashi Station,"[Steak, Hamburger, Izakaya]",mid
+Dinner,Akagyu Yakiniku and Horse Sashimi Tabetomo,3999.25,-,3.06,Iidabashi Station,"[Yakiniku, Horse Sashimi, Izakaya]",mid
+Dinner,Yamahiko,5749.5,-,3.39,Iidabashi Station,"[Teppanyaki, Steak, Seafood]",high
+Dinner,Nakaya Sushi,12499.5,-,3.21,Iidabashi Station,"[Sushi, Sake Bar, Japanese Cuisine]",high
+Dinner,Ichibanchō Teruya,34999.5,-,3.61,Kōjimachi Station,[Sushi],high
+Bar,Kōjimachi Sakaba Mandeya,999.0,-,3.12,Hanzomon Station,"[Izakaya, Fried Chicken, Yakitori]",low
+Bar,Iwamotochō Washun-shoku Chitora,999.0,-,3.37,Kodemmacho Station,"[Izakaya, Japanese Cuisine (Other)]",low
+Bar,Matsuri Iidabashi East Exit Station Front,2499.5,-,3.25,Iidabashi Station,"[Izakaya, Japanese Cuisine (Other), Yakitori]",mid
+Bar,Torichū Iidabashi,2249.25,-,3.46,Iidabashi Station,"[Yakitori, Izakaya, Sake Bar]",mid
+Bar,Private Room Hokukoku Robata Tokishirazu Iidabashi Station Front,3499.5,-,3.12,Iidabashi Station,"[Seafood, Izakaya, Japanese Cuisine]",mid
+Bar,Private Room Izakaya × Hakata Yakitori Makinosuke Iidabashi,3499.5,-,3.07,Iidabashi Station,"[Izakaya, Yakitori, Motsunabe]",mid
+Bar,Wine and Sake Shop Le Jongleur,12499.5,-,3.46,Iidabashi Station,"[Izakaya, Wine Bar, Sake Bar]",high
+Bar,Ristorante Shy,12499.5,-,3.54,Kanda Station,"[Italian, Wine Bar, Pasta]",high

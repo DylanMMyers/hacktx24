@@ -1,51 +1,51 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags
-Attraction,Osaka Castle,600,0.7,4.4,Osakajokoen Station,"[Historical Sites, Cultural Landmarks, Museums, Parks and Gardens]"
-Attraction,Dotonbori,0,0.4,4.3,Namba Station,"[Entertainment Areas, Nightlife, Food and Dining, Free Attractions]"
-Attraction,Shinsaibashi Shopping Street,0,0.1,4.0,Shinsaibashi Station,"[Shopping Districts, Entertainment Areas, Free Attractions]"
-Attraction,Kuromon Ichiba Market,0,0.61,4.0,Nipponbashi Station,"[Markets, Food and Dining, Cultural Landmarks, Free Attractions]"
-Attraction,Osaka Aquarium Kaiyukan,2400,0.5,4.3,Osakako Station,"[Aquariums, Family-Friendly, Educational Attractions]"
-Attraction,Universal Studios Japan,7800,0.14,4.5,Universal City Station,"[Theme Parks, Entertainment Areas, Family-Friendly]"
-Attraction,Sumiyoshi Taisha Shrine,0,0.28,4.3,Sumiyoshi Taisha Station,"[Religious Sites, Historical Sites, Cultural Landmarks, Free Attractions]"
-Attraction,Shinsekai,0,0.71,3.7,Ebisucho Station,"[Entertainment Areas, Food and Dining, Traditional Streets, Free Attractions]"
-Attraction,Tsutenkaku Tower,800,0.25,4.0,Shin-Imamiya Station,"[Observation Decks, Cultural Landmarks, Scenic Views]"
-Attraction,Tennoji Park,150,0.4,4.1,Tennoji Station,"[Parks and Gardens, Wildlife and Zoos, Art Galleries]"
-Attraction,Osaka Museum of Housing and Living,600,0.0,4.3,Tenjinbashisuji 6-chome Station,"[Museums, Historical Sites, Educational Attractions]"
-Attraction,Umeda Sky Building,1500,1.2,4.4,Osaka Station,"[Observation Decks, Modern Architecture, Scenic Views]"
-Attraction,Osaka Science Museum,400,0.5,4.1,Higobashi Station,"[Science Centers, Educational Attractions, Family-Friendly]"
-Attraction,Nakanoshima Park,0,0.5,4.3,Naniwabashi Station,"[Parks and Gardens, Free Attractions]"
-Attraction,Osaka Museum of History,600,0.25,4.2,Tanimachi 4-chome Station,"[Museums, Historical Sites, Educational Attractions]"
-Attraction,Hozenji Yokocho,0,0.5,4.0,Namba Station,"[Traditional Streets, Cultural Landmarks, Free Attractions]"
-Attraction,America-mura,0,0.4,3.8,Shinsaibashi Station,"[Shopping Districts, Entertainment Areas, Free Attractions]"
-Attraction,Namba Yasaka Shrine,0,0.5,4.0,Namba Station,"[Religious Sites, Unique Experiences, Free Attractions]"
-Attraction,Osaka Tenmangu Shrine,0,0.5,4.1,Osaka Tenmangu Station,"[Religious Sites, Cultural Landmarks, Free Attractions]"
-Attraction,Kids Plaza Osaka,1400,0.5,4.3,Ogimachi Station,"[Family-Friendly, Educational Attractions, Science Centers]"
-Attraction,Osaka Castle Park,0,0.7,4.4,Osakajokoen Station,"[Parks and Gardens, Historical Sites, Free Attractions]"
-Attraction,Minoo Park,0,2.8,4.5,Minoo Station,"[Nature Spots, Parks and Gardens, Free Attractions]"
-Attraction,Abeno Harukas,1500,0.3,4.3,Tennoji Station,"[Observation Decks, Modern Architecture, Shopping Districts]"
-Attraction,Tempozan Ferris Wheel,800,0.4,4.1,Osakako Station,"[Entertainment Areas, Scenic Views, Family-Friendly]"
-Attraction,Osaka Peace Center,0,0.5,4.2,Tanimachi 4-chome Station,"[Museums, Educational Attractions, Free Attractions]"
-Attraction,Osaka Museum of Natural History,300,0.8,4.2,Nagai Station,"[Museums, Educational Attractions, Family-Friendly]"
-Attraction,Nagai Botanical Garden,200,0.8,4.0,Nagai Station,"[Parks and Gardens, Nature Spots, Educational Attractions]"
-Attraction,Shitenno-ji Temple,300,0.4,4.2,Shitennoji-mae Yuhigaoka Station,"[Religious Sites, Historical Sites, Cultural Landmarks]"
-Attraction,Isshin-ji Temple,0,0.7,4.1,Tennoji Station,"[Religious Sites, Unique Experiences, Free Attractions]"
-Attraction,Spa World,2700,0.56,3.8,Shin-Imamiya Station,"[Relaxation and Wellness, Unique Experiences]"
-Attraction,Osaka Prefectural Sayamaike Museum,300,0.7,4.3,Sayamaike Station,"[Museums, Educational Attractions]"
-Attraction,Osaka Maritime Museum,0,1.0,3.9,Cosmosquare Station,"[Museums, Educational Attractions, Free Attractions]"
-Attraction,Osaka International Peace Center,0,0.5,4.2,Morinomiya Station,"[Museums, Educational Attractions, Free Attractions]"
-Attraction,Osaka City Central Public Hall,200,0.5,4.1,Yodoyabashi Station,"[Historical Sites, Cultural Landmarks]"
-Attraction,Namba Shrine,0,0.5,3.9,Namba Station,"[Religious Sites, Cultural Landmarks, Free Attractions]"
-Attraction,Tsuruhashi Korean Town,0,0.5,3.8,Tsuruhashi Station,"[Food and Dining, Cultural Landmarks, Shopping Districts, Free Attractions]"
-Attraction,Osaka Mint Bureau,0,0.5,4.0,Temmabashi Station,"[Historical Sites, Seasonal Attractions, Free Attractions]"
-Attraction,Nipponbashi Denden Town,0,0.5,3.9,Ebisucho Station,"[Shopping Districts, Technology and Pop Culture, Free Attractions]"
-Attraction,Osaka Museum of Fine Arts,300,0.4,4.0,Tennoji Station,"[Museums, Art Galleries]"
-Attraction,Namba Parks,0,0.2,4.1,Namba Station,"[Shopping Districts, Modern Architecture, Parks and Gardens, Free Attractions]"
-Attraction,Osaka City Air Terminal,0,0.25,3.7,Namba Station,"[Observation Decks, Free Attractions]"
-Attraction,Tempozan Harbor Village,0,0.8,4.0,Osakako Station,"[Waterfront Areas, Shopping Districts, Entertainment Areas, Free Attractions]"
-Attraction,Osaka Culturarium at Tempozan,0,0.5,3.9,Osakako Station,"[Art Galleries, Cultural Landmarks, Free Attractions]"
-Attraction,Osaka Shochikuza Theater,1000,0.1,4.2,Namba Station,"[Performing Arts, Cultural Landmarks]"
-Attraction,Nakanoshima Library,0,0.3,4.1,Watanabebashi Station,"[Cultural Landmarks, Educational Attractions, Free Attractions]"
-Attraction,Osaka City Central Wholesale Market,0,1.0,3.8,Tamagawa Station,"[Markets, Food and Dining, Unique Experiences, Free Attractions]"
-Attraction,Osaka Castle Nishinomaru Garden,200,1.0,4.3,Osakajokoen Station,"[Parks and Gardens, Historical Sites]"
-Attraction,Utsubo Park,0,0.47,4.0,Hommachi Station,"[Parks and Gardens, Sports Venues, Free Attractions]"
-Attraction,Nagai Stadium,0,0.5,4.1,Nagai Station,"[Sports Venues, Free Attractions]"
-Attraction,Tsuyunoten Shrine,0,0.8,3.9,Tennoji Station,"[Religious Sites, Unique Experiences, Free Attractions]"
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category
+Attraction,Osaka Castle,600,0.7,4.4,Osakajokoen Station,"[Historical Sites, Cultural Landmarks, Museums, Parks and Gardens]",high
+Attraction,Dotonbori,0,0.4,4.3,Namba Station,"[Entertainment Areas, Nightlife, Food and Dining, Free Attractions]",low
+Attraction,Shinsaibashi Shopping Street,0,0.1,4.0,Shinsaibashi Station,"[Shopping Districts, Entertainment Areas, Free Attractions]",low
+Attraction,Kuromon Ichiba Market,0,0.61,4.0,Nipponbashi Station,"[Markets, Food and Dining, Cultural Landmarks, Free Attractions]",low
+Attraction,Osaka Aquarium Kaiyukan,2400,0.5,4.3,Osakako Station,"[Aquariums, Family-Friendly, Educational Attractions]",high
+Attraction,Universal Studios Japan,7800,0.14,4.5,Universal City Station,"[Theme Parks, Entertainment Areas, Family-Friendly]",high
+Attraction,Sumiyoshi Taisha Shrine,0,0.28,4.3,Sumiyoshi Taisha Station,"[Religious Sites, Historical Sites, Cultural Landmarks, Free Attractions]",low
+Attraction,Shinsekai,0,0.71,3.7,Ebisucho Station,"[Entertainment Areas, Food and Dining, Traditional Streets, Free Attractions]",low
+Attraction,Tsutenkaku Tower,800,0.25,4.0,Shin-Imamiya Station,"[Observation Decks, Cultural Landmarks, Scenic Views]",high
+Attraction,Tennoji Park,150,0.4,4.1,Tennoji Station,"[Parks and Gardens, Wildlife and Zoos, Art Galleries]",mid
+Attraction,Osaka Museum of Housing and Living,600,0.0,4.3,Tenjinbashisuji 6-chome Station,"[Museums, Historical Sites, Educational Attractions]",high
+Attraction,Umeda Sky Building,1500,1.2,4.4,Osaka Station,"[Observation Decks, Modern Architecture, Scenic Views]",high
+Attraction,Osaka Science Museum,400,0.5,4.1,Higobashi Station,"[Science Centers, Educational Attractions, Family-Friendly]",high
+Attraction,Nakanoshima Park,0,0.5,4.3,Naniwabashi Station,"[Parks and Gardens, Free Attractions]",low
+Attraction,Osaka Museum of History,600,0.25,4.2,Tanimachi 4-chome Station,"[Museums, Historical Sites, Educational Attractions]",high
+Attraction,Hozenji Yokocho,0,0.5,4.0,Namba Station,"[Traditional Streets, Cultural Landmarks, Free Attractions]",low
+Attraction,America-mura,0,0.4,3.8,Shinsaibashi Station,"[Shopping Districts, Entertainment Areas, Free Attractions]",low
+Attraction,Namba Yasaka Shrine,0,0.5,4.0,Namba Station,"[Religious Sites, Unique Experiences, Free Attractions]",low
+Attraction,Osaka Tenmangu Shrine,0,0.5,4.1,Osaka Tenmangu Station,"[Religious Sites, Cultural Landmarks, Free Attractions]",low
+Attraction,Kids Plaza Osaka,1400,0.5,4.3,Ogimachi Station,"[Family-Friendly, Educational Attractions, Science Centers]",high
+Attraction,Osaka Castle Park,0,0.7,4.4,Osakajokoen Station,"[Parks and Gardens, Historical Sites, Free Attractions]",low
+Attraction,Minoo Park,0,2.8,4.5,Minoo Station,"[Nature Spots, Parks and Gardens, Free Attractions]",low
+Attraction,Abeno Harukas,1500,0.3,4.3,Tennoji Station,"[Observation Decks, Modern Architecture, Shopping Districts]",high
+Attraction,Tempozan Ferris Wheel,800,0.4,4.1,Osakako Station,"[Entertainment Areas, Scenic Views, Family-Friendly]",high
+Attraction,Osaka Peace Center,0,0.5,4.2,Tanimachi 4-chome Station,"[Museums, Educational Attractions, Free Attractions]",low
+Attraction,Osaka Museum of Natural History,300,0.8,4.2,Nagai Station,"[Museums, Educational Attractions, Family-Friendly]",high
+Attraction,Nagai Botanical Garden,200,0.8,4.0,Nagai Station,"[Parks and Gardens, Nature Spots, Educational Attractions]",mid
+Attraction,Shitenno-ji Temple,300,0.4,4.2,Shitennoji-mae Yuhigaoka Station,"[Religious Sites, Historical Sites, Cultural Landmarks]",high
+Attraction,Isshin-ji Temple,0,0.7,4.1,Tennoji Station,"[Religious Sites, Unique Experiences, Free Attractions]",low
+Attraction,Spa World,2700,0.56,3.8,Shin-Imamiya Station,"[Relaxation and Wellness, Unique Experiences]",high
+Attraction,Osaka Prefectural Sayamaike Museum,300,0.7,4.3,Sayamaike Station,"[Museums, Educational Attractions]",high
+Attraction,Osaka Maritime Museum,0,1.0,3.9,Cosmosquare Station,"[Museums, Educational Attractions, Free Attractions]",low
+Attraction,Osaka International Peace Center,0,0.5,4.2,Morinomiya Station,"[Museums, Educational Attractions, Free Attractions]",low
+Attraction,Osaka City Central Public Hall,200,0.5,4.1,Yodoyabashi Station,"[Historical Sites, Cultural Landmarks]",mid
+Attraction,Namba Shrine,0,0.5,3.9,Namba Station,"[Religious Sites, Cultural Landmarks, Free Attractions]",low
+Attraction,Tsuruhashi Korean Town,0,0.5,3.8,Tsuruhashi Station,"[Food and Dining, Cultural Landmarks, Shopping Districts, Free Attractions]",low
+Attraction,Osaka Mint Bureau,0,0.5,4.0,Temmabashi Station,"[Historical Sites, Seasonal Attractions, Free Attractions]",low
+Attraction,Nipponbashi Denden Town,0,0.5,3.9,Ebisucho Station,"[Shopping Districts, Technology and Pop Culture, Free Attractions]",low
+Attraction,Osaka Museum of Fine Arts,300,0.4,4.0,Tennoji Station,"[Museums, Art Galleries]",high
+Attraction,Namba Parks,0,0.2,4.1,Namba Station,"[Shopping Districts, Modern Architecture, Parks and Gardens, Free Attractions]",low
+Attraction,Osaka City Air Terminal,0,0.25,3.7,Namba Station,"[Observation Decks, Free Attractions]",low
+Attraction,Tempozan Harbor Village,0,0.8,4.0,Osakako Station,"[Waterfront Areas, Shopping Districts, Entertainment Areas, Free Attractions]",low
+Attraction,Osaka Culturarium at Tempozan,0,0.5,3.9,Osakako Station,"[Art Galleries, Cultural Landmarks, Free Attractions]",low
+Attraction,Osaka Shochikuza Theater,1000,0.1,4.2,Namba Station,"[Performing Arts, Cultural Landmarks]",high
+Attraction,Nakanoshima Library,0,0.3,4.1,Watanabebashi Station,"[Cultural Landmarks, Educational Attractions, Free Attractions]",low
+Attraction,Osaka City Central Wholesale Market,0,1.0,3.8,Tamagawa Station,"[Markets, Food and Dining, Unique Experiences, Free Attractions]",low
+Attraction,Osaka Castle Nishinomaru Garden,200,1.0,4.3,Osakajokoen Station,"[Parks and Gardens, Historical Sites]",mid
+Attraction,Utsubo Park,0,0.47,4.0,Hommachi Station,"[Parks and Gardens, Sports Venues, Free Attractions]",low
+Attraction,Nagai Stadium,0,0.5,4.1,Nagai Station,"[Sports Venues, Free Attractions]",low
+Attraction,Tsuyunoten Shrine,0,0.8,3.9,Tennoji Station,"[Religious Sites, Unique Experiences, Free Attractions]",low

@@ -1,19 +1,19 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags
-Hotel,The Ritz-Carlton Kyoto,650,0.5,4.8,Kyoto Shiyakusho-mae Station,"[Luxury, Central Location, Highly Rated, Hotel, Pool, Spa, Fine Dining, Business Center, River View, Concierge Service, Fitness Center]"
-Hotel,Four Seasons Hotel Kyoto,550,0.7,4.7,Higashiyama Station,"[Luxury, Walking Distance, Well Rated, Hotel, Pool, Spa, Fine Dining, Garden View, Tea Ceremony, Fitness Center, Concierge Service]"
-Hotel,Hotel Granvia Kyoto,200,0.1,4.4,Kyoto Station,"[Mid-range, Central Location, Well Rated, Hotel, Multiple Restaurants, Fitness Center, City View, Shopping Mall Access, Business Center]"
-Hotel,Kyoto Century Hotel,180,0.2,4.3,Kyoto Station,"[Mid-range, Central Location, Well Rated, Hotel, Restaurant, Business Center, Fitness Center, Laundry Service, Convenience Store]"
-Hotel,Ibis Styles Kyoto Station,120,0.1,4.1,Kyoto Station,"[Mid-range, Central Location, Well Rated, Hotel, Breakfast Included, Family Friendly, Modern Design, 24-hour Front Desk]"
-Hotel,Hotel Keihan Kyoto Grande,100,0.3,4.0,Kyoto Station,"[Budget, Central Location, Well Rated, Hotel, Restaurant, Convenience Store, Laundry Facilities, Free WiFi]"
-Hostel,Len Kyoto Kawaramachi,30,0.4,4.6,Kawaramachi Station,"[Budget, Walking Distance, Well Rated, Hostel, Communal Kitchen, Bike Rental, Social Activities, Free WiFi, Lounge Area]"
-Hostel,Piece Hostel Sanjo,25,0.5,4.5,Kyotoshiyakushomae Station,"[Budget, Walking Distance, Well Rated, Hostel, Rooftop Terrace, Bar, Shared Kitchen, Bike Rental, Laundry Facilities]"
-Hostel,The Lower East Nine Hostel,40,0.6,4.3,Kiyomizu-Gojo Station,"[Budget, Walking Distance, Well Rated, Hostel, Cafe, Laundry Facilities, Free WiFi, Shared Lounge, Bicycle Parking]"
-Hostel,Kyoto Morris Hostel,45,0.3,4.2,Gojo Station,"[Budget, Central Location, Well Rated, Hostel, Shared Lounge, Free Tea, Luggage Storage, Free WiFi, 24-hour Front Desk]"
-Hostel,Gojo Guest House,55,0.4,4.1,Gojo Station,"[Budget, Walking Distance, Well Rated, Hostel, Traditional Japanese Room, Shared Bathroom, Free WiFi, Communal Kitchen]"
-Hostel,Khaosan Kyoto Guesthouse,60,0.5,4.0,Kawaramachi Station,"[Budget, Walking Distance, Well Rated, Hostel, Communal Kitchen, Movie Room, Free WiFi, Bicycle Rental, Laundry Facilities]"
-Airbnb,Gion Shijo Private Condo,128,0.1,4.9,Gion-Shijo Station,"[Mid-range, Central Location, Highly Rated, Airbnb, Fully Equipped Kitchen, Washing Machine, City View, Free WiFi, Self Check-in]"
-Airbnb,Kyoto Gion Apartment,75,0.2,4.8,Gion-Shijo Station,"[Budget, Central Location, Highly Rated, Airbnb, Traditional Decor, Pocket WiFi, Kitchenette, Walking Tours, Local Experience]"
-Airbnb,Double Room near Kyoto Station,55,0.8,4.8,Kyoto Station,"[Budget, Walking Distance, Highly Rated, Airbnb, Private Room, Shared Facilities, Free WiFi, Luggage Storage, Bicycle Parking]"
-Airbnb,Zen House near Kyoto Station,90,0.7,4.9,Kyoto Station,"[Budget, Walking Distance, Highly Rated, Airbnb, Entire House, Japanese Garden, Traditional Architecture, Free WiFi, Bicycle Rental]"
-Airbnb,Spacious Apartment in Central Kyoto,133,0.5,4.9,Karasuma Oike Station,"[Mid-range, Walking Distance, Highly Rated, Airbnb, Family Friendly, Modern Amenities, Fully Equipped Kitchen, City View, Free WiFi]"
-Airbnb,The Gion House (Upper Level),234,0.3,4.9,Gion-Shijo Station,"[Mid-range, Central Location, Highly Rated, Airbnb, Traditional Machiya, River View, Fully Equipped Kitchen, Cultural Experience, Free WiFi]"
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category
+Hotel,The Ritz-Carlton Kyoto,650,0.5,4.8,Kyoto Shiyakusho-mae Station,"[Luxury, Central Location, Highly Rated, Hotel, Pool, Spa, Fine Dining, Business Center, River View, Concierge Service, Fitness Center]",high
+Hotel,Four Seasons Hotel Kyoto,550,0.7,4.7,Higashiyama Station,"[Luxury, Walking Distance, Well Rated, Hotel, Pool, Spa, Fine Dining, Garden View, Tea Ceremony, Fitness Center, Concierge Service]",high
+Hotel,Hotel Granvia Kyoto,200,0.1,4.4,Kyoto Station,"[Mid-range, Central Location, Well Rated, Hotel, Multiple Restaurants, Fitness Center, City View, Shopping Mall Access, Business Center]",high
+Hotel,Kyoto Century Hotel,180,0.2,4.3,Kyoto Station,"[Mid-range, Central Location, Well Rated, Hotel, Restaurant, Business Center, Fitness Center, Laundry Service, Convenience Store]",high
+Hotel,Ibis Styles Kyoto Station,120,0.1,4.1,Kyoto Station,"[Mid-range, Central Location, Well Rated, Hotel, Breakfast Included, Family Friendly, Modern Design, 24-hour Front Desk]",mid
+Hotel,Hotel Keihan Kyoto Grande,100,0.3,4.0,Kyoto Station,"[Budget, Central Location, Well Rated, Hotel, Restaurant, Convenience Store, Laundry Facilities, Free WiFi]",mid
+Hostel,Len Kyoto Kawaramachi,30,0.4,4.6,Kawaramachi Station,"[Budget, Walking Distance, Well Rated, Hostel, Communal Kitchen, Bike Rental, Social Activities, Free WiFi, Lounge Area]",low
+Hostel,Piece Hostel Sanjo,25,0.5,4.5,Kyotoshiyakushomae Station,"[Budget, Walking Distance, Well Rated, Hostel, Rooftop Terrace, Bar, Shared Kitchen, Bike Rental, Laundry Facilities]",low
+Hostel,The Lower East Nine Hostel,40,0.6,4.3,Kiyomizu-Gojo Station,"[Budget, Walking Distance, Well Rated, Hostel, Cafe, Laundry Facilities, Free WiFi, Shared Lounge, Bicycle Parking]",low
+Hostel,Kyoto Morris Hostel,45,0.3,4.2,Gojo Station,"[Budget, Central Location, Well Rated, Hostel, Shared Lounge, Free Tea, Luggage Storage, Free WiFi, 24-hour Front Desk]",low
+Hostel,Gojo Guest House,55,0.4,4.1,Gojo Station,"[Budget, Walking Distance, Well Rated, Hostel, Traditional Japanese Room, Shared Bathroom, Free WiFi, Communal Kitchen]",low
+Hostel,Khaosan Kyoto Guesthouse,60,0.5,4.0,Kawaramachi Station,"[Budget, Walking Distance, Well Rated, Hostel, Communal Kitchen, Movie Room, Free WiFi, Bicycle Rental, Laundry Facilities]",mid
+Airbnb,Gion Shijo Private Condo,128,0.1,4.9,Gion-Shijo Station,"[Mid-range, Central Location, Highly Rated, Airbnb, Fully Equipped Kitchen, Washing Machine, City View, Free WiFi, Self Check-in]",mid
+Airbnb,Kyoto Gion Apartment,75,0.2,4.8,Gion-Shijo Station,"[Budget, Central Location, Highly Rated, Airbnb, Traditional Decor, Pocket WiFi, Kitchenette, Walking Tours, Local Experience]",mid
+Airbnb,Double Room near Kyoto Station,55,0.8,4.8,Kyoto Station,"[Budget, Walking Distance, Highly Rated, Airbnb, Private Room, Shared Facilities, Free WiFi, Luggage Storage, Bicycle Parking]",low
+Airbnb,Zen House near Kyoto Station,90,0.7,4.9,Kyoto Station,"[Budget, Walking Distance, Highly Rated, Airbnb, Entire House, Japanese Garden, Traditional Architecture, Free WiFi, Bicycle Rental]",mid
+Airbnb,Spacious Apartment in Central Kyoto,133,0.5,4.9,Karasuma Oike Station,"[Mid-range, Walking Distance, Highly Rated, Airbnb, Family Friendly, Modern Amenities, Fully Equipped Kitchen, City View, Free WiFi]",high
+Airbnb,The Gion House (Upper Level),234,0.3,4.9,Gion-Shijo Station,"[Mid-range, Central Location, Highly Rated, Airbnb, Traditional Machiya, River View, Fully Equipped Kitchen, Cultural Experience, Free WiFi]",high
