@@ -1,18 +1,48 @@
 require([
     "esri/Map",
-    "esri/views/MapView"
-  ], function(Map, MapView) {
+    "esri/views/MapView",
+    "esri/layers/GraphicsLayer",
+    "esri/Graphic",
+    "esri/geometry/Point"
+], function(Map, MapView, GraphicsLayer, Graphic, Point) {
     const map = new Map({
-      basemap: "topo-vector" // Choose a basemap style
+        basemap: "topo-vector"
     });
 
+    const graphicsLayer = new GraphicsLayer();
+    map.add(graphicsLayer);
+
     const view = new MapView({
-      container: "viewDiv",
-      map: map,
-      center: [138.2529, 36.2048], // Longitude, latitude of Japan
-      zoom: 5 // Initial zoom level
+        container: "viewDiv",
+        map: map,
+        center: [138.2529, 36.2048],
+        zoom: 5
     });
-  });
+
+    // Function to add a pin
+    function addPin(longitude, latitude) {
+        const point = new Point({
+            longitude: longitude,
+            latitude: latitude
+        });
+
+        const simpleMarkerSymbol = {
+            type: "simple-marker",
+            color: [226, 119, 40],  // Orange
+            outline: {
+                color: [255, 255, 255], // White
+                width: 1
+            }
+        };
+
+        const pointGraphic = new Graphic({
+            geometry: point,
+            symbol: simpleMarkerSymbol
+        });
+
+        graphicsLayer.add(pointGraphic);
+    }
+});
 
   function handleClick(button) {
     const buttons = document.querySelectorAll('.button');
@@ -203,6 +233,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
+    
+    
+    
+    
     
       
       

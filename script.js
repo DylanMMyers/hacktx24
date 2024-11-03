@@ -71,6 +71,73 @@ require([
 
         addPin(lat, long);
     });
+
+    // Add sample coordinates array (you can adjust these coordinates as needed)
+    const sampleLocations = [
+        [35.6762, 139.6503],  // Tokyo
+        [34.6937, 135.5023],  // Osaka
+        [43.0618, 141.3545],  // Sapporo
+        [33.5904, 130.4017],  // Fukuoka
+        [26.2124, 127.6809],  // Naha
+    ];
+
+    // Add button to the map
+    const testButton = document.createElement("button");
+    testButton.textContent = "Add Test Pins";
+    testButton.style.position = "absolute";
+    testButton.style.top = "20px";
+    testButton.style.right = "20px";
+    testButton.style.zIndex = "1000";
+    testButton.style.padding = "8px 16px";
+    testButton.style.backgroundColor = "#fff";
+    testButton.style.border = "1px solid #ccc";
+    testButton.style.borderRadius = "4px";
+    testButton.style.cursor = "pointer";
+
+    // Add button to map container
+    view.ui.add(testButton, "top-right");
+
+    // Add click event for the test button
+    testButton.addEventListener("click", function() {
+        console.log("Test button clicked");
+        sampleLocations.forEach(location => {
+            console.log("Adding pin at:", location[0], location[1]);
+            addPin(location[0], location[1]);
+        });
+        
+        // Optional: Zoom out to see all pins
+        view.goTo({
+            center: [135.5023, 35.6762],
+            zoom: 5
+        });
+    });
+
+    // Add this function to process the itinerary locations
+    function processItineraryLocations(locations) {
+        // Clear existing pins if needed
+        graphicsLayer.removeAll();
+        
+        // Process each location
+        locations.forEach(async (location) => {
+            // Assuming location object has latitude and longitude properties
+            if (location.latitude && location.longitude) {
+                addPin(location.latitude, location.longitude);
+            }
+        });
+
+        // Zoom out to see all pins
+        view.goTo({
+            center: [135.5023, 35.6762], // Center of Japan
+            zoom: 5
+        });
+    }
+
+    // Example of how to integrate with LLM response:
+    function handleLLMResponse(llmResponse) {
+        // Assuming llmResponse includes an array of location objects
+        const itineraryLocations = llmResponse.locations; // Adjust based on actual response structure
+        processItineraryLocations(itineraryLocations);
+    }
 });
 
   function handleClick(button) {
