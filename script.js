@@ -58,7 +58,7 @@ require([
     if (shouldCenter) {
       view.goTo({
         center: [longitude, latitude],
-        // zoom: 12
+        zoom: 12
       });
     }
   };
@@ -324,8 +324,8 @@ async function parseResponse(response) {
       text: response
     })
   });
-
   const data = await response2.json();
+  console.log(data);
   if (data.locations) {
     data.locations.forEach((location, index) => {
       // Swap the coordinates order since they come as [lat, lon] but we need [lon, lat]
