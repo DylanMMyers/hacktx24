@@ -368,4 +368,18 @@ def start_conversation():
         check_if_listed = output["messages"][-1].content
         print(check_if_listed)
 
+def format_response(locations, message):
+    formatted_locations = []
+    for location in locations:
+        formatted_locations.append({
+            'name': location['Name'],
+            'latitude': location['Latitude'],
+            'longitude': location['Longitude']
+        })
+    
+    return {
+        'locations': formatted_locations,
+        'message': message
+    }
+
 start_conversation()
