@@ -1,33 +1,33 @@
-Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category
-Breakfast,Yoshinoya,5,0.2,3.8,Osaka Station,"[Japanese Cuisine, Fast Food]",low
-Breakfast,Doutor Coffee,6,0.3,3.7,Umeda Station,"[Cafe, Coffee Shop]",low
-Breakfast,West Wood Bakers,12,0.5,4.1,Shinsaibashi Station,"[Bakery, Cafe]",low
-Breakfast,MANSOU,15,0.4,4.0,Kadoma-minami Station,"[Japanese Cuisine, Other]",mid
-Breakfast,bills Osaka,25,0.1,4.3,Osaka Station,"[Cafe, Western Cuisine]",mid
-Breakfast,Cafe Italian,30,0.3,4.2,Nishikinohama Station,"[Cafe, Italian]",mid
-Breakfast,Swissotel Nankai Osaka Tavola 36,50,0.1,4.5,Namba Station,"[Hotel Restaurant, Buffet]",high
-Breakfast,Hotel Keihan Kyobashi Grande Lorraine,55,0.2,4.4,Kyobashi Station,"[Hotel Restaurant, Buffet]",high
-Lunch,Takoyaki Stand,3,0.3,3.9,Dotonbori Station,"[Japanese Cuisine, Takoyaki]",low
-Lunch,Okonomiyaki Fukutaro,5,0.4,4.0,Namba Station,"[Japanese Cuisine, Okonomiyaki]",low
-Lunch,Kushikatsu Daruma,10,0.2,4.1,Tsutenkaku Station,"[Japanese Cuisine, Kushikatsu]",low
-Lunch,Kura Sushi,12,0.5,3.8,Shinsaibashi Station,"[Sushi, Japanese Cuisine]",low
-Lunch,Ippudo Ramen,20,0.3,4.2,Umeda Station,"[Ramen, Japanese Cuisine]",mid
-Lunch,Mizuno,25,0.4,4.3,Namba Station,"[Japanese Cuisine, Okonomiyaki]",mid
-Lunch,Hajime,120,0.6,4.7,Higobashi Station,"[French, Fine Dining]",high
-Lunch,La Cime,130,0.5,4.6,Hommachi Station,"[French, Fine Dining]",high
-Dinner,Osaka Ohsho,7,0.3,3.8,Umeda Station,"[Japanese Cuisine, Gyoza]",low
-Dinner,Ichiran Ramen,8,0.2,4.0,Dotonbori Station,"[Ramen, Japanese Cuisine]",low
-Dinner,Chibo,15,0.4,4.1,Namba Station,"[Japanese Cuisine, Okonomiyaki]",mid
-Dinner,Kani Doraku,18,0.3,4.2,Shinsaibashi Station,"[Japanese Cuisine, Seafood]",mid
-Dinner,Zuboraya,30,0.5,4.3,Shinsekai Station,"[Japanese Cuisine, Fugu]",mid
-Dinner,Hariju,35,0.4,4.4,Kitashinchi Station,"[Japanese Cuisine, Yakiniku]",high
-Dinner,Kashiwaya,150,0.7,4.8,Yodoyabashi Station,"[Japanese Cuisine, Kaiseki]",high
-Dinner,Fujiya 1935,160,0.6,4.7,Shinsaibashi Station,"[French, Fine Dining]",high
-Bar,300 Bar,5,0.2,3.7,Namba Station,"[Bar, Budget]",low
-Bar,Space Station,6,0.3,3.8,Amerikamura Station,"[Bar, Themed]",low
-Bar,Moonshine,12,0.4,4.0,Shinsaibashi Station,"[Bar, Cocktail Bar]",low
-Bar,Nayuta,15,0.3,4.1,Kitashinchi Station,"[Bar, Cocktail Bar]",mid
-Bar,Bar Nayuta,25,0.5,4.3,Umeda Station,"[Bar, Cocktail Bar]",mid
-Bar,The Silver Whisky Bar,30,0.4,4.4,Hommachi Station,"[Bar, Whisky Bar]",mid
-Bar,Bar Elixir K,50,0.6,4.6,Kitashinchi Station,"[Bar, Cocktail Bar]",high
-Bar,Bar Osaka,55,0.5,4.5,Umeda Station,"[Bar, Cocktail Bar]",high
+Category,Name,Price,Distance to Nearest Train Station,Ratings,Nearest Train Station,Tags,price_category,Coordinates
+Breakfast,Yoshinoya,5,0.2,3.8,Osaka Station,"[Japanese Cuisine, Fast Food]",low,"(34.7025, 135.4959)"
+Breakfast,Doutor Coffee,6,0.3,3.7,Umeda Station,"[Cafe, Coffee Shop]",low,"(34.7055, 135.4983)"
+Breakfast,West Wood Bakers,12,0.5,4.1,Shinsaibashi Station,"[Bakery, Cafe]",low,"(34.6737, 135.5023)"
+Breakfast,MANSOU,15,0.4,4.0,Kadoma-minami Station,"[Japanese Cuisine, Other]",mid,"(34.7352, 135.5768)"
+Breakfast,bills Osaka,25,0.1,4.3,Osaka Station,"[Cafe, Western Cuisine]",mid,"(34.7025, 135.4959)"
+Breakfast,Cafe Italian,30,0.3,4.2,Nishikinohama Station,"[Cafe, Italian]",mid,"(34.7382, 135.5660)"
+Breakfast,Swissotel Nankai Osaka Tavola 36,50,0.1,4.5,Namba Station,"[Hotel Restaurant, Buffet]",high,"(34.6659, 135.5013)"
+Breakfast,Hotel Keihan Kyobashi Grande Lorraine,55,0.2,4.4,Kyobashi Station,"[Hotel Restaurant, Buffet]",high,"(34.6964, 135.5340)"
+Lunch,Takoyaki Stand,3,0.3,3.9,Dotonbori Station,"[Japanese Cuisine, Takoyaki]",low,"(34.6687, 135.5021)"
+Lunch,Okonomiyaki Fukutaro,5,0.4,4.0,Namba Station,"[Japanese Cuisine, Okonomiyaki]",low,"(34.6659, 135.5013)"
+Lunch,Kushikatsu Daruma,10,0.2,4.1,Tsutenkaku Station,"[Japanese Cuisine, Kushikatsu]",low,"(34.6524, 135.5060)"
+Lunch,Kura Sushi,12,0.5,3.8,Shinsaibashi Station,"[Sushi, Japanese Cuisine]",low,"(34.6737, 135.5023)"
+Lunch,Ippudo Ramen,20,0.3,4.2,Umeda Station,"[Ramen, Japanese Cuisine]",mid,"(34.7055, 135.4983)"
+Lunch,Mizuno,25,0.4,4.3,Namba Station,"[Japanese Cuisine, Okonomiyaki]",mid,"(34.6659, 135.5013)"
+Lunch,Hajime,120,0.6,4.7,Higobashi Station,"[French, Fine Dining]",high,"(34.6885, 135.4957)"
+Lunch,La Cime,130,0.5,4.6,Hommachi Station,"[French, Fine Dining]",high,"(34.6814, 135.5066)"
+Dinner,Osaka Ohsho,7,0.3,3.8,Umeda Station,"[Japanese Cuisine, Gyoza]",low,"(34.7055, 135.4983)"
+Dinner,Ichiran Ramen,8,0.2,4.0,Dotonbori Station,"[Ramen, Japanese Cuisine]",low,"(34.6687, 135.5021)"
+Dinner,Chibo,15,0.4,4.1,Namba Station,"[Japanese Cuisine, Okonomiyaki]",mid,"(34.6659, 135.5013)"
+Dinner,Kani Doraku,18,0.3,4.2,Shinsaibashi Station,"[Japanese Cuisine, Seafood]",mid,"(34.6737, 135.5023)"
+Dinner,Zuboraya,30,0.5,4.3,Shinsekai Station,"[Japanese Cuisine, Fugu]",mid,"(34.6524, 135.5060)"
+Dinner,Hariju,35,0.4,4.4,Kitashinchi Station,"[Japanese Cuisine, Yakiniku]",high,"(34.6976, 135.4995)"
+Dinner,Kashiwaya,150,0.7,4.8,Yodoyabashi Station,"[Japanese Cuisine, Kaiseki]",high,"(34.6918, 135.5023)"
+Dinner,Fujiya 1935,160,0.6,4.7,Shinsaibashi Station,"[French, Fine Dining]",high,"(34.6737, 135.5023)"
+Bar,300 Bar,5,0.2,3.7,Namba Station,"[Bar, Budget]",low,"(34.6659, 135.5013)"
+Bar,Space Station,6,0.3,3.8,Amerikamura Station,"[Bar, Themed]",low,"(34.6718, 135.4987)"
+Bar,Moonshine,12,0.4,4.0,Shinsaibashi Station,"[Bar, Cocktail Bar]",low,"(34.6737, 135.5023)"
+Bar,Nayuta,15,0.3,4.1,Kitashinchi Station,"[Bar, Cocktail Bar]",mid,"(34.6976, 135.4995)"
+Bar,Bar Nayuta,25,0.5,4.3,Umeda Station,"[Bar, Cocktail Bar]",mid,"(34.7055, 135.4983)"
+Bar,The Silver Whisky Bar,30,0.4,4.4,Hommachi Station,"[Bar, Whisky Bar]",mid,"(34.6814, 135.5066)"
+Bar,Bar Elixir K,50,0.6,4.6,Kitashinchi Station,"[Bar, Cocktail Bar]",high,"(34.6976, 135.4995)"
+Bar,Bar Osaka,55,0.5,4.5,Umeda Station,"[Bar, Cocktail Bar]",high,"(34.7055, 135.4983)"
