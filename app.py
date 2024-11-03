@@ -1,16 +1,23 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from openai import OpenAI
+from dotenv import load_dotenv
 import os
+
+load_dotenv() 
 
 
 app = Flask(__name__)
 CORS(app)
 
 
-client = OpenAI(api_key='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', base_url="https://api.perplexity.ai")
-client2 = OpenAI(api_key='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')
-
+client = OpenAI(
+    api_key=os.getenv('PERPLEXITY_API_KEY'), 
+    base_url="https://api.perplexity.ai"
+)
+client2 = OpenAI(
+    api_key=os.getenv('OPENAI_API_KEY')
+)
 
 # Store conversations in memory (in a production environment, use a database)
 conversations = {}
