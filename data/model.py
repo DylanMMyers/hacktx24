@@ -20,7 +20,8 @@ memory = MemorySaver()
 app = workflow.compile(checkpointer=memory)
 
 def website_introduction():
-    print("Welcome to Nihon-go! Please select the preferences above to the best of your ability to start our convorsation.")
+    ai_response_print = "Welcome to Nihon-go! Please select the preferences above to the best of your ability to start our convorsation."
+    broadcast_output(ai_response_print)
 
 website_introduction()
 
@@ -125,6 +126,7 @@ def create_itinerary():
 
         for j in range(2):
             attractions_result = s3req.run(current_location, "placestogo", {"cost": price_point, "interests": attractions_output, "meal": None, "dont": dont_go})
+            broadcast_output(attractions_result)
             if attractions_result == 'Not found':
                 print(f"day {i+1} " + "No attractions found")
             else:
@@ -156,11 +158,13 @@ def create_itinerary():
         else:
             current_location = locations[2]
         places_to_stay_result = s3req.run(current_location, "placestostay", {"cost": price_point, "interests": places_to_stay_output, "meal": None, "dont": dont_stay})
+        broadcast_output(places_to_stay_result)
         print(f"day {i+1} " + places_to_stay_result['Name'])
 
 def start_conversation():
     global prompt
-    print("Great! Now that we have a baseline for your preferences, lets fine tune your trip.")
+    ai_response_print = "Great! Now that we have a baseline for your preferences, lets fine tune your trip."
+    broadcast_output(ai_response_print)
     prompt = ChatPromptTemplate.from_messages(
     [
         (
@@ -173,7 +177,7 @@ def start_conversation():
     query = ""
     input_messages = [HumanMessage(query)]
     output = app.invoke({"messages": input_messages}, config)
-    print(output["messages"][-1].content)
+    broadcast_output(output["messages"][-1].content)
 
     places_to_stay = {
     "24-hour Front Desk",
@@ -344,7 +348,8 @@ def start_conversation():
 
     create_itinerary()
 
-    print("Now that we have a basic outline of the trip, we can start editing the trip to your liking. Is there anything you would like to change?")
+    ai_response_print("Now that we have a basic outline of the trip, we can start editing the trip to your liking. Is there anything you would like to change?")
+    broadcast_output(ai_response_print)
 
     while(True):
         print(dont_food, dont_go, dont_stay)
@@ -361,8 +366,7 @@ def start_conversation():
         )
         input_messages = [HumanMessage(query)]
         output = app.invoke({"messages": input_messages}, config)
-        print(output["messages"][-1].content)
-        broadcast_output()
+        broadcast_output(output["messages"][-1].content)
 
         prompt = ChatPromptTemplate.from_messages(
         [
