@@ -7,6 +7,10 @@ import json
 import importlib
 s3req = importlib.import_module("s3req")
 
+
+global current_itinerary
+current_itinerary = []
+
 config = {"configurable": {"thread_id": "abc123"}}
 model = Ollama(model="llama3.2")
 workflow = StateGraph(state_schema=MessagesState)
@@ -17,7 +21,7 @@ def call_model(state: MessagesState):
 workflow.add_edge(START, "model")
 workflow.add_node("model", call_model)
 memory = MemorySaver()
-app = workflow.compile(checkpointer=memory)
+app = workflow.compile()
 
 # function that will put all text and objects passed into it into a json format
 def broadcast_output(ai_output, **objects):
@@ -81,13 +85,14 @@ def create_itinerary():
                 meal = "Lunch"
             else:
                 meal = "Dinner"
-            food_result = s3req.run(current_location, "placestoeat", {"cost": price_point, "interests": food_output, "meal": meal, "dont": dont_food})
+            food_result = s3req.run(current_location, "placestoeat", {"cost": price_point, "interests": food_output, "meal": meal, "dont": dont})
             broadcast_output(food_result)
             if food_result == 'Not found':
                 print(f"day {i+1} " + "No food found")
             else :
                 print(f"day {i+1} " + meal, food_result['Name'])
-                dont_food.append(food_result['Name'])
+                dont.append(food_result['Name'])
+                current_itinerary.append(food_result['Name'])
 
     config = {"configurable": {"thread_id": "attractionsquerythread"}}
     prompt = ChatPromptTemplate.from_messages(
@@ -115,13 +120,14 @@ def create_itinerary():
             current_location = locations[2]
 
         for j in range(2):
-            attractions_result = s3req.run(current_location, "placestogo", {"cost": price_point, "interests": attractions_output, "meal": None, "dont": dont_go})
+            attractions_result = s3req.run(current_location, "placestogo", {"cost": price_point, "interests": attractions_output, "meal": None, "dont": dont})
             broadcast_output(attractions_result)
             if attractions_result == 'Not found':
                 print(f"day {i+1} " + "No attractions found")
             else:
                 print(f"day {i+1}, attraction #{j+1} " + attractions_result['Name'])
-                dont_go.append(attractions_result['Name'])
+                dont.append(attractions_result['Name'])
+                current_itinerary.append(attractions_result['Name'])
 
     config = {"configurable": {"thread_id": "stayingatquerythread"}}
     prompt = ChatPromptTemplate.from_messages(
@@ -147,11 +153,13 @@ def create_itinerary():
             current_location = locations[1]
         else:
             current_location = locations[2]
-        places_to_stay_result = s3req.run(current_location, "placestostay", {"cost": price_point, "interests": places_to_stay_output, "meal": None, "dont": dont_stay})
+        places_to_stay_result = s3req.run(current_location, "placestostay", {"cost": price_point, "interests": places_to_stay_output, "meal": None, "dont": dont})
         broadcast_output(places_to_stay_result)
         print(f"day {i+1} " + places_to_stay_result['Name'])
+        current_itinerary.append(places_to_stay_result['Name'])
 
 def start_conversation():
+    
     global prompt
     ai_response_print = "Great! Now that we have a baseline for your preferences, lets fine tune your trip."
     broadcast_output(ai_response_print)
@@ -328,57 +336,59 @@ def start_conversation():
     places_to_stay_string = convert_places_to_stay(places_to_stay)
     attractions_string = convert_attractions(attractions)
 
-    global dont_food
-    global dont_go
-    global dont_stay
+    global dont
 
-    dont_food = []
-    dont_go = []
-    dont_stay = []
+    dont = []
 
     create_itinerary()
 
     ai_response_print = "Now that we have a basic outline of the trip, we can start editing the trip to your liking. Is there anything you would like to change?"
     broadcast_output(ai_response_print)
+    
+    dont.clear()
 
-    while(True):
-        print(dont_food, dont_go, dont_stay)
+    def chat_calls_self():
+        global prompt
+        prompt = ChatPromptTemplate.from_messages(
+        [
+        (
+            "system",
+            "If the user wants to change an event, remove an event, or doesn't want to go to an event, print only the word 'true' and nothing else (no explination). Otherwise, print 'false.",
+        ),
+        MessagesPlaceholder(variable_name="messages"),
+        ]
+        )
         query = input(">>> ")
-
-        prompt = ChatPromptTemplate.from_messages(
-        [
-            (
-                "system",
-                "The user will say they want to change something or say they are happy with the trip. If they want to change something, agree and say you will change the itinerary to match their preferences. If they are happy with their changes or current, ask them if they would like to see the updated itinerary. Keep your answer short and sweet. Do not add a follow up question.",
-            ),
-            MessagesPlaceholder(variable_name="messages"),
-        ]
-        )
         input_messages = [HumanMessage(query)]
         output = app.invoke({"messages": input_messages}, config)
-        broadcast_output(output["messages"][-1].content)
-
-        prompt = ChatPromptTemplate.from_messages(
-        [
-            (
+        ai_response_print = output["messages"][-1].content
+        broadcast_output(ai_response_print)
+        # if ai_response_print has the word true in it
+        if "true" in ai_response_print:
+            prompt = ChatPromptTemplate.from_messages(
+            [
+                (
                 "system",
-                "If user doesnt want to change the itinerary, print only the word 'true' and **nothing** else. Otherwise, You must print out the name(s) of what they want to remove. Get spelling and capitalization from itinerary and use proper capitalization and spelling in your output. It must be the full name as it appears in the itinerary. Do **not** output it how the user typed it. Only output what is to be removed, nothing else. After, it will be followed by the category that it comes from based on where it was in the itinerary ('Food' or 'Attraction' or 'Accommodation'). Seperate the name and category by using ', '. You can't include any other information in your output, **you can't** describe the list, and **you can't** use new line characters.",
-            ),
+                f"Print just one number: The index where this list constains the closest value to query: {current_itinerary}",
+                ),
             MessagesPlaceholder(variable_name="messages"),
-        ]
-        )
-        input_messages = [HumanMessage(query)]
-        output = app.invoke({"messages": input_messages}, config)
-        check_if_listed = output["messages"][-1].content
-        print(check_if_listed)
-        if ", " in check_if_listed:
-            check_if_listed = check_if_listed.split(", ")
-            dont_food.append(check_if_listed[0])
-            dont_go.append(check_if_listed[0])
-            dont_stay.append(check_if_listed[0])
-        else:
-            ai_response_print = "Would you like to see the updated itinerary?"
-            broadcast_output(ai_response_print)
-            break
+            ]
+            )
+            input_messages = [HumanMessage("")]
+            output = app.invoke({"messages": input_messages}, config)
+            try:
+                ind = int(output["messages"][-1].content)
+            except:
+                print("failed to remove event")
+                ind = 0
+            print(current_itinerary)
+            dont.append(current_itinerary[ind])
+            print(dont)
+
+        elif "itinerary" in ai_response_print:
+            create_itinerary()
+        
+        chat_calls_self()
+    chat_calls_self()
 
 start_conversation()
