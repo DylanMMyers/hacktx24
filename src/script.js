@@ -226,31 +226,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-// REGISTERING NEW USERS
-document.querySelector('.popup-submit-register').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    const username = document.getElementById('registerUsername').value;
-    const password = document.getElementById('registerPassword').value;
-
-    // Send the data to the Python server
-    fetch('/register', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ username: username, password: password })
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data); // Log the entire JSON response
-        alert(data.message); // Show a message to the user
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('There was an error with registration.');
+    document.querySelector('.popup-submit-register').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        const username = document.getElementById('registerUsername').value;
+        const password = document.getElementById('registerPassword').value;
+    
+        // Send the data to the Python server
+        fetch('/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username: username, password: password })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.message); // Log the response for debugging
+            alert(data.message);       // Display the message to the user
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error with registration.');
+        });
     });
-});
+
 
     
     
