@@ -99,39 +99,40 @@ def parse():
 
 @app.route('/chat', methods=['POST'])
 def chat():
-    data = request.json
-    user_message = data['message']
-    conversation_id = data.get('conversation_id', 'default')
-    preferences = data.get('preferences', {})
-    budget = preferences.get('budget', '$')
-    days = preferences.get('days', '1')
+    try:
+        data = request.json
+        user_message = data['message']
+        conversation_id = data.get('conversation_id', 'default')
+        preferences = data.get('preferences', {})
+        budget = preferences.get('budget', '$')
+        days = preferences.get('days', '1')
 
+        # Initialize conversation history if it doesn't exist
+        if conversation_id not in conversations:
+            conversations[conversation_id] = create_prompt("system", f"""You are a helpful travel assistant for Japan. You will only ouput the itinerary, for a trip to Japan. Only Japan.
+            Create detailed itineraries based on these preferences:
+            - Budget:
+            - Length of stay:
+            Be specific with times, places, and activities. Include estimated costs when possible.""")
 
-    # Initialize conversation history if it doesn't exist
-    if conversation_id not in conversations:
-        conversations[conversation_id] = create_prompt("system", f"""You are a helpful travel assistant for Japan. You will only ouput the itinerary, for a trip to Japan. Only Japan.
-        Create detailed itineraries based on these preferences:
-        - Budget:
-        - Length of stay:
-        Be specific with times, places, and activities. Include estimated costs when possible.""")
+        # Add user message to conversation history
+        conversations[conversation_id].append({"role": "user", "content": user_message})
 
+        response = run_perplexity(conversations[conversation_id])
 
-    # Add user message to conversation history
-    conversations[conversation_id].append({"role": "user", "content": user_message})
+        if response:
+            # Add assistant's response to conversation history
+            conversations[conversation_id].append({"role": "assistant", "content": response})
 
-
-    response = run_perplexity(conversations[conversation_id])
-   
-    if response:
-        # Add assistant's response to conversation history
-        conversations[conversation_id].append({"role": "assistant", "content": response})
-       
-        return jsonify({
-            "response": response,
-            "conversation_id": conversation_id
-        })
-    else:
-        return jsonify({"error": "Failed to get response from Perplexity"}), 500
+            return jsonify({
+                "response": response,
+                "conversation_id": conversation_id
+            })
+        else:
+            return jsonify({"error": "Failed to get response from Perplexity"}), 500
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == '__main__':
