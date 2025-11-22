@@ -27,7 +27,7 @@ def create_prompt(role, content):
     return [{"role": role, "content": content}]
 
 
-def run_perplexity(messages, model="llama-3.1-sonar-small-128k-online", temperature=0.7, max_tokens=1000):
+def run_perplexity(messages, model="sonar", temperature=0.7, max_tokens=1000):
     try:
         completion = client.chat.completions.create(
             model=model,
